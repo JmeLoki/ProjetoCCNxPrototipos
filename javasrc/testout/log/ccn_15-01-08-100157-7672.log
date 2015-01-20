@@ -1,0 +1,1317 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2015-01-08T10:01:57</date>
+  <millis>1420722117671</millis>
+  <sequence>0</sequence>
+  <logger>ccnx.Default</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.support.Log</class>
+  <method>&lt;clinit&gt;</method>
+  <thread>1</thread>
+  <message>Set log level for facility org.ccnx.ccn.LogLevel.Test to FINEST</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:57</date>
+  <millis>1420722117674</millis>
+  <sequence>1</sequence>
+  <logger>ccnx.Default</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.support.Log</class>
+  <method>&lt;clinit&gt;</method>
+  <thread>1</thread>
+  <message>Set log level for facility org.ccnx.ccn.LogLevel.Sync to FINEST</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:57</date>
+  <millis>1420722117675</millis>
+  <sequence>2</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.CCNTestHelper</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Initializing test org.ccnx.ccn.profiles.sync.SliceComparatorTest, data can be found under /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57.</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:57</date>
+  <millis>1420722117998</millis>
+  <sequence>3</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.BasicKeyManager</class>
+  <method>loadKeyStore</method>
+  <thread>1</thread>
+  <message>Loading CCN key store from /root/.ccnx/.ccnx_keystore...last modified 1420721633000(ms).</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:57</date>
+  <millis>1420722117999</millis>
+  <sequence>4</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.BasicKeyManager</class>
+  <method>readKeyStore</method>
+  <thread>1</thread>
+  <message>Loading CCN key store...</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118052</millis>
+  <sequence>5</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.BasicKeyManager</class>
+  <method>loadKeyStore</method>
+  <thread>1</thread>
+  <message>Loaded CCN key store from /root/.ccnx/.ccnx_keystore...version 2015-01-08 09:53:53.0 ms: 1420721633000</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118055</millis>
+  <sequence>6</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.BasicKeyManager</class>
+  <method>loadValuesFromKeystore</method>
+  <thread>1</thread>
+  <message>Loading key store file:/root/.ccnx/.ccnx_keystore version 2015-01-08 09:53:53.0 version component =FD054AE7DE1000 millis 1420721633000</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118073</millis>
+  <sequence>7</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.BasicKeyManager</class>
+  <method>loadValuesFromKeystore</method>
+  <thread>1</thread>
+  <message>Default key ID for user root: kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118086</millis>
+  <sequence>8</sequence>
+  <logger>ccnx.Default</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.SecureKeyCache</class>
+  <method>loadKeyStore</method>
+  <thread>1</thread>
+  <message>KeyCache: loading signing key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=, remembering public key in public key cache.</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118090</millis>
+  <sequence>9</sequence>
+  <logger>ccnx.AccessControl</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.SecureKeyCache</class>
+  <method>addMySigningKey</method>
+  <thread>1</thread>
+  <message>SecureKeyCache: adding my private key 9234adec47d19e3e6a2af362d44e09ab6b71f43b1900ba0622fb45f2a5b7d9f6</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118091</millis>
+  <sequence>10</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.BasicKeyManager</class>
+  <method>loadValuesFromConfiguration</method>
+  <thread>1</thread>
+  <message>Not loading key manager configuration data in response to user configuration variable.</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118102</millis>
+  <sequence>11</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>WARNING</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkManager</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>NetworkManager 1: Non-standard CCN agent port 63000 per property ccn.agent.port</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118103</millis>
+  <sequence>12</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkManager</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>NetworkManager 1: Contacting CCN agent at localhost:63000</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118107</millis>
+  <sequence>13</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkChannel</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>NetworkChannel 1: Starting up CCNNetworkChannel using TCP.</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118108</millis>
+  <sequence>14</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkChannel</class>
+  <method>open</method>
+  <thread>1</thread>
+  <message>NetworkChannel 1: open()</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118115</millis>
+  <sequence>15</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkChannel</class>
+  <method>open</method>
+  <thread>1</thread>
+  <message>NetworkChannel 1: Contacting CCN agent at localhost:63000 on local port 44571</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118116</millis>
+  <sequence>16</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.CCNHandle</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>CCNHandle 1: Handle is now open</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118120</millis>
+  <sequence>17</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkManager</class>
+  <method>run</method>
+  <thread>9</thread>
+  <message>NetworkManager 1: CCNNetworkManager processing thread started for port: 63000</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118136</millis>
+  <sequence>18</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.PublicKeyCache</class>
+  <method>getPublicKeyObject</method>
+  <thread>1</thread>
+  <message>Retrieved key 1jYqtWb54a3hYuudALlY+uWoa+H6XEFakodAe1T6/ws= using locator NAME: /%C1.M.S.localhost/%C1.M.SRV/ccnd/KEY/%C1.M.K=00D6362AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B/=FD054AE7DDF135.</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118137</millis>
+  <sequence>19</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.PublicKeyCache</class>
+  <method>getPublicKeyObject</method>
+  <thread>1</thread>
+  <message>Retrieved key 1jYqtWb54a3hYuudALlY+uWoa+H6XEFakodAe1T6/ws= using locator NAME: /%C1.M.S.localhost/%C1.M.SRV/ccnd/KEY/%C1.M.K=00D6362AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B/=FD054AE7DDF135 - got /%C1.M.S.localhost/%C1.M.SRV/ccnd/KEY/%C1.M.K=00D6362AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B/=FD054AE7DDF135/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118151</millis>
+  <sequence>20</sequence>
+  <logger>ccnx.IO</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.io.CCNAbstractInputStream</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>CCNAbstractInputStream: /%C1.M.S.localhost/%C1.M.SRV/ccnd/KEY/%C1.M.K=00D6362AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B/=FD054AE7DDF135 segment 0</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118181</millis>
+  <sequence>21</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.PublicKeyCache</class>
+  <method>getPublicKeyObject</method>
+  <thread>1</thread>
+  <message>Retrieved public key using name: /%C1.M.S.localhost/%C1.M.SRV/ccnd/KEY/%C1.M.K=00D6362AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B/=FD054AE7DDF135</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118182</millis>
+  <sequence>22</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.PublicKeyCache</class>
+  <method>getPublicKey</method>
+  <thread>1</thread>
+  <message>Retrieved key 1jYqtWb54a3hYuudALlY+uWoa+H6XEFakodAe1T6/ws= from network with locator NAME: /%C1.M.S.localhost/%C1.M.SRV/ccnd/KEY/%C1.M.K=00D6362AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B/=FD054AE7DDF135!</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118185</millis>
+  <sequence>23</sequence>
+  <logger>ccnx.Default</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.config.PlatformConfiguration</class>
+  <method>&lt;clinit&gt;</method>
+  <thread>1</thread>
+  <message>BC provider: BC</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118190</millis>
+  <sequence>24</sequence>
+  <logger>ccnx.Default</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.config.PlatformConfiguration</class>
+  <method>&lt;clinit&gt;</method>
+  <thread>1</thread>
+  <message>Provider info: BouncyCastle Security Provider v1.43 version: 1.43</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118191</millis>
+  <sequence>25</sequence>
+  <logger>ccnx.Default</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.config.PlatformConfiguration</class>
+  <method>&lt;clinit&gt;</method>
+  <thread>1</thread>
+  <message>java.vm.name = OpenJDK 64-Bit Server VM</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118212</millis>
+  <sequence>26</sequence>
+  <logger>ccnx.IO</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNFlowControl</class>
+  <method>addNameSpace</method>
+  <thread>1</thread>
+  <message>Flow controller addNameSpace: added namespace: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118214</millis>
+  <sequence>27</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.BasicKeyManager</class>
+  <method>getKeyLocator</method>
+  <thread>1</thread>
+  <message>getKeyLocator: returning locator KEY: kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY= for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118217</millis>
+  <sequence>28</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.KeyManager</class>
+  <method>publishKey</method>
+  <thread>1</thread>
+  <message>publishKey: key not previously published, making new key object /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6 with version 2015-01-08 09:53:53.0 displayed as =FD054AE7DE1000</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118222</millis>
+  <sequence>29</sequence>
+  <logger>ccnx.IO</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.io.CCNAbstractOutputStream</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>CCNAbstractOutputStream: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 blocksize is 4096</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118224</millis>
+  <sequence>30</sequence>
+  <logger>ccnx.IO</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.io.CCNAbstractOutputStream</class>
+  <method>startWrite</method>
+  <thread>1</thread>
+  <message>CCNAbstractOutputStream: startWrite -- searching for keys.</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118231</millis>
+  <sequence>31</sequence>
+  <logger>ccnx.AccessControl</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.profiles.security.access.AccessControlManager</class>
+  <method>keysForOutput</method>
+  <thread>1</thread>
+  <message>keysForOutput: found an acm: (null)</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118232</millis>
+  <sequence>32</sequence>
+  <logger>ccnx.IO</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.io.CCNOutputStream</class>
+  <method>flushToNetwork</method>
+  <thread>1</thread>
+  <message>flush: outputting to the segmenter, baseName /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 basenameindex =00; 162 bytes written, holding back 162 flushing final blocks? false.</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118233</millis>
+  <sequence>33</sequence>
+  <logger>ccnx.IO</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.io.CCNOutputStream</class>
+  <method>flushToNetwork</method>
+  <thread>1</thread>
+  <message>HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 0</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118234</millis>
+  <sequence>34</sequence>
+  <logger>ccnx.IO</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.io.CCNOutputStream</class>
+  <method>flushToNetwork</method>
+  <thread>1</thread>
+  <message>flush: outputting to the segmenter, baseName /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 basenameindex =00; 162 bytes written, holding back 0 flushing final blocks? true.</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118238</millis>
+  <sequence>35</sequence>
+  <logger>ccnx.IO</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.io.CCNOutputStream</class>
+  <method>flushToNetwork</method>
+  <thread>1</thread>
+  <message>HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 1</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118239</millis>
+  <sequence>36</sequence>
+  <logger>ccnx.IO</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.io.CCNOutputStream</class>
+  <method>close</method>
+  <thread>1</thread>
+  <message>CCNOutputStream close: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118243</millis>
+  <sequence>37</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.KeyManager</class>
+  <method>publishKey</method>
+  <thread>1</thread>
+  <message>Published key Sun RSA public key, 1024 bits
+  modulus: 110921138301212145392004253279917995950258669333863662056871643271976607790547016315269834949391078948318860805625603844022322721344201027571021917379901461301585327002407293702110801478794762434747364279565414349376821790585553127606947398240644540011141381284624017866806283409148649866001587866016004087361
+  public exponent: 65537 to name /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 with key locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga; ephemeral digest N=ADE9AEADFCAE59E12798AE773DAB55DD673768CD860B675291B392B082E6DF.</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118245</millis>
+  <sequence>38</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.BasicKeyManager</class>
+  <method>publishKey</method>
+  <thread>1</thread>
+  <message>publishKey: published key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+ under specified key name /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000
+ key locator: NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118246</millis>
+  <sequence>39</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.BasicKeyManager</class>
+  <method>publishKey</method>
+  <thread>1</thread>
+  <message>publishKey: storing key locator kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY= for key NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118248</millis>
+  <sequence>40</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>WARNING</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkManager</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>NetworkManager 2: Non-standard CCN agent port 63000 per property ccn.agent.port</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118248</millis>
+  <sequence>41</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkManager</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>NetworkManager 2: Contacting CCN agent at localhost:63000</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118250</millis>
+  <sequence>42</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkChannel</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>NetworkChannel 2: Starting up CCNNetworkChannel using TCP.</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118250</millis>
+  <sequence>43</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkChannel</class>
+  <method>open</method>
+  <thread>1</thread>
+  <message>NetworkChannel 2: open()</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118252</millis>
+  <sequence>44</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkChannel</class>
+  <method>open</method>
+  <thread>1</thread>
+  <message>NetworkChannel 2: Contacting CCN agent at localhost:63000 on local port 44572</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118252</millis>
+  <sequence>45</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.CCNHandle</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>CCNHandle 2: Handle is now open</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118253</millis>
+  <sequence>46</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>WARNING</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkManager</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>NetworkManager 3: Non-standard CCN agent port 63000 per property ccn.agent.port</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118254</millis>
+  <sequence>47</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkManager</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>NetworkManager 3: Contacting CCN agent at localhost:63000</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118255</millis>
+  <sequence>48</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkChannel</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>NetworkChannel 3: Starting up CCNNetworkChannel using TCP.</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118256</millis>
+  <sequence>49</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkChannel</class>
+  <method>open</method>
+  <thread>1</thread>
+  <message>NetworkChannel 3: open()</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118257</millis>
+  <sequence>50</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkChannel</class>
+  <method>open</method>
+  <thread>1</thread>
+  <message>NetworkChannel 3: Contacting CCN agent at localhost:63000 on local port 44573</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118257</millis>
+  <sequence>51</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.CCNHandle</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>CCNHandle 3: Handle is now open</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118263</millis>
+  <sequence>52</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.profiles.sync.SliceComparatorTest</class>
+  <method>testUpdateWithEmbeddedSingleNode</method>
+  <thread>1</thread>
+  <message>Starting testUpdateWithEmbeddedSingleNode</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118267</millis>
+  <sequence>53</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.io.content.SyncNodeComposite</class>
+  <method>decodeLogging</method>
+  <thread>1</thread>
+  <message>decode node for =01D195CDD0B4CA depth = 1 refs = 4</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118268</millis>
+  <sequence>54</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.io.content.SyncNodeComposite</class>
+  <method>decodeLogging</method>
+  <thread>1</thread>
+  <message>min is 7885910091414925170, max is 7885910091414925170, expanded min is /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57/testSliceComparator/test-1, expanded max is /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57/testSliceComparator/test-4</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118269</millis>
+  <sequence>55</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.io.content.SyncNodeComposite</class>
+  <method>decodeLogging</method>
+  <thread>1</thread>
+  <message>decode node for test-6 depth = 1 refs = 1</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118270</millis>
+  <sequence>56</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.io.content.SyncNodeComposite</class>
+  <method>decodeLogging</method>
+  <thread>1</thread>
+  <message>min is 7885910091414925170, max is 7885910091414925170, expanded min is /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57/testSliceComparator/test-6, expanded max is /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57/testSliceComparator/test-6</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118272</millis>
+  <sequence>57</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.io.content.SyncNodeComposite</class>
+  <method>decodeLogging</method>
+  <thread>1</thread>
+  <message>decode node for u=C2A3CE89B8D8 depth = 1 refs = 4</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118273</millis>
+  <sequence>58</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.io.content.SyncNodeComposite</class>
+  <method>decodeLogging</method>
+  <thread>1</thread>
+  <message>min is 7885910091414925170, max is 7885910091414925170, expanded min is /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57/testSliceComparator/test-7, expanded max is /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57/testSliceComparator/test-10</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118274</millis>
+  <sequence>59</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.io.content.SyncNodeComposite</class>
+  <method>decodeLogging</method>
+  <thread>1</thread>
+  <message>decode node for x=089F0FCE9AD8 depth = 2 refs = 3</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118275</millis>
+  <sequence>60</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.io.content.SyncNodeComposite</class>
+  <method>decodeLogging</method>
+  <thread>1</thread>
+  <message>min is 7885910091414925170, max is 7885910091414925170, expanded min is /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57/testSliceComparator/test-1, expanded max is /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57/testSliceComparator/test-10</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118276</millis>
+  <sequence>61</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.NodeBuilder</class>
+  <method>createHeadRecursive</method>
+  <thread>1</thread>
+  <message>Creating new compound node - with first element =01D195CDD0B4CA and last element u=C2A3CE89B8D8</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118277</millis>
+  <sequence>62</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.io.content.SyncNodeComposite</class>
+  <method>decodeLogging</method>
+  <thread>1</thread>
+  <message>decode node for =015D305A5C879F depth = 1 refs = 3</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118277</millis>
+  <sequence>63</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.io.content.SyncNodeComposite</class>
+  <method>decodeLogging</method>
+  <thread>1</thread>
+  <message>min is 7885910091414925170, max is 7885910091414925170, expanded min is /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57/testSliceComparator/test-4, expanded max is /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57/testSliceComparator/test-6</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118282</millis>
+  <sequence>64</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Beginning sync monitoring starting with: x=089F0FCE9AD8</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118282</millis>
+  <sequence>65</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SyncTreeEntry</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Found existing node: x=089F0FCE9AD8</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118383</millis>
+  <sequence>66</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINE</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>run</method>
+  <thread>11</thread>
+  <message>Starting comparator run - state is INIT, sc is org.ccnx.ccn.impl.sync.SliceComparator@5c576b3d, this is the lead</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118386</millis>
+  <sequence>67</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINE</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>run</method>
+  <thread>11</thread>
+  <message>Init - startHash is x=089F0FCE9AD8</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118388</millis>
+  <sequence>68</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINE</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>run</method>
+  <thread>11</thread>
+  <message>Setting root to x=089F0FCE9AD8 based on startHash</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118389</millis>
+  <sequence>69</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>run</method>
+  <thread>11</thread>
+  <message>Starting new round with X = x=089F0FCE9AD8 and Y = =015D305A5C879F</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118391</millis>
+  <sequence>70</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>doComparison</method>
+  <thread>11</thread>
+  <message>Compare NODE x=089F0FCE9AD8 to LEAF =015D305A5C879F, resMin is 1, resMax is -1</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118393</millis>
+  <sequence>71</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>doComparison</method>
+  <thread>11</thread>
+  <message>minname is 7885910091414925170, maxname is 7885910091414925170, pos X is 0, pos Y is 0</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118395</millis>
+  <sequence>72</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SyncTreeEntry</class>
+  <method>&lt;init&gt;</method>
+  <thread>11</thread>
+  <message>Found existing node: =01D195CDD0B4CA</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118396</millis>
+  <sequence>73</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>doComparison</method>
+  <thread>11</thread>
+  <message>Compare LEAF =01D195CDD0B4CA to LEAF =015D305A5C879F</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118398</millis>
+  <sequence>74</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>doComparison</method>
+  <thread>11</thread>
+  <message>name X is 7885910091414925170, pos X is 0, name Y is 7885910091414925170, pos Y is 0 comp is -1</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118399</millis>
+  <sequence>75</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>doComparison</method>
+  <thread>11</thread>
+  <message>name X (expanded) is /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57/testSliceComparator/test-1, name Y (expanded) is /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57/testSliceComparator/test-4</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118401</millis>
+  <sequence>76</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>doComparison</method>
+  <thread>11</thread>
+  <message>Compare LEAF =01D195CDD0B4CA to LEAF =015D305A5C879F</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118402</millis>
+  <sequence>77</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>doComparison</method>
+  <thread>11</thread>
+  <message>name X is 7885910091414925170, pos X is 1, name Y is 7885910091414925170, pos Y is 0 comp is -1</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118404</millis>
+  <sequence>78</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>doComparison</method>
+  <thread>11</thread>
+  <message>name X (expanded) is /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57/testSliceComparator/test-2, name Y (expanded) is /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57/testSliceComparator/test-4</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118406</millis>
+  <sequence>79</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>doComparison</method>
+  <thread>11</thread>
+  <message>Compare LEAF =01D195CDD0B4CA to LEAF =015D305A5C879F</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118407</millis>
+  <sequence>80</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>doComparison</method>
+  <thread>11</thread>
+  <message>name X is 7885910091414925170, pos X is 2, name Y is 7885910091414925170, pos Y is 0 comp is -1</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118409</millis>
+  <sequence>81</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>doComparison</method>
+  <thread>11</thread>
+  <message>name X (expanded) is /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57/testSliceComparator/test-3, name Y (expanded) is /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57/testSliceComparator/test-4</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118409</millis>
+  <sequence>82</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>doComparison</method>
+  <thread>11</thread>
+  <message>Compare LEAF =01D195CDD0B4CA to LEAF =015D305A5C879F</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118410</millis>
+  <sequence>83</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>doComparison</method>
+  <thread>11</thread>
+  <message>name X is 7885910091414925170, pos X is 3, name Y is 7885910091414925170, pos Y is 0 comp is 0</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118411</millis>
+  <sequence>84</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>doComparison</method>
+  <thread>11</thread>
+  <message>name X (expanded) is /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57/testSliceComparator/test-4, name Y (expanded) is /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57/testSliceComparator/test-4</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118412</millis>
+  <sequence>85</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>doComparison</method>
+  <thread>11</thread>
+  <message>Compare NODE x=089F0FCE9AD8 to LEAF =015D305A5C879F, resMin is 1, resMax is -1</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118413</millis>
+  <sequence>86</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>doComparison</method>
+  <thread>11</thread>
+  <message>minname is 7885910091414925170, maxname is 7885910091414925170, pos X is 1, pos Y is 1</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118414</millis>
+  <sequence>87</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SyncTreeEntry</class>
+  <method>&lt;init&gt;</method>
+  <thread>11</thread>
+  <message>Found existing node: test-6</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118416</millis>
+  <sequence>88</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>doComparison</method>
+  <thread>11</thread>
+  <message>Compare LEAF test-6 to LEAF =015D305A5C879F</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118418</millis>
+  <sequence>89</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>doComparison</method>
+  <thread>11</thread>
+  <message>name X is 7885910091414925170, pos X is 0, name Y is 7885910091414925170, pos Y is 1 comp is 1</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118419</millis>
+  <sequence>90</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>doComparison</method>
+  <thread>11</thread>
+  <message>name X (expanded) is /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57/testSliceComparator/test-6, name Y (expanded) is /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57/testSliceComparator/test-5</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118420</millis>
+  <sequence>91</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>doComparison</method>
+  <thread>11</thread>
+  <message>Compare LEAF test-6 to LEAF =015D305A5C879F</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118421</millis>
+  <sequence>92</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>doComparison</method>
+  <thread>11</thread>
+  <message>name X is 7885910091414925170, pos X is 0, name Y is 7885910091414925170, pos Y is 2 comp is 0</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118422</millis>
+  <sequence>93</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>doComparison</method>
+  <thread>11</thread>
+  <message>name X (expanded) is /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57/testSliceComparator/test-6, name Y (expanded) is /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57/testSliceComparator/test-6</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118423</millis>
+  <sequence>94</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>updateCurrent</method>
+  <thread>11</thread>
+  <message>Starting update from hash x=089F0FCE9AD8</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118424</millis>
+  <sequence>95</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>updateCurrent</method>
+  <thread>11</thread>
+  <message>Update compare - moving to: =01D195CDD0B4CA</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118425</millis>
+  <sequence>96</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>updateCurrent</method>
+  <thread>11</thread>
+  <message>Shortcut in update - popping back to x=089F0FCE9AD8, pos 1</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118426</millis>
+  <sequence>97</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>updateCurrent</method>
+  <thread>11</thread>
+  <message>Update compare - moving to: test-6</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118427</millis>
+  <sequence>98</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>updateCurrent</method>
+  <thread>11</thread>
+  <message>Update compare: name from tree (expanded) is /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57/testSliceComparator/test-6, name  is /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57/testSliceComparator/test-5, comp is 1</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118427</millis>
+  <sequence>99</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>updateCurrent</method>
+  <thread>11</thread>
+  <message>Update: starting redo of names because of /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57/testSliceComparator/test-5 at /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57/testSliceComparator/test-6</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118428</millis>
+  <sequence>100</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SyncTreeEntry</class>
+  <method>&lt;init&gt;</method>
+  <thread>11</thread>
+  <message>Found existing node: u=C2A3CE89B8D8</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118429</millis>
+  <sequence>101</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>updateCurrent</method>
+  <thread>11</thread>
+  <message>Update compare - moving to: u=C2A3CE89B8D8</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118430</millis>
+  <sequence>102</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>addNeededNames</method>
+  <thread>11</thread>
+  <message>Update: subsuming node</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118432</millis>
+  <sequence>103</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.io.content.SyncNodeComposite</class>
+  <method>decodeLogging</method>
+  <thread>11</thread>
+  <message>decode node for v%ABn%B5r%13C depth = 1 refs = 6</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118433</millis>
+  <sequence>104</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.io.content.SyncNodeComposite</class>
+  <method>decodeLogging</method>
+  <thread>11</thread>
+  <message>min is 7885910091414925170, max is 7885910091414925170, expanded min is /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57/testSliceComparator/test-5, expanded max is /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57/testSliceComparator/test-10</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118434</millis>
+  <sequence>105</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.io.content.SyncNodeComposite</class>
+  <method>decodeLogging</method>
+  <thread>11</thread>
+  <message>decode node for x=7D048342C80D depth = 2 refs = 2</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118435</millis>
+  <sequence>106</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.io.content.SyncNodeComposite</class>
+  <method>decodeLogging</method>
+  <thread>11</thread>
+  <message>min is 7885910091414925170, max is 7885910091414925170, expanded min is /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57/testSliceComparator/test-1, expanded max is /ccnx.org/test/SliceComparatorTest-15-01-08-10.01.57/testSliceComparator/test-10</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118436</millis>
+  <sequence>107</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.NodeBuilder</class>
+  <method>createHeadRecursive</method>
+  <thread>11</thread>
+  <message>Creating new compound node - with first element =01D195CDD0B4CA and last element v%ABn%B5r%13C</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118437</millis>
+  <sequence>108</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.sync.SliceComparator</class>
+  <method>updateCurrent</method>
+  <thread>11</thread>
+  <message>Resetting current to created head: x=7D048342C80D</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118484</millis>
+  <sequence>109</sequence>
+  <logger>ccnx.Sync</logger>
+  <level>FINEST</level>
+  <class>org.ccnx.ccn.impl.sync.SyncTreeEntry</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Found existing node: x=7D048342C80D</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118485</millis>
+  <sequence>110</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.profiles.sync.SliceComparatorTest</class>
+  <method>testUpdateWithEmbeddedSingleNode</method>
+  <thread>1</thread>
+  <message>Completed testUpdateWithEmbeddedSingleNode</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118487</millis>
+  <sequence>111</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkManager</class>
+  <method>shutdown</method>
+  <thread>1</thread>
+  <message>NetworkManager 2: Shutdown requested</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118488</millis>
+  <sequence>112</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkChannel</class>
+  <method>close</method>
+  <thread>1</thread>
+  <message>NetworkChannel 2: close(false)</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118490</millis>
+  <sequence>113</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkManager</class>
+  <method>shutdown</method>
+  <thread>1</thread>
+  <message>NetworkManager 3: Shutdown requested</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118490</millis>
+  <sequence>114</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkChannel</class>
+  <method>close</method>
+  <thread>1</thread>
+  <message>NetworkChannel 3: close(false)</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118491</millis>
+  <sequence>115</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkManager</class>
+  <method>shutdown</method>
+  <thread>1</thread>
+  <message>NetworkManager 1: Shutdown requested</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118493</millis>
+  <sequence>116</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkManager</class>
+  <method>run</method>
+  <thread>9</thread>
+  <message>NetworkManager 1: Shutdown complete for port: 63000</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118494</millis>
+  <sequence>117</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkChannel</class>
+  <method>close</method>
+  <thread>1</thread>
+  <message>NetworkChannel 1: close(false)</message>
+</record>
+<record>
+  <date>2015-01-08T10:01:58</date>
+  <millis>1420722118495</millis>
+  <sequence>118</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.BasicKeyManager</class>
+  <method>saveSecureKeyCache</method>
+  <thread>1</thread>
+  <message>Not saving key manager secure key cache data in response to user configuration variable.</message>
+</record>
+</log>

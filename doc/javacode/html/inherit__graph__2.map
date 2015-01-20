@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" href="$interfaceorg_1_1ccnx_1_1ccn_1_1_c_c_n_base.html" title="This is the lowest&#45;level interface to CCN, and describes in its entirety, the interface..." alt="" coords="7,5,137,27"/>
+<area shape="rect" href="$classorg_1_1ccnx_1_1ccn_1_1_c_c_n_handle.html" title="The core class encapsulating a Java interface to the CCN network." alt="" coords="188,5,329,27"/>
+</map>

@@ -1,0 +1,2054 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2015-01-08T10:07:50</date>
+  <millis>1420722470800</millis>
+  <sequence>0</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.BasicKeyManager</class>
+  <method>loadKeyStore</method>
+  <thread>1</thread>
+  <message>Loading CCN key store from /root/.ccnx/.ccnx_keystore...last modified 1420721633000(ms).</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:50</date>
+  <millis>1420722470803</millis>
+  <sequence>1</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.BasicKeyManager</class>
+  <method>readKeyStore</method>
+  <thread>1</thread>
+  <message>Loading CCN key store...</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:50</date>
+  <millis>1420722470888</millis>
+  <sequence>2</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.BasicKeyManager</class>
+  <method>loadKeyStore</method>
+  <thread>1</thread>
+  <message>Loaded CCN key store from /root/.ccnx/.ccnx_keystore...version 2015-01-08 09:53:53.0 ms: 1420721633000</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:50</date>
+  <millis>1420722470891</millis>
+  <sequence>3</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.BasicKeyManager</class>
+  <method>loadValuesFromKeystore</method>
+  <thread>1</thread>
+  <message>Loading key store file:/root/.ccnx/.ccnx_keystore version 2015-01-08 09:53:53.0 version component =FD054AE7DE1000 millis 1420721633000</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:50</date>
+  <millis>1420722470910</millis>
+  <sequence>4</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.BasicKeyManager</class>
+  <method>loadValuesFromKeystore</method>
+  <thread>1</thread>
+  <message>Default key ID for user root: kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:50</date>
+  <millis>1420722470923</millis>
+  <sequence>5</sequence>
+  <logger>ccnx.Default</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.SecureKeyCache</class>
+  <method>loadKeyStore</method>
+  <thread>1</thread>
+  <message>KeyCache: loading signing key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=, remembering public key in public key cache.</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:50</date>
+  <millis>1420722470926</millis>
+  <sequence>6</sequence>
+  <logger>ccnx.AccessControl</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.SecureKeyCache</class>
+  <method>addMySigningKey</method>
+  <thread>1</thread>
+  <message>SecureKeyCache: adding my private key 9234adec47d19e3e6a2af362d44e09ab6b71f43b1900ba0622fb45f2a5b7d9f6</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:50</date>
+  <millis>1420722470927</millis>
+  <sequence>7</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.BasicKeyManager</class>
+  <method>loadValuesFromConfiguration</method>
+  <thread>1</thread>
+  <message>Not loading key manager configuration data in response to user configuration variable.</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:50</date>
+  <millis>1420722470937</millis>
+  <sequence>8</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>WARNING</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkManager</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>NetworkManager 1: Non-standard CCN agent port 63000 per property ccn.agent.port</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:50</date>
+  <millis>1420722470938</millis>
+  <sequence>9</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkManager</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>NetworkManager 1: Contacting CCN agent at localhost:63000</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:50</date>
+  <millis>1420722470942</millis>
+  <sequence>10</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkChannel</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>NetworkChannel 1: Starting up CCNNetworkChannel using TCP.</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:50</date>
+  <millis>1420722470943</millis>
+  <sequence>11</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkChannel</class>
+  <method>open</method>
+  <thread>1</thread>
+  <message>NetworkChannel 1: open()</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:50</date>
+  <millis>1420722470950</millis>
+  <sequence>12</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkChannel</class>
+  <method>open</method>
+  <thread>1</thread>
+  <message>NetworkChannel 1: Contacting CCN agent at localhost:63000 on local port 44833</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:50</date>
+  <millis>1420722470950</millis>
+  <sequence>13</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.CCNHandle</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>CCNHandle 1: Handle is now open</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:50</date>
+  <millis>1420722470955</millis>
+  <sequence>14</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkManager</class>
+  <method>run</method>
+  <thread>9</thread>
+  <message>NetworkManager 1: CCNNetworkManager processing thread started for port: 63000</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:50</date>
+  <millis>1420722470971</millis>
+  <sequence>15</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.PublicKeyCache</class>
+  <method>getPublicKeyObject</method>
+  <thread>1</thread>
+  <message>Retrieved key 1jYqtWb54a3hYuudALlY+uWoa+H6XEFakodAe1T6/ws= using locator NAME: /%C1.M.S.localhost/%C1.M.SRV/ccnd/KEY/%C1.M.K=00D6362AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B/=FD054AE7DDF135.</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:50</date>
+  <millis>1420722470972</millis>
+  <sequence>16</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.PublicKeyCache</class>
+  <method>getPublicKeyObject</method>
+  <thread>1</thread>
+  <message>Retrieved key 1jYqtWb54a3hYuudALlY+uWoa+H6XEFakodAe1T6/ws= using locator NAME: /%C1.M.S.localhost/%C1.M.SRV/ccnd/KEY/%C1.M.K=00D6362AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B/=FD054AE7DDF135 - got /%C1.M.S.localhost/%C1.M.SRV/ccnd/KEY/%C1.M.K=00D6362AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B/=FD054AE7DDF135/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:50</date>
+  <millis>1420722470984</millis>
+  <sequence>17</sequence>
+  <logger>ccnx.IO</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.io.CCNAbstractInputStream</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>CCNAbstractInputStream: /%C1.M.S.localhost/%C1.M.SRV/ccnd/KEY/%C1.M.K=00D6362AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B/=FD054AE7DDF135 segment 0</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471020</millis>
+  <sequence>18</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.PublicKeyCache</class>
+  <method>getPublicKeyObject</method>
+  <thread>1</thread>
+  <message>Retrieved public key using name: /%C1.M.S.localhost/%C1.M.SRV/ccnd/KEY/%C1.M.K=00D6362AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B/=FD054AE7DDF135</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471022</millis>
+  <sequence>19</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.PublicKeyCache</class>
+  <method>getPublicKey</method>
+  <thread>1</thread>
+  <message>Retrieved key 1jYqtWb54a3hYuudALlY+uWoa+H6XEFakodAe1T6/ws= from network with locator NAME: /%C1.M.S.localhost/%C1.M.SRV/ccnd/KEY/%C1.M.K=00D6362AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B/=FD054AE7DDF135!</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471025</millis>
+  <sequence>20</sequence>
+  <logger>ccnx.Default</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.config.PlatformConfiguration</class>
+  <method>&lt;clinit&gt;</method>
+  <thread>1</thread>
+  <message>BC provider: BC</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471032</millis>
+  <sequence>21</sequence>
+  <logger>ccnx.Default</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.config.PlatformConfiguration</class>
+  <method>&lt;clinit&gt;</method>
+  <thread>1</thread>
+  <message>Provider info: BouncyCastle Security Provider v1.43 version: 1.43</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471033</millis>
+  <sequence>22</sequence>
+  <logger>ccnx.Default</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.config.PlatformConfiguration</class>
+  <method>&lt;clinit&gt;</method>
+  <thread>1</thread>
+  <message>java.vm.name = OpenJDK 64-Bit Server VM</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471067</millis>
+  <sequence>23</sequence>
+  <logger>ccnx.IO</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNFlowControl</class>
+  <method>addNameSpace</method>
+  <thread>1</thread>
+  <message>Flow controller addNameSpace: added namespace: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471069</millis>
+  <sequence>24</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.BasicKeyManager</class>
+  <method>getKeyLocator</method>
+  <thread>1</thread>
+  <message>getKeyLocator: returning locator KEY: kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY= for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471072</millis>
+  <sequence>25</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.KeyManager</class>
+  <method>publishKey</method>
+  <thread>1</thread>
+  <message>publishKey: key not previously published, making new key object /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6 with version 2015-01-08 09:53:53.0 displayed as =FD054AE7DE1000</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471087</millis>
+  <sequence>26</sequence>
+  <logger>ccnx.IO</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.io.CCNAbstractOutputStream</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>CCNAbstractOutputStream: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 blocksize is 4096</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471087</millis>
+  <sequence>27</sequence>
+  <logger>ccnx.IO</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.io.CCNAbstractOutputStream</class>
+  <method>startWrite</method>
+  <thread>1</thread>
+  <message>CCNAbstractOutputStream: startWrite -- searching for keys.</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471092</millis>
+  <sequence>28</sequence>
+  <logger>ccnx.AccessControl</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.profiles.security.access.AccessControlManager</class>
+  <method>keysForOutput</method>
+  <thread>1</thread>
+  <message>keysForOutput: found an acm: (null)</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471094</millis>
+  <sequence>29</sequence>
+  <logger>ccnx.IO</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.io.CCNOutputStream</class>
+  <method>flushToNetwork</method>
+  <thread>1</thread>
+  <message>flush: outputting to the segmenter, baseName /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 basenameindex =00; 162 bytes written, holding back 162 flushing final blocks? false.</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471095</millis>
+  <sequence>30</sequence>
+  <logger>ccnx.IO</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.io.CCNOutputStream</class>
+  <method>flushToNetwork</method>
+  <thread>1</thread>
+  <message>HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 0</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471096</millis>
+  <sequence>31</sequence>
+  <logger>ccnx.IO</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.io.CCNOutputStream</class>
+  <method>flushToNetwork</method>
+  <thread>1</thread>
+  <message>flush: outputting to the segmenter, baseName /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 basenameindex =00; 162 bytes written, holding back 0 flushing final blocks? true.</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471101</millis>
+  <sequence>32</sequence>
+  <logger>ccnx.IO</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.io.CCNOutputStream</class>
+  <method>flushToNetwork</method>
+  <thread>1</thread>
+  <message>HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 1</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471103</millis>
+  <sequence>33</sequence>
+  <logger>ccnx.IO</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.io.CCNOutputStream</class>
+  <method>close</method>
+  <thread>1</thread>
+  <message>CCNOutputStream close: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471106</millis>
+  <sequence>34</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.KeyManager</class>
+  <method>publishKey</method>
+  <thread>1</thread>
+  <message>Published key Sun RSA public key, 1024 bits
+  modulus: 110921138301212145392004253279917995950258669333863662056871643271976607790547016315269834949391078948318860805625603844022322721344201027571021917379901461301585327002407293702110801478794762434747364279565414349376821790585553127606947398240644540011141381284624017866806283409148649866001587866016004087361
+  public exponent: 65537 to name /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 with key locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga; ephemeral digest %C1f=C6D50A1FE052E9F6138188952CF2AE9CA5BF45F643EDEFED4164C9CFFBC7.</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471109</millis>
+  <sequence>35</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.BasicKeyManager</class>
+  <method>publishKey</method>
+  <thread>1</thread>
+  <message>publishKey: published key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+ under specified key name /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000
+ key locator: NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471110</millis>
+  <sequence>36</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.BasicKeyManager</class>
+  <method>publishKey</method>
+  <thread>1</thread>
+  <message>publishKey: storing key locator kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY= for key NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471112</millis>
+  <sequence>37</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>WARNING</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkManager</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>NetworkManager 2: Non-standard CCN agent port 63000 per property ccn.agent.port</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471113</millis>
+  <sequence>38</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkManager</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>NetworkManager 2: Contacting CCN agent at localhost:63000</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471114</millis>
+  <sequence>39</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkChannel</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>NetworkChannel 2: Starting up CCNNetworkChannel using TCP.</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471115</millis>
+  <sequence>40</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkChannel</class>
+  <method>open</method>
+  <thread>1</thread>
+  <message>NetworkChannel 2: open()</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471116</millis>
+  <sequence>41</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkChannel</class>
+  <method>open</method>
+  <thread>1</thread>
+  <message>NetworkChannel 2: Contacting CCN agent at localhost:63000 on local port 44835</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471116</millis>
+  <sequence>42</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.CCNHandle</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>CCNHandle 2: Handle is now open</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471122</millis>
+  <sequence>43</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>sink</method>
+  <thread>1</thread>
+  <message>Starting sink</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471126</millis>
+  <sequence>44</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkManager</class>
+  <method>run</method>
+  <thread>11</thread>
+  <message>NetworkManager 2: CCNNetworkManager processing thread started for port: 63000</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471135</millis>
+  <sequence>45</sequence>
+  <logger>ccnx.IO</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNFlowControl</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>adding namespace: /BaseLibraryTest/sync</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471141</millis>
+  <sequence>46</sequence>
+  <logger>ccnx.IO</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNFlowControl</class>
+  <method>addNameSpace</method>
+  <thread>1</thread>
+  <message>addNameSpace: not adding name: /BaseLibraryTest/sync/return/4596 already monitoring prefix: /BaseLibraryTest/sync</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471142</millis>
+  <sequence>47</sequence>
+  <logger>ccnx.Keys</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.security.keys.BasicKeyManager</class>
+  <method>getKeyLocator</method>
+  <thread>1</thread>
+  <message>getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471143</millis>
+  <sequence>48</sequence>
+  <logger>ccnx.IO</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNFlowControl</class>
+  <method>addNameSpace</method>
+  <thread>1</thread>
+  <message>addNameSpace: not adding name: /BaseLibraryTest/sync/return/4596 already monitoring prefix: /BaseLibraryTest/sync</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471185</millis>
+  <sequence>49</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Get sequence started</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471247</millis>
+  <sequence>50</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 0</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471248</millis>
+  <sequence>51</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/0/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471288</millis>
+  <sequence>52</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 1</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471289</millis>
+  <sequence>53</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/1/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471318</millis>
+  <sequence>54</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 2</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471318</millis>
+  <sequence>55</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/2/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471356</millis>
+  <sequence>56</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 3</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471357</millis>
+  <sequence>57</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/3/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471403</millis>
+  <sequence>58</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 4</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471404</millis>
+  <sequence>59</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/4/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471462</millis>
+  <sequence>60</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 5</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471463</millis>
+  <sequence>61</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/5/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471478</millis>
+  <sequence>62</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 6</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471479</millis>
+  <sequence>63</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/6/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471512</millis>
+  <sequence>64</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 7</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471514</millis>
+  <sequence>65</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/7/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471535</millis>
+  <sequence>66</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 8</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471537</millis>
+  <sequence>67</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/8/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471589</millis>
+  <sequence>68</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 9</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471590</millis>
+  <sequence>69</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/9/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471621</millis>
+  <sequence>70</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 10</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471622</millis>
+  <sequence>71</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/10/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471652</millis>
+  <sequence>72</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 11</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471653</millis>
+  <sequence>73</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/11/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471683</millis>
+  <sequence>74</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 12</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471684</millis>
+  <sequence>75</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/12/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471700</millis>
+  <sequence>76</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 13</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471701</millis>
+  <sequence>77</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/13/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471752</millis>
+  <sequence>78</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 14</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471754</millis>
+  <sequence>79</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/14/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471775</millis>
+  <sequence>80</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 15</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471775</millis>
+  <sequence>81</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/15/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471834</millis>
+  <sequence>82</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 16</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471835</millis>
+  <sequence>83</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/16/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471874</millis>
+  <sequence>84</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 17</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471876</millis>
+  <sequence>85</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/17/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471892</millis>
+  <sequence>86</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 18</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471893</millis>
+  <sequence>87</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/18/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471931</millis>
+  <sequence>88</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 19</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471933</millis>
+  <sequence>89</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/19/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471976</millis>
+  <sequence>90</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 20</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:51</date>
+  <millis>1420722471978</millis>
+  <sequence>91</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/20/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472019</millis>
+  <sequence>92</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 21</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472021</millis>
+  <sequence>93</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/21/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472074</millis>
+  <sequence>94</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 22</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472076</millis>
+  <sequence>95</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/22/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472131</millis>
+  <sequence>96</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 23</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472132</millis>
+  <sequence>97</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/23/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472186</millis>
+  <sequence>98</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 24</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472188</millis>
+  <sequence>99</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/24/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472238</millis>
+  <sequence>100</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 25</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472239</millis>
+  <sequence>101</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/25/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472286</millis>
+  <sequence>102</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 26</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472287</millis>
+  <sequence>103</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/26/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472304</millis>
+  <sequence>104</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 27</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472305</millis>
+  <sequence>105</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/27/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472327</millis>
+  <sequence>106</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 28</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472329</millis>
+  <sequence>107</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/28/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472383</millis>
+  <sequence>108</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 29</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472386</millis>
+  <sequence>109</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/29/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472415</millis>
+  <sequence>110</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 30</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472416</millis>
+  <sequence>111</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/30/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472458</millis>
+  <sequence>112</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 31</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472460</millis>
+  <sequence>113</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/31/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472519</millis>
+  <sequence>114</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 32</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472520</millis>
+  <sequence>115</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/32/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472550</millis>
+  <sequence>116</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 33</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472552</millis>
+  <sequence>117</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/33/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472596</millis>
+  <sequence>118</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 34</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472597</millis>
+  <sequence>119</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/34/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472623</millis>
+  <sequence>120</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 35</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472624</millis>
+  <sequence>121</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/35/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472675</millis>
+  <sequence>122</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 36</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472675</millis>
+  <sequence>123</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/36/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472721</millis>
+  <sequence>124</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 37</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472723</millis>
+  <sequence>125</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/37/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472769</millis>
+  <sequence>126</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 38</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472770</millis>
+  <sequence>127</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/38/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472825</millis>
+  <sequence>128</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 39</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472828</millis>
+  <sequence>129</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/39/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472849</millis>
+  <sequence>130</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 40</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472850</millis>
+  <sequence>131</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/40/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472901</millis>
+  <sequence>132</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 41</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472903</millis>
+  <sequence>133</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/41/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472919</millis>
+  <sequence>134</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Got 42</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472921</millis>
+  <sequence>135</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>1</thread>
+  <message>Got result: /BaseLibraryTest/gets/42/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472922</millis>
+  <sequence>136</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>gets</method>
+  <thread>1</thread>
+  <message>Get sequence finished</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:52</date>
+  <millis>1420722472923</millis>
+  <sequence>137</sequence>
+  <logger>ccnx.Default</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>server</method>
+  <thread>1</thread>
+  <message>GetServer started</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:56</date>
+  <millis>1420722476940</millis>
+  <sequence>138</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/0/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:56</date>
+  <millis>1420722476943</millis>
+  <sequence>139</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/0/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:56</date>
+  <millis>1420722476954</millis>
+  <sequence>140</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/1/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:56</date>
+  <millis>1420722476964</millis>
+  <sequence>141</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/2/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:56</date>
+  <millis>1420722476972</millis>
+  <sequence>142</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/3/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:56</date>
+  <millis>1420722476981</millis>
+  <sequence>143</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/4/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:56</date>
+  <millis>1420722476990</millis>
+  <sequence>144</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/5/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:56</date>
+  <millis>1420722476998</millis>
+  <sequence>145</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/6/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477008</millis>
+  <sequence>146</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/7/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477016</millis>
+  <sequence>147</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/8/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477022</millis>
+  <sequence>148</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/9/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477028</millis>
+  <sequence>149</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/10/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477034</millis>
+  <sequence>150</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/11/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477039</millis>
+  <sequence>151</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/12/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477045</millis>
+  <sequence>152</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/13/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477051</millis>
+  <sequence>153</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/14/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477057</millis>
+  <sequence>154</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/15/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477062</millis>
+  <sequence>155</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/16/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477067</millis>
+  <sequence>156</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/17/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477072</millis>
+  <sequence>157</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/18/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477076</millis>
+  <sequence>158</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/19/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477081</millis>
+  <sequence>159</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/20/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477087</millis>
+  <sequence>160</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/21/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477092</millis>
+  <sequence>161</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/22/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477098</millis>
+  <sequence>162</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/23/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477103</millis>
+  <sequence>163</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/24/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477116</millis>
+  <sequence>164</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/25/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477121</millis>
+  <sequence>165</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/26/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477125</millis>
+  <sequence>166</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/27/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477130</millis>
+  <sequence>167</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/28/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477135</millis>
+  <sequence>168</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/29/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477139</millis>
+  <sequence>169</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/30/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477144</millis>
+  <sequence>170</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/31/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477149</millis>
+  <sequence>171</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/32/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477156</millis>
+  <sequence>172</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/33/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477161</millis>
+  <sequence>173</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/34/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477168</millis>
+  <sequence>174</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/35/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477174</millis>
+  <sequence>175</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/36/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477180</millis>
+  <sequence>176</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/37/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477185</millis>
+  <sequence>177</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/38/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477191</millis>
+  <sequence>178</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/39/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477197</millis>
+  <sequence>179</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/40/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477203</millis>
+  <sequence>180</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/41/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477211</millis>
+  <sequence>181</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.BaseLibrarySink</class>
+  <method>checkGetResults</method>
+  <thread>11</thread>
+  <message>Got result: /BaseLibraryTest/server/42/=00</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477212</millis>
+  <sequence>182</sequence>
+  <logger>ccnx.Test</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.endtoend.EndToEndTestSink</class>
+  <method>sink</method>
+  <thread>1</thread>
+  <message>Completed sink</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477214</millis>
+  <sequence>183</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkManager</class>
+  <method>shutdown</method>
+  <thread>1</thread>
+  <message>NetworkManager 2: Shutdown requested</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477215</millis>
+  <sequence>184</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkManager</class>
+  <method>run</method>
+  <thread>11</thread>
+  <message>NetworkManager 2: Shutdown complete for port: 63000</message>
+</record>
+<record>
+  <date>2015-01-08T10:07:57</date>
+  <millis>1420722477217</millis>
+  <sequence>185</sequence>
+  <logger>ccnx.NetManager</logger>
+  <level>INFO</level>
+  <class>org.ccnx.ccn.impl.CCNNetworkChannel</class>
+  <method>close</method>
+  <thread>1</thread>
+  <message>NetworkChannel 2: close(false)</message>
+</record>
+</log>

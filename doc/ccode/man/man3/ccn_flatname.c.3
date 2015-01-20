@@ -1,0 +1,185 @@
+.TH "lib/ccn_flatname.c" 3 "9 Oct 2013" "Version 0.8.1" "Content-Centric Networking in C" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lib/ccn_flatname.c \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBccn_flatname_charbuf_compare\fP (struct \fBccn_charbuf\fP *a, struct \fBccn_charbuf\fP *b)"
+.br
+.RI "\fIFlattened representation of a name. \fP"
+.ti -1c
+.RI "int \fBccn_flatname_compare\fP (const unsigned char *a, size_t al, const unsigned char *b, size_t bl)"
+.br
+.RI "\fICompare flatnames a and b (raw version). \fP"
+.ti -1c
+.RI "int \fBccn_flatname_append_component\fP (struct \fBccn_charbuf\fP *dst, const unsigned char *comp, size_t size)"
+.br
+.RI "\fIAppend one component to a flatname. \fP"
+.ti -1c
+.RI "int \fBccn_flatname_append_from_ccnb\fP (struct \fBccn_charbuf\fP *dst, const unsigned char *ccnb, size_t size, int skip, int count)"
+.br
+.RI "\fIAppend Components from a ccnb-encoded Name to a flatname. \fP"
+.ti -1c
+.RI "int \fBccn_flatname_from_ccnb\fP (struct \fBccn_charbuf\fP *dst, const unsigned char *ccnb, size_t size)"
+.br
+.RI "\fIConvert a ccnb-encoded Name to a flatname. \fP"
+.ti -1c
+.RI "int \fBccn_flatname_next_comp\fP (const unsigned char *flatname, size_t size)"
+.br
+.RI "\fIParse the component delimiter from the start of a flatname. \fP"
+.ti -1c
+.RI "int \fBccn_name_append_flatname\fP (struct \fBccn_charbuf\fP *dst, const unsigned char *flatname, size_t size, int skip, int count)"
+.br
+.RI "\fIAppend Components from a flatname to a ccnb-encoded Name. \fP"
+.ti -1c
+.RI "int \fBccn_uri_append_flatname\fP (struct \fBccn_charbuf\fP *uri, const unsigned char *flatname, size_t size, int includescheme)"
+.br
+.RI "\fILike \fBccn_uri_append()\fP, but accepts a flatname instead of ccnb. \fP"
+.ti -1c
+.RI "int \fBccn_flatname_ncomps\fP (const unsigned char *flatname, size_t size)"
+.br
+.RI "\fIGet flatname component count. \fP"
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "int ccn_flatname_append_component (struct \fBccn_charbuf\fP * dst, const unsigned char * comp, size_t size)"
+.PP
+Append one component to a flatname. Flat name representation.
+.PP
+\fBReturns:\fP
+.RS 4
+0, or -1 if there is an error. 
+.RE
+.PP
+
+.PP
+Definition at line 65 of file ccn_flatname.c.
+.PP
+Referenced by ccn_flatname_append_from_ccnb(), process_incoming_content(), r_store_set_flatname(), and test_insert_content().
+.SS "int ccn_flatname_append_from_ccnb (struct \fBccn_charbuf\fP * dst, const unsigned char * ccnb, size_t size, int skip, int count)"
+.PP
+Append Components from a ccnb-encoded Name to a flatname. The ccnb encoded input may be a ContentObject, Interest, Prefix, or Component instead of simply a Name. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdst\fP is the destination, which should hold a ccnb-encoded Name 
+.br
+\fIccnb\fP points to first byte of Name 
+.br
+\fIsize\fP is the number of bytes in ccnb 
+.br
+\fIskip\fP is the number of components at the front of flatname to skip 
+.br
+\fIcount\fP is the maximum number of componebts to append, or -1 for all 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+number of appended components, or -1 if there is an error. 
+.RE
+.PP
+
+.PP
+Definition at line 100 of file ccn_flatname.c.
+.PP
+Referenced by ccn_append_interest_bounds(), ccn_flatname_from_ccnb(), find_first_match_candidate(), process_incoming_content(), process_incoming_interest(), and test_flatname().
+.SS "int ccn_flatname_charbuf_compare (struct \fBccn_charbuf\fP * a, struct \fBccn_charbuf\fP * b)"
+.PP
+Flattened representation of a name. Compare flatnames a and b 
+.PP
+\fBReturns:\fP
+.RS 4
+negative, 0, or positive if a < b, a == b, a > b, respectively. The special return value CCN_STRICT_PREFIX means a < b and a is also a prefix of b. Similarly CCN_STRICT_REV_PREFIX means b is a strict prefix of a. 
+.RE
+.PP
+
+.PP
+Definition at line 34 of file ccn_flatname.c.
+.PP
+Referenced by r_store_content_matches_interest_prefix(), and r_store_lookup_ccnb().
+.SS "int ccn_flatname_compare (const unsigned char * a, size_t al, const unsigned char * b, size_t bl)"
+.PP
+Compare flatnames a and b (raw version). 
+.PP
+Definition at line 43 of file ccn_flatname.c.
+.PP
+Referenced by ccn_flatname_charbuf_compare(), ccn_nametree_create(), and content_matches_prefix().
+.SS "int ccn_flatname_from_ccnb (struct \fBccn_charbuf\fP * dst, const unsigned char * ccnb, size_t size)"
+.PP
+Convert a ccnb-encoded Name to a flatname. \fBReturns:\fP
+.RS 4
+number of components, or -1 if there is an error. 
+.RE
+.PP
+
+.PP
+Definition at line 156 of file ccn_flatname.c.
+.PP
+Referenced by find_first_match_candidate(), next_child_at_level(), r_store_content_matches_interest_prefix(), r_store_find_first_match_candidate(), r_store_lookup_backwards(), r_store_lookup_ccnb(), r_store_next_child_at_level(), r_store_set_flatname(), test_flatname(), test_insert_content(), and testhelp_count_matches().
+.SS "int ccn_flatname_ncomps (const unsigned char * flatname, size_t size)"
+.PP
+Get flatname component count. \fBReturns:\fP
+.RS 4
+the number of name components in the flatname, or -1 if the flatname is not well-formed 
+.RE
+.PP
+
+.PP
+Definition at line 266 of file ccn_flatname.c.
+.PP
+Referenced by ccn_btree_insert_content(), and test_flatname().
+.SS "int ccn_flatname_next_comp (const unsigned char * flatname, size_t size)"
+.PP
+Parse the component delimiter from the start of a flatname. The delimiter size is limited to 3 bytes. 
+.PP
+\fBReturns:\fP
+.RS 4
+-1 for error, 0 nothing left, or compsize * 4 + delimsize 
+.RE
+.PP
+
+.PP
+Definition at line 170 of file ccn_flatname.c.
+.PP
+Referenced by ccn_btree_match_interest(), ccn_flatname_ncomps(), ccn_name_append_flatname(), and r_store_lookup_backwards().
+.SS "int ccn_name_append_flatname (struct \fBccn_charbuf\fP * dst, const unsigned char * flatname, size_t size, int skip, int count)"
+.PP
+Append Components from a flatname to a ccnb-encoded Name. \fBParameters:\fP
+.RS 4
+\fIdst\fP is the destination, which should hold a ccnb-encoded Name 
+.br
+\fIflatname\fP points to first byte of flatname 
+.br
+\fIsize\fP is the number of bytes in flatname 
+.br
+\fIskip\fP is the number of components at the front of flatname to skip 
+.br
+\fIcount\fP is the maximum number of components to append, or -1 for all 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+number of appended components, or -1 if there is an error. 
+.RE
+.PP
+
+.PP
+Definition at line 199 of file ccn_flatname.c.
+.PP
+Referenced by ccn_uri_append_flatname(), match_interests(), next_child_at_level(), r_store_name_append_components(), r_store_next_child_at_level(), and test_flatname().
+.SS "int ccn_uri_append_flatname (struct \fBccn_charbuf\fP * uri, const unsigned char * flatname, size_t size, int includescheme)"
+.PP
+Like \fBccn_uri_append()\fP, but accepts a flatname instead of ccnb. 
+.PP
+Definition at line 238 of file ccn_flatname.c.
+.PP
+Referenced by ccnd_debug_content(), ccnr_debug_content(), test_flatname(), and test_insert_content().
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Content-Centric Networking in C from the source code.

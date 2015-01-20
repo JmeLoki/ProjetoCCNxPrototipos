@@ -1,0 +1,1 @@
+-rw-r--r-- 1 root root 5502086 Jan 15 18:12 ./testrepo2/repoFile1

@@ -1,0 +1,1163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="barbara-Notebook" name="org.ccnx.ccn.repo.RFSTest" skipped="0" tests="3" time="2.824" timestamp="2015-01-15T21:12:21">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="src.test.dir" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/src/test" />
+    <property name="jarfile" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/ccn.jar" />
+    <property name="PROTOCOL_KEY" value="ccn.agent.protocol" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="ccnr" value="/home/barbara/jaime/ccnx-0.8.1/csrc/ccnr/ccnr" />
+    <property name="jarfile-base" value="ccn.jar" />
+    <property name="env.MAKELEVEL" value="2" />
+    <property name="ccn-libs-basedir" value="/home/barbara/jaime/ccnx-0.8.1/javasrc" />
+    <property name="env.SUDO_COMMAND" value="/usr/bin/make test" />
+    <property name="ant.file.type.java-ccnx" value="file" />
+    <property name="REPO_GLOBAL" value="/parc.com/csl/ccn/repositories/TestRepository" />
+    <property name="CCND_CAP" value="50000" />
+    <property name="lib" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/lib" />
+    <property name="SYNC_NOISY" value="FINEST" />
+    <property name="os.name" value="Linux" />
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/classes" />
+    <property name="env.PWD" value="/home/barbara/jaime/ccnx-0.8.1/javasrc" />
+    <property name="JAVA_MEMORY" value="1g" />
+    <property name="env.LANG" value="pt_BR.UTF-8" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ccnd" value="/home/barbara/jaime/ccnx-0.8.1/csrc/ccnd/ccnd" />
+    <property name="ant.home" value="/usr/share/ant" />
+    <property name="java.runtime.version" value="1.7.0_65-b32" />
+    <property name="org.ccnx.ccn.LogDir" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/testout/log" />
+    <property name="env.DISPLAY" value=":0" />
+    <property name="REPO_ROOT" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/testout/repotest" />
+    <property name="user.name" value="root" />
+    <property name="CCND_CMD" value="../../csrc/ccnd/ccnd" />
+    <property name="env.USER" value="root" />
+    <property name="env.SHELL" value="/bin/bash" />
+    <property name="DEBUG_OPTIONS" value="" />
+    <property name="env.PATH" value="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin" />
+    <property name="user.language" value="pt" />
+    <property name="build" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/build" />
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64" />
+    <property name="ant.project.default-target" value="jar" />
+    <property name="ant.project.name" value="java-ccnx" />
+    <property name="java.version" value="1.7.0_65" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="testout" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/testout" />
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="showoutput" value="no" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="USE_KEY_CONFIG_VAL" value="false" />
+    <property name="repo2" value="true" />
+    <property name="java.class.version" value="51.0" />
+    <property name="TOP_DIR" value="../src/systemtest" />
+    <property name="user.country" value="BR" />
+    <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="env.LOGNAME" value="root" />
+    <property name="ant.file" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/build.xml" />
+    <property name="os.version" value="3.16.0-29-generic" />
+    <property name="REPO_LOCAL_ROOT" value="repotest" />
+    <property name="ant.file.type.ccn-libs" value="file" />
+    <property name="REPO_LOCAL" value="TestRepository" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="24.65-b04" />
+    <property name="env.LANGUAGE" value="pt_BR:pt:en" />
+    <property name="EXIT_ON_ERROR" value="org.ccnx.ExitOnNetworkError" />
+    <property name="ant.library.dir" value="/usr/share/ant/lib" />
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+    <property name="env.TERM" value="xterm" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="env.SUDO_UID" value="1000" />
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+    <property name="build-excludes" value="bin/**, log/**, lib/**, libsrc/**, repository/**, build/**, testout/**, ktrace.out, CCN_DEBUG_DATA/**" />
+    <property name="user.home" value="/root" />
+    <property name="env.OLDPWD" value="/home/barbara/jaime/ccnx-0.8.1" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="env.MFLAGS" value="-w" />
+    <property name="LOGDIR_KEY" value="org.ccnx.ccn.LogDir" />
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="org.ccnx.ExitOnNetworkError" value="true" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="CCND_DEBUG" value="87" />
+    <property name="env.MAKEFLAGS" value="w" />
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.4 compiled on May 9 2014" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/home/barbara/jaime/ccnx-0.8.1/javasrc/junittestcases5645918064380920877.properties skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/barbara/jaime/ccnx-0.8.1/javasrc/testout/IGNORETHIS.xml crashfile=/home/barbara/jaime/ccnx-0.8.1/javasrc/junitvmwatcher4297959004136568373.properties propsfile=/home/barbara/jaime/ccnx-0.8.1/javasrc/junit4606955676531587217.properties" />
+    <property name="java.class.path" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/lib/bcprov-jdk16-143.jar:/home/barbara/jaime/ccnx-0.8.1/javasrc/lib/kxml2-2.3.0.jar:/home/barbara/jaime/ccnx-0.8.1/javasrc/lib/junit-4.3.1.jar:/home/barbara/jaime/ccnx-0.8.1/javasrc/ccn.jar:/usr/share/java/ant-launcher-1.9.4.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+    <property name="xml-jar" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/lib/kxml2-2.3.0.jar" />
+    <property name="junit-jar" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/lib/junit-4.3.1.jar" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="bcprov-jar" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/lib/bcprov-jdk16-143.jar" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.7" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="cmddir" value="/home/barbara/jaime/ccnx-0.8.1/csrc/cmd" />
+    <property name="env.HOME" value="/home/barbara" />
+    <property name="env.LS_COLORS" value="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="repozip" value="repotest.zip" />
+    <property name="ccn.agent.port" value="63000" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="UNIT_TOP_DIR" value="../src/test" />
+    <property name="ant.file.ccn-libs" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/libs.xml" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext" />
+    <property name="env.SUDO_USER" value="barbara" />
+    <property name="user.dir" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/testout" />
+    <property name="env.XAUTHORITY" value="/home/barbara/.Xauthority" />
+    <property name="ant.file.java-ccnx" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/build.xml" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+    <property name="env.COLORTERM" value="gnome-terminal" />
+    <property name="TEST_PORT" value="63000" />
+    <property name="basedir" value="/home/barbara/jaime/ccnx-0.8.1/javasrc" />
+    <property name="ant.java.version" value="1.7" />
+    <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
+    <property name="env.USERNAME" value="root" />
+    <property name="ccn.test.topdir" value="../src/systemtest" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="env.MAIL" value="/var/mail/root" />
+    <property name="src.systemtest.dir" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/src/systemtest" />
+    <property name="env.SUDO_GID" value="1000" />
+    <property name="testoutlog" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/testout/log" />
+    <property name="java.specification.version" value="1.7" />
+    <property name="src.dir" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/src/main" />
+    <property name="ant.project.invoked-targets" value="test" />
+    <property name="USE_KEY_CONFIG_KEY" value="org.ccnx.config.UseKeyConfiguration" />
+    <property name="REPO_ROOT2" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/testout/repotest2" />
+    <property name="org.ccnx.config.UseKeyConfiguration" value="false" />
+  </properties>
+  <testcase classname="org.ccnx.ccn.repo.RFSTest" name="testRepo" time="0.748" />
+  <testcase classname="org.ccnx.ccn.repo.RFSTest" name="testBulkImport" time="0.197" />
+  <testcase classname="org.ccnx.ccn.repo.RFSTest" name="testPolicy" time="0.134" />
+  <system-out><![CDATA[Writing log records to /home/barbara/jaime/ccnx-0.8.1/javasrc/testout/log/ccn_15-01-15-181222-5263.log
+Repotest - Testing basic data
+Repotest - Testing multiple digests for same data
+Repotest - Testing same digest for different data and/or publisher
+Repotest - Testing too long data
+Repotest - Testing invalid characters in name
+Repotest - Testing different kinds of interests
+Repotest - Testing different kinds of interests in a mixture of encoded/standard data
+Test some unusual left and right searches that could break the prescanner
+Repotest - test that rightSearch iterates backwards through objects
+Repotest - test that rightSearch gives left branch of rightMost object
+Repotest - testing version and segment files
+Repotest - storing sequence of objects for versioned stream read testing
+Repotest - testing min and max in retrieval
+Repotest - testing fast name enumeration response
+Repotest - Testing reinitialization of repo
+]]></system-out>
+  <system-err><![CDATA[Jan 15, 2015 6:12:22 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadKeyStore
+INFORMAÇÕES: Loading CCN key store from /root/.ccnx/.ccnx_keystore...last modified 1420721633000(ms).
+Jan 15, 2015 6:12:22 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager readKeyStore
+INFORMAÇÕES: Loading CCN key store...
+Jan 15, 2015 6:12:22 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadKeyStore
+INFORMAÇÕES: Loaded CCN key store from /root/.ccnx/.ccnx_keystore...version 2015-01-08 09:53:53.0 ms: 1420721633000
+Jan 15, 2015 6:12:22 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadValuesFromKeystore
+INFORMAÇÕES: Loading key store file:/root/.ccnx/.ccnx_keystore version 2015-01-08 09:53:53.0 version component =FD054AE7DE1000 millis 1420721633000
+Jan 15, 2015 6:12:22 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadValuesFromKeystore
+INFORMAÇÕES: Default key ID for user root: kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:12:22 PM org.ccnx.ccn.impl.security.keys.SecureKeyCache loadKeyStore
+INFORMAÇÕES: KeyCache: loading signing key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=, remembering public key in public key cache.
+Jan 15, 2015 6:12:22 PM org.ccnx.ccn.impl.security.keys.SecureKeyCache addMySigningKey
+INFORMAÇÕES: SecureKeyCache: adding my private key 9234adec47d19e3e6a2af362d44e09ab6b71f43b1900ba0622fb45f2a5b7d9f6
+Jan 15, 2015 6:12:22 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadValuesFromConfiguration
+INFORMAÇÕES: Not loading key manager configuration data in response to user configuration variable.
+Jan 15, 2015 6:12:22 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+ADVERTÊNCIA: NetworkManager 1: Non-standard CCN agent port 63000 per property ccn.agent.port
+Jan 15, 2015 6:12:22 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+INFORMAÇÕES: NetworkManager 1: Contacting CCN agent at localhost:63000
+Jan 15, 2015 6:12:22 PM org.ccnx.ccn.impl.CCNNetworkChannel <init>
+INFORMAÇÕES: NetworkChannel 1: Starting up CCNNetworkChannel using TCP.
+Jan 15, 2015 6:12:22 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 1: open()
+Jan 15, 2015 6:12:22 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 1: Contacting CCN agent at localhost:63000 on local port 40176
+Jan 15, 2015 6:12:22 PM org.ccnx.ccn.CCNHandle <init>
+INFORMAÇÕES: CCNHandle 1: Handle is now open
+Jan 15, 2015 6:12:22 PM org.ccnx.ccn.impl.CCNNetworkManager run
+INFORMAÇÕES: NetworkManager 1: CCNNetworkManager processing thread started for port: 63000
+Jan 15, 2015 6:12:22 PM org.ccnx.ccn.impl.security.keys.PublicKeyCache getPublicKeyObject
+INFORMAÇÕES: Retrieved key 1jYqtWb54a3hYuudALlY+uWoa+H6XEFakodAe1T6/ws= using locator NAME: /%C1.M.S.localhost/%C1.M.SRV/ccnd/KEY/%C1.M.K=00D6362AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B/=FD054B82D339C9.
+Jan 15, 2015 6:12:22 PM org.ccnx.ccn.impl.security.keys.PublicKeyCache getPublicKeyObject
+INFORMAÇÕES: Retrieved key 1jYqtWb54a3hYuudALlY+uWoa+H6XEFakodAe1T6/ws= using locator NAME: /%C1.M.S.localhost/%C1.M.SRV/ccnd/KEY/%C1.M.K=00D6362AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B/=FD054B82D339C9 - got /%C1.M.S.localhost/%C1.M.SRV/ccnd/KEY/%C1.M.K=00D6362AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B/=FD054B82D339C9/=00
+Jan 15, 2015 6:12:22 PM org.ccnx.ccn.io.CCNAbstractInputStream <init>
+INFORMAÇÕES: CCNAbstractInputStream: /%C1.M.S.localhost/%C1.M.SRV/ccnd/KEY/%C1.M.K=00D6362AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B/=FD054B82D339C9 segment 0
+Jan 15, 2015 6:12:22 PM org.ccnx.ccn.impl.security.keys.PublicKeyCache getPublicKeyObject
+INFORMAÇÕES: Retrieved public key using name: /%C1.M.S.localhost/%C1.M.SRV/ccnd/KEY/%C1.M.K=00D6362AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B/=FD054B82D339C9
+Jan 15, 2015 6:12:22 PM org.ccnx.ccn.impl.security.keys.PublicKeyCache getPublicKey
+INFORMAÇÕES: Retrieved key 1jYqtWb54a3hYuudALlY+uWoa+H6XEFakodAe1T6/ws= from network with locator NAME: /%C1.M.S.localhost/%C1.M.SRV/ccnd/KEY/%C1.M.K=00D6362AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B/=FD054B82D339C9!
+Jan 15, 2015 6:12:22 PM org.ccnx.ccn.config.PlatformConfiguration <clinit>
+INFORMAÇÕES: BC provider: BC
+Jan 15, 2015 6:12:22 PM org.ccnx.ccn.config.PlatformConfiguration <clinit>
+INFORMAÇÕES: Provider info: BouncyCastle Security Provider v1.43 version: 1.43
+Jan 15, 2015 6:12:22 PM org.ccnx.ccn.config.PlatformConfiguration <clinit>
+INFORMAÇÕES: java.vm.name = OpenJDK 64-Bit Server VM
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: Flow controller addNameSpace: added namespace: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator KEY: kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY= for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.KeyManager publishKey
+INFORMAÇÕES: publishKey: key not previously published, making new key object /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6 with version 2015-01-08 09:53:53.0 displayed as =FD054AE7DE1000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNAbstractOutputStream <init>
+INFORMAÇÕES: CCNAbstractOutputStream: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 blocksize is 4096
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNAbstractOutputStream startWrite
+INFORMAÇÕES: CCNAbstractOutputStream: startWrite -- searching for keys.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.profiles.security.access.AccessControlManager keysForOutput
+INFORMAÇÕES: keysForOutput: found an acm: (null)
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 basenameindex =00; 162 bytes written, holding back 162 flushing final blocks? false.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 0
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 basenameindex =00; 162 bytes written, holding back 0 flushing final blocks? true.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 1
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream close
+INFORMAÇÕES: CCNOutputStream close: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.KeyManager publishKey
+INFORMAÇÕES: Published key Sun RSA public key, 1024 bits
+  modulus: 110921138301212145392004253279917995950258669333863662056871643271976607790547016315269834949391078948318860805625603844022322721344201027571021917379901461301585327002407293702110801478794762434747364279565414349376821790585553127606947398240644540011141381284624017866806283409148649866001587866016004087361
+  public exponent: 65537 to name /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 with key locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga; ephemeral digest =D914BDC1DED0B6A1C6C964BAE098E3114E3A833D81DDD3CAAD9961786ADF484B.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager publishKey
+INFORMAÇÕES: publishKey: published key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+ under specified key name /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000
+ key locator: NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager publishKey
+INFORMAÇÕES: publishKey: storing key locator kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY= for key NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+ADVERTÊNCIA: NetworkManager 2: Non-standard CCN agent port 63000 per property ccn.agent.port
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+INFORMAÇÕES: NetworkManager 2: Contacting CCN agent at localhost:63000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel <init>
+INFORMAÇÕES: NetworkChannel 2: Starting up CCNNetworkChannel using TCP.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 2: open()
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 2: Contacting CCN agent at localhost:63000 on local port 40177
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.CCNHandle <init>
+INFORMAÇÕES: CCNHandle 2: Handle is now open
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+ADVERTÊNCIA: NetworkManager 3: Non-standard CCN agent port 63000 per property ccn.agent.port
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+INFORMAÇÕES: NetworkManager 3: Contacting CCN agent at localhost:63000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel <init>
+INFORMAÇÕES: NetworkChannel 3: Starting up CCNNetworkChannel using TCP.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 3: open()
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 3: Contacting CCN agent at localhost:63000 on local port 40178
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.CCNHandle <init>
+INFORMAÇÕES: CCNHandle 3: Handle is now open
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.repo.RFSTest testRepo
+INFORMAÇÕES: Starting testRepo
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.LogStructRepoStore initialize
+INFORMAÇÕES: LogStructRepoStore.initialize()
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.LogStructRepoStore initialize
+ADVERTÊNCIA: Starting repository; repository root is: /home/barbara/jaime/ccnx-0.8.1/javasrc/testout/repotest
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadKeyStore
+INFORMAÇÕES: Creating new CCN key store.../home/barbara/jaime/ccnx-0.8.1/javasrc/testout/repotest/ccnx_repository_keystore
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadKeyStore
+INFORMAÇÕES: ...created key store. Version: 2015-01-15 18:12:23.0 (1421356343000 ms) Last modified: 1421356343000. Will now load normally.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadKeyStore
+INFORMAÇÕES: Loading CCN key store from /home/barbara/jaime/ccnx-0.8.1/javasrc/testout/repotest/ccnx_repository_keystore...last modified 1421356343000(ms).
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager readKeyStore
+INFORMAÇÕES: Loading CCN key store...
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadKeyStore
+INFORMAÇÕES: Loaded CCN key store from /home/barbara/jaime/ccnx-0.8.1/javasrc/testout/repotest/ccnx_repository_keystore...version 2015-01-15 18:12:23.0 ms: 1421356343000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadValuesFromKeystore
+INFORMAÇÕES: Loading key store file:/home/barbara/jaime/ccnx-0.8.1/javasrc/testout/repotest/ccnx_repository_keystore version 2015-01-15 18:12:23.0 version component =FD054B82D37000 millis 1421356343000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadValuesFromKeystore
+INFORMAÇÕES: Default key ID for user Repository: S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.SecureKeyCache loadKeyStore
+INFORMAÇÕES: KeyCache: loading signing key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=, remembering public key in public key cache.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.SecureKeyCache addMySigningKey
+INFORMAÇÕES: SecureKeyCache: adding my private key 4b88bb633ad3703a8b229e3db316e7ebaa673879525261007f7bedca1d64ed4d
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadValuesFromConfiguration
+INFORMAÇÕES: Not loading key manager configuration data in response to user configuration variable.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+ADVERTÊNCIA: NetworkManager 4: Non-standard CCN agent port 63000 per property ccn.agent.port
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+INFORMAÇÕES: NetworkManager 4: Contacting CCN agent at localhost:63000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel <init>
+INFORMAÇÕES: NetworkChannel 4: Starting up CCNNetworkChannel using TCP.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 4: open()
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 4: Contacting CCN agent at localhost:63000 on local port 40179
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.CCNHandle <init>
+INFORMAÇÕES: CCNHandle 4: Handle is now open
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager run
+INFORMAÇÕES: NetworkManager 4: CCNNetworkManager processing thread started for port: 63000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.PublicKeyCache getPublicKey
+INFORMAÇÕES: Repository looking up a key that is contained in the locator...
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: Flow controller addNameSpace: added namespace: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator KEY: S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0= for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.KeyManager publishKey
+INFORMAÇÕES: publishKey: key not previously published, making new key object /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D with version 2015-01-15 18:12:23.0 displayed as =FD054B82D37000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNAbstractOutputStream <init>
+INFORMAÇÕES: CCNAbstractOutputStream: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 blocksize is 4096
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNAbstractOutputStream startWrite
+INFORMAÇÕES: CCNAbstractOutputStream: startWrite -- searching for keys.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 basenameindex =00; 162 bytes written, holding back 162 flushing final blocks? false.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 0
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 basenameindex =00; 162 bytes written, holding back 0 flushing final blocks? true.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 1
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream close
+INFORMAÇÕES: CCNOutputStream close: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.KeyManager publishKey
+INFORMAÇÕES: Published key Sun RSA public key, 1024 bits
+  modulus: 98729377285944538465654956187621095622677951714248211360140917608734483559715223520334906132288194480350362537812985517558301519177055488150813821216139774229467697924672398800354015829065146829515241059906091543682694035243938592326788092684795643863022466657863905576446292930838490580910344904710395128307
+  public exponent: 65537 to name /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 with key locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad; ephemeral digest =8D85A03023E31E7837B1DB8848C3A457355E44AE8642D69A80C46FD8B0E6CDE2.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager publishKey
+INFORMAÇÕES: publishKey: published key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+ under specified key name /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000
+ key locator: NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager publishKey
+INFORMAÇÕES: publishKey: storing key locator S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0= for key NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager shutdown
+INFORMAÇÕES: NetworkManager 1: Shutdown requested
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager run
+INFORMAÇÕES: NetworkManager 1: Shutdown complete for port: 63000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel close
+INFORMAÇÕES: NetworkChannel 1: close(false)
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager saveSecureKeyCache
+INFORMAÇÕES: Not saving key manager secure key cache data in response to user configuration variable.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.KeyManager setDefaultKeyManager
+INFORMAÇÕES: Setting default key manager: new KeyManager org.ccnx.ccn.impl.security.keys.BasicKeyManager
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+ADVERTÊNCIA: NetworkManager 5: Non-standard CCN agent port 63000 per property ccn.agent.port
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+INFORMAÇÕES: NetworkManager 5: Contacting CCN agent at localhost:63000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel <init>
+INFORMAÇÕES: NetworkChannel 5: Starting up CCNNetworkChannel using TCP.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 5: open()
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 5: Contacting CCN agent at localhost:63000 on local port 40180
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.CCNHandle <init>
+INFORMAÇÕES: CCNHandle 5: Handle is now open
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: Flow controller addNameSpace: added namespace: /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.KeyManager publishKey
+INFORMAÇÕES: publishKey: key not previously published, making new key object /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D with version 2015-01-15 18:12:23.38696289 displayed as <no version>
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNAbstractOutputStream <init>
+INFORMAÇÕES: CCNAbstractOutputStream: /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37631 blocksize is 4096
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNAbstractOutputStream startWrite
+INFORMAÇÕES: CCNAbstractOutputStream: startWrite -- searching for keys.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37631 basenameindex =00; 162 bytes written, holding back 162 flushing final blocks? false.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 0
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37631 basenameindex =00; 162 bytes written, holding back 0 flushing final blocks? true.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 1
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream close
+INFORMAÇÕES: CCNOutputStream close: /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37631
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.KeyManager publishKey
+INFORMAÇÕES: Published key Sun RSA public key, 1024 bits
+  modulus: 98729377285944538465654956187621095622677951714248211360140917608734483559715223520334906132288194480350362537812985517558301519177055488150813821216139774229467697924672398800354015829065146829515241059906091543682694035243938592326788092684795643863022466657863905576446292930838490580910344904710395128307
+  public exponent: 65537 to name /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37631 with key locator NAME: /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37631 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad; ephemeral digest -=FEC7924AA9F5727446918CA65A2A2DF4350905BE35E8298F04629D88C428A7.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager publishKey
+INFORMAÇÕES: publishKey: published key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+ under specified key name /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37631
+ key locator: NAME: /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37631 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: Flow controller addNameSpace: added namespace: /%C1.M.S.localhost/%C1.M.SRV/repository/KEY
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.LogStructRepoStore initialize
+INFORMAÇÕES: REPO: initializing repository: global prefix /parc.com/csl/ccn/repositories/TestRepository, local name TestRepository
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.LogStructRepoStore initialize
+INFORMAÇÕES: REPO: initializing policy location: TestRepository for global prefix /parc.com/csl/ccn/repositories/TestRepository and local name TestRepository
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.repo.RFSTest test
+INFORMAÇÕES: RFSTEST: Name enumeration prefix:/testFastNameEnumeration/%C1.E.be
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.ContentTree getNamesWithPrefix
+INFORMAÇÕES: the new version is a match with the interest!  we should respond: interest = /testFastNameEnumeration/%C1.E.be:  potentialCollectionName = /testFastNameEnumeration/%C1.E.be/=FD054B82D37AE1/=00
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.ContentTree insert
+INFORMAÇÕES: we added at least one child, need to send a name enumeration response
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.ContentTree insert
+INFORMAÇÕES: prefix for FastNEResponse: /testFastNameEnumeration/%C1.E.be
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.ContentTree insert
+INFORMAÇÕES: response name will be: /testFastNameEnumeration/%C1.E.be/%C1.E.be/=FD054B82D37AE9
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.ContentTree insert
+INFORMAÇÕES: resetting interestFlag to false
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.ContentTree insert
+INFORMAÇÕES: we added at least one child, need to send a name enumeration response
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.ContentTree insert
+INFORMAÇÕES: prefix for FastNEResponse: /testFastNameEnumeration/%C1.E.be
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.ContentTree insert
+INFORMAÇÕES: response name will be: /testFastNameEnumeration/%C1.E.be/%C1.E.be/=FD054B82D37AFE
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.ContentTree insert
+INFORMAÇÕES: resetting interestFlag to false
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.LogStructRepoStore shutDown
+INFORMAÇÕES: LogStructRepoStore.shutdown()
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.RepositoryStoreBase shutDown
+INFORMAÇÕES: RespositoryStoreBase.shutdown()
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager shutdown
+INFORMAÇÕES: NetworkManager 5: Shutdown requested
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel close
+INFORMAÇÕES: NetworkChannel 5: close(false)
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager shutdown
+INFORMAÇÕES: NetworkManager 4: Shutdown requested
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager run
+INFORMAÇÕES: NetworkManager 4: Shutdown complete for port: 63000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel close
+INFORMAÇÕES: NetworkChannel 4: close(false)
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager saveSecureKeyCache
+INFORMAÇÕES: Not saving key manager secure key cache data in response to user configuration variable.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.LogStructRepoStore initialize
+INFORMAÇÕES: LogStructRepoStore.initialize()
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.LogStructRepoStore initialize
+ADVERTÊNCIA: Starting repository; repository root is: /home/barbara/jaime/ccnx-0.8.1/javasrc/testout/repotest
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadKeyStore
+INFORMAÇÕES: Loading CCN key store from /home/barbara/jaime/ccnx-0.8.1/javasrc/testout/repotest/ccnx_repository_keystore...last modified 1421356343000(ms).
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager readKeyStore
+INFORMAÇÕES: Loading CCN key store...
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadKeyStore
+INFORMAÇÕES: Loaded CCN key store from /home/barbara/jaime/ccnx-0.8.1/javasrc/testout/repotest/ccnx_repository_keystore...version 2015-01-15 18:12:23.0 ms: 1421356343000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadValuesFromKeystore
+INFORMAÇÕES: Loading key store file:/home/barbara/jaime/ccnx-0.8.1/javasrc/testout/repotest/ccnx_repository_keystore version 2015-01-15 18:12:23.0 version component =FD054B82D37000 millis 1421356343000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadValuesFromKeystore
+INFORMAÇÕES: Default key ID for user Repository: S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.SecureKeyCache loadKeyStore
+INFORMAÇÕES: KeyCache: loading signing key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=, remembering public key in public key cache.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.SecureKeyCache addMySigningKey
+INFORMAÇÕES: SecureKeyCache: adding my private key 4b88bb633ad3703a8b229e3db316e7ebaa673879525261007f7bedca1d64ed4d
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadValuesFromConfiguration
+INFORMAÇÕES: Not loading key manager configuration data in response to user configuration variable.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+ADVERTÊNCIA: NetworkManager 6: Non-standard CCN agent port 63000 per property ccn.agent.port
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+INFORMAÇÕES: NetworkManager 6: Contacting CCN agent at localhost:63000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel <init>
+INFORMAÇÕES: NetworkChannel 6: Starting up CCNNetworkChannel using TCP.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 6: open()
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 6: Contacting CCN agent at localhost:63000 on local port 40181
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.CCNHandle <init>
+INFORMAÇÕES: CCNHandle 6: Handle is now open
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager run
+INFORMAÇÕES: NetworkManager 6: CCNNetworkManager processing thread started for port: 63000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.PublicKeyCache getPublicKey
+INFORMAÇÕES: Repository looking up a key that is contained in the locator...
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: Flow controller addNameSpace: added namespace: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator KEY: S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0= for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.KeyManager publishKey
+INFORMAÇÕES: publishKey: key not previously published, making new key object /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D with version 2015-01-15 18:12:23.0 displayed as =FD054B82D37000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNAbstractOutputStream <init>
+INFORMAÇÕES: CCNAbstractOutputStream: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 blocksize is 4096
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNAbstractOutputStream startWrite
+INFORMAÇÕES: CCNAbstractOutputStream: startWrite -- searching for keys.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 basenameindex =00; 162 bytes written, holding back 162 flushing final blocks? false.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 0
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 basenameindex =00; 162 bytes written, holding back 0 flushing final blocks? true.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 1
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream close
+INFORMAÇÕES: CCNOutputStream close: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.KeyManager publishKey
+INFORMAÇÕES: Published key Sun RSA public key, 1024 bits
+  modulus: 98729377285944538465654956187621095622677951714248211360140917608734483559715223520334906132288194480350362537812985517558301519177055488150813821216139774229467697924672398800354015829065146829515241059906091543682694035243938592326788092684795643863022466657863905576446292930838490580910344904710395128307
+  public exponent: 65537 to name /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 with key locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad; ephemeral digest 5Rr%84L=A3C4EF6CDF86B356421A1A7B2D04295BA0C9D09B6BEBA5D41FBC6F.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager publishKey
+INFORMAÇÕES: publishKey: published key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+ under specified key name /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000
+ key locator: NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager publishKey
+INFORMAÇÕES: publishKey: storing key locator S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0= for key NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.KeyManager setDefaultKeyManager
+INFORMAÇÕES: Setting default key manager: new KeyManager org.ccnx.ccn.impl.security.keys.BasicKeyManager
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+ADVERTÊNCIA: NetworkManager 7: Non-standard CCN agent port 63000 per property ccn.agent.port
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+INFORMAÇÕES: NetworkManager 7: Contacting CCN agent at localhost:63000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel <init>
+INFORMAÇÕES: NetworkChannel 7: Starting up CCNNetworkChannel using TCP.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 7: open()
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 7: Contacting CCN agent at localhost:63000 on local port 40182
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.CCNHandle <init>
+INFORMAÇÕES: CCNHandle 7: Handle is now open
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: Flow controller addNameSpace: added namespace: /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.KeyManager publishKey
+INFORMAÇÕES: publishKey: key not previously published, making new key object /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D with version 2015-01-15 18:12:23.745117187 displayed as <no version>
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNAbstractOutputStream <init>
+INFORMAÇÕES: CCNAbstractOutputStream: /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37BEC blocksize is 4096
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNAbstractOutputStream startWrite
+INFORMAÇÕES: CCNAbstractOutputStream: startWrite -- searching for keys.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37BEC basenameindex =00; 162 bytes written, holding back 162 flushing final blocks? false.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 0
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37BEC basenameindex =00; 162 bytes written, holding back 0 flushing final blocks? true.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 1
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream close
+INFORMAÇÕES: CCNOutputStream close: /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37BEC
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.KeyManager publishKey
+INFORMAÇÕES: Published key Sun RSA public key, 1024 bits
+  modulus: 98729377285944538465654956187621095622677951714248211360140917608734483559715223520334906132288194480350362537812985517558301519177055488150813821216139774229467697924672398800354015829065146829515241059906091543682694035243938592326788092684795643863022466657863905576446292930838490580910344904710395128307
+  public exponent: 65537 to name /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37BEC with key locator NAME: /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37BEC KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad; ephemeral digest %40q=F43E2A710BA206E8D1E06099DF8A34D8046126C9ECACA65A5C56820502BB.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager publishKey
+INFORMAÇÕES: publishKey: published key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+ under specified key name /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37BEC
+ key locator: NAME: /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37BEC KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: Flow controller addNameSpace: added namespace: /%C1.M.S.localhost/%C1.M.SRV/repository/KEY
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.LogStructRepoStore createIndex
+INFORMAÇÕES: at the end of the file
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.LogStructRepoStore initialize
+INFORMAÇÕES: REPO: initializing repository: global prefix /parc.com/csl/ccn/repositories/TestRepository, local name TestRepository
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.LogStructRepoStore initialize
+INFORMAÇÕES: REPO: initializing policy location: TestRepository for global prefix /parc.com/csl/ccn/repositories/TestRepository and local name TestRepository
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.LogStructRepoStore shutDown
+INFORMAÇÕES: LogStructRepoStore.shutdown()
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.RepositoryStoreBase shutDown
+INFORMAÇÕES: RespositoryStoreBase.shutdown()
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager shutdown
+INFORMAÇÕES: NetworkManager 7: Shutdown requested
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel close
+INFORMAÇÕES: NetworkChannel 7: close(false)
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager shutdown
+INFORMAÇÕES: NetworkManager 6: Shutdown requested
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager run
+INFORMAÇÕES: NetworkManager 6: Shutdown complete for port: 63000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel close
+INFORMAÇÕES: NetworkChannel 6: close(false)
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager saveSecureKeyCache
+INFORMAÇÕES: Not saving key manager secure key cache data in response to user configuration variable.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.repo.RFSTest testRepo
+INFORMAÇÕES: Completed testRepo
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.repo.RFSTest testBulkImport
+INFORMAÇÕES: Starting testBulkImport
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.LogStructRepoStore initialize
+INFORMAÇÕES: LogStructRepoStore.initialize()
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.LogStructRepoStore initialize
+ADVERTÊNCIA: Starting repository; repository root is: /home/barbara/jaime/ccnx-0.8.1/javasrc/testout/repotest
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadKeyStore
+INFORMAÇÕES: Loading CCN key store from /home/barbara/jaime/ccnx-0.8.1/javasrc/testout/repotest/ccnx_repository_keystore...last modified 1421356343000(ms).
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager readKeyStore
+INFORMAÇÕES: Loading CCN key store...
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadKeyStore
+INFORMAÇÕES: Loaded CCN key store from /home/barbara/jaime/ccnx-0.8.1/javasrc/testout/repotest/ccnx_repository_keystore...version 2015-01-15 18:12:23.0 ms: 1421356343000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadValuesFromKeystore
+INFORMAÇÕES: Loading key store file:/home/barbara/jaime/ccnx-0.8.1/javasrc/testout/repotest/ccnx_repository_keystore version 2015-01-15 18:12:23.0 version component =FD054B82D37000 millis 1421356343000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadValuesFromKeystore
+INFORMAÇÕES: Default key ID for user Repository: S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.SecureKeyCache loadKeyStore
+INFORMAÇÕES: KeyCache: loading signing key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=, remembering public key in public key cache.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.SecureKeyCache addMySigningKey
+INFORMAÇÕES: SecureKeyCache: adding my private key 4b88bb633ad3703a8b229e3db316e7ebaa673879525261007f7bedca1d64ed4d
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadValuesFromConfiguration
+INFORMAÇÕES: Not loading key manager configuration data in response to user configuration variable.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+ADVERTÊNCIA: NetworkManager 8: Non-standard CCN agent port 63000 per property ccn.agent.port
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+INFORMAÇÕES: NetworkManager 8: Contacting CCN agent at localhost:63000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel <init>
+INFORMAÇÕES: NetworkChannel 8: Starting up CCNNetworkChannel using TCP.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 8: open()
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 8: Contacting CCN agent at localhost:63000 on local port 40183
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.CCNHandle <init>
+INFORMAÇÕES: CCNHandle 8: Handle is now open
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager run
+INFORMAÇÕES: NetworkManager 8: CCNNetworkManager processing thread started for port: 63000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.PublicKeyCache getPublicKey
+INFORMAÇÕES: Repository looking up a key that is contained in the locator...
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: Flow controller addNameSpace: added namespace: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator KEY: S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0= for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.KeyManager publishKey
+INFORMAÇÕES: publishKey: key not previously published, making new key object /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D with version 2015-01-15 18:12:23.0 displayed as =FD054B82D37000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNAbstractOutputStream <init>
+INFORMAÇÕES: CCNAbstractOutputStream: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 blocksize is 4096
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNAbstractOutputStream startWrite
+INFORMAÇÕES: CCNAbstractOutputStream: startWrite -- searching for keys.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 basenameindex =00; 162 bytes written, holding back 162 flushing final blocks? false.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 0
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 basenameindex =00; 162 bytes written, holding back 0 flushing final blocks? true.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 1
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream close
+INFORMAÇÕES: CCNOutputStream close: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.KeyManager publishKey
+INFORMAÇÕES: Published key Sun RSA public key, 1024 bits
+  modulus: 98729377285944538465654956187621095622677951714248211360140917608734483559715223520334906132288194480350362537812985517558301519177055488150813821216139774229467697924672398800354015829065146829515241059906091543682694035243938592326788092684795643863022466657863905576446292930838490580910344904710395128307
+  public exponent: 65537 to name /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 with key locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad; ephemeral digest =2B29F03636AEB335CEE835E15A4DEDA285B13AD9E899CCEF51B8882A8D4F30CE.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager publishKey
+INFORMAÇÕES: publishKey: published key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+ under specified key name /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000
+ key locator: NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager publishKey
+INFORMAÇÕES: publishKey: storing key locator S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0= for key NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.KeyManager setDefaultKeyManager
+INFORMAÇÕES: Setting default key manager: new KeyManager org.ccnx.ccn.impl.security.keys.BasicKeyManager
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+ADVERTÊNCIA: NetworkManager 9: Non-standard CCN agent port 63000 per property ccn.agent.port
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+INFORMAÇÕES: NetworkManager 9: Contacting CCN agent at localhost:63000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel <init>
+INFORMAÇÕES: NetworkChannel 9: Starting up CCNNetworkChannel using TCP.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 9: open()
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 9: Contacting CCN agent at localhost:63000 on local port 40184
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.CCNHandle <init>
+INFORMAÇÕES: CCNHandle 9: Handle is now open
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: Flow controller addNameSpace: added namespace: /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.KeyManager publishKey
+INFORMAÇÕES: publishKey: key not previously published, making new key object /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D with version 2015-01-15 18:12:23.836914062 displayed as <no version>
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNAbstractOutputStream <init>
+INFORMAÇÕES: CCNAbstractOutputStream: /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37D64 blocksize is 4096
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNAbstractOutputStream startWrite
+INFORMAÇÕES: CCNAbstractOutputStream: startWrite -- searching for keys.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37D64 basenameindex =00; 162 bytes written, holding back 162 flushing final blocks? false.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 0
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37D64 basenameindex =00; 162 bytes written, holding back 0 flushing final blocks? true.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 1
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream close
+INFORMAÇÕES: CCNOutputStream close: /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37D64
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.KeyManager publishKey
+INFORMAÇÕES: Published key Sun RSA public key, 1024 bits
+  modulus: 98729377285944538465654956187621095622677951714248211360140917608734483559715223520334906132288194480350362537812985517558301519177055488150813821216139774229467697924672398800354015829065146829515241059906091543682694035243938592326788092684795643863022466657863905576446292930838490580910344904710395128307
+  public exponent: 65537 to name /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37D64 with key locator NAME: /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37D64 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad; ephemeral digest %F8G=0F25DBC7A57933CB6752C57F915E24EF845570FF801E7F7CA11423630D65.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager publishKey
+INFORMAÇÕES: publishKey: published key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+ under specified key name /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37D64
+ key locator: NAME: /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37D64 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: Flow controller addNameSpace: added namespace: /%C1.M.S.localhost/%C1.M.SRV/repository/KEY
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.LogStructRepoStore createIndex
+INFORMAÇÕES: at the end of the file
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.LogStructRepoStore initialize
+INFORMAÇÕES: REPO: initializing repository: global prefix /parc.com/csl/ccn/repositories/TestRepository, local name TestRepository
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.LogStructRepoStore initialize
+INFORMAÇÕES: REPO: initializing policy location: TestRepository for global prefix /parc.com/csl/ccn/repositories/TestRepository and local name TestRepository
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.LogStructRepoStore initialize
+INFORMAÇÕES: LogStructRepoStore.initialize()
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.LogStructRepoStore initialize
+ADVERTÊNCIA: Starting repository; repository root is: /home/barbara/jaime/ccnx-0.8.1/javasrc/testout/repotest2
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadKeyStore
+INFORMAÇÕES: Loading CCN key store from /home/barbara/jaime/ccnx-0.8.1/javasrc/testout/repotest2/ccnx_repository_keystore...last modified 1420721634000(ms).
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager readKeyStore
+INFORMAÇÕES: Loading CCN key store...
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadKeyStore
+INFORMAÇÕES: Loaded CCN key store from /home/barbara/jaime/ccnx-0.8.1/javasrc/testout/repotest2/ccnx_repository_keystore...version 2015-01-08 09:53:54.0 ms: 1420721634000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadValuesFromKeystore
+INFORMAÇÕES: Loading key store file:/home/barbara/jaime/ccnx-0.8.1/javasrc/testout/repotest2/ccnx_repository_keystore version 2015-01-08 09:53:54.0 version component =FD054AE7DE2000 millis 1420721634000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadValuesFromKeystore
+INFORMAÇÕES: Default key ID for user Repository: uIWzdvZFJ7Gfv1Siq6YKMA4AGNgl+yjOqf1pWoqcw4g=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.SecureKeyCache loadKeyStore
+INFORMAÇÕES: KeyCache: loading signing key uIWzdvZFJ7Gfv1Siq6YKMA4AGNgl+yjOqf1pWoqcw4g=, remembering public key in public key cache.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.SecureKeyCache addMySigningKey
+INFORMAÇÕES: SecureKeyCache: adding my private key b885b376f64527b19fbf54a2aba60a300e0018d825fb28cea9fd695a8a9cc388
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadValuesFromConfiguration
+INFORMAÇÕES: Not loading key manager configuration data in response to user configuration variable.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+ADVERTÊNCIA: NetworkManager 10: Non-standard CCN agent port 63000 per property ccn.agent.port
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+INFORMAÇÕES: NetworkManager 10: Contacting CCN agent at localhost:63000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel <init>
+INFORMAÇÕES: NetworkChannel 10: Starting up CCNNetworkChannel using TCP.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 10: open()
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 10: Contacting CCN agent at localhost:63000 on local port 40185
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.CCNHandle <init>
+INFORMAÇÕES: CCNHandle 10: Handle is now open
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager run
+INFORMAÇÕES: NetworkManager 10: CCNNetworkManager processing thread started for port: 63000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.PublicKeyCache getPublicKey
+INFORMAÇÕES: Repository looking up a key that is contained in the locator...
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: Flow controller addNameSpace: added namespace: /ccnx.org/Users/Repository/Keys/%C1.M.K=00B885B376F64527B19FBF54A2ABA60A300E0018D825FB28CEA9FD695A8A9CC388/=FD054AE7DE2000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator KEY: uIWzdvZFJ7Gfv1Siq6YKMA4AGNgl+yjOqf1pWoqcw4g= for key uIWzdvZFJ7Gfv1Siq6YKMA4AGNgl+yjOqf1pWoqcw4g=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.KeyManager publishKey
+INFORMAÇÕES: publishKey: key not previously published, making new key object /ccnx.org/Users/Repository/Keys/%C1.M.K=00B885B376F64527B19FBF54A2ABA60A300E0018D825FB28CEA9FD695A8A9CC388 with version 2015-01-08 09:53:54.0 displayed as =FD054AE7DE2000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNAbstractOutputStream <init>
+INFORMAÇÕES: CCNAbstractOutputStream: /ccnx.org/Users/Repository/Keys/%C1.M.K=00B885B376F64527B19FBF54A2ABA60A300E0018D825FB28CEA9FD695A8A9CC388/=FD054AE7DE2000 blocksize is 4096
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNAbstractOutputStream startWrite
+INFORMAÇÕES: CCNAbstractOutputStream: startWrite -- searching for keys.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /ccnx.org/Users/Repository/Keys/%C1.M.K=00B885B376F64527B19FBF54A2ABA60A300E0018D825FB28CEA9FD695A8A9CC388/=FD054AE7DE2000 basenameindex =00; 162 bytes written, holding back 162 flushing final blocks? false.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 0
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /ccnx.org/Users/Repository/Keys/%C1.M.K=00B885B376F64527B19FBF54A2ABA60A300E0018D825FB28CEA9FD695A8A9CC388/=FD054AE7DE2000 basenameindex =00; 162 bytes written, holding back 0 flushing final blocks? true.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 1
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream close
+INFORMAÇÕES: CCNOutputStream close: /ccnx.org/Users/Repository/Keys/%C1.M.K=00B885B376F64527B19FBF54A2ABA60A300E0018D825FB28CEA9FD695A8A9CC388/=FD054AE7DE2000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.KeyManager publishKey
+INFORMAÇÕES: Published key Sun RSA public key, 1024 bits
+  modulus: 124240715561206266021500651275685662978395953964789812484268231120095690332702473132488013391557608697851404297967505300657589063170388917333972480944520522222091754127480972711311592555555850215546067510884187860475572866606301563829419335209677756466876242486013074422509905366925568698099489298130565792643
+  public exponent: 65537 to name /ccnx.org/Users/Repository/Keys/%C1.M.K=00B885B376F64527B19FBF54A2ABA60A300E0018D825FB28CEA9FD695A8A9CC388/=FD054AE7DE2000 with key locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K=00B885B376F64527B19FBF54A2ABA60A300E0018D825FB28CEA9FD695A8A9CC388/=FD054AE7DE2000 KEY:-hrq9i4gjemo9pg41aqtahcvbjvhvvjifmg4qsolc0kmklqm6f3o; ephemeral digest Ns%C7z=0623369F13D4829C1C256F7B9295BEFBEB92D036BA4AB423447F8E6B.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager publishKey
+INFORMAÇÕES: publishKey: published key uIWzdvZFJ7Gfv1Siq6YKMA4AGNgl+yjOqf1pWoqcw4g=
+ under specified key name /ccnx.org/Users/Repository/Keys/%C1.M.K=00B885B376F64527B19FBF54A2ABA60A300E0018D825FB28CEA9FD695A8A9CC388/=FD054AE7DE2000
+ key locator: NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K=00B885B376F64527B19FBF54A2ABA60A300E0018D825FB28CEA9FD695A8A9CC388/=FD054AE7DE2000 KEY:-hrq9i4gjemo9pg41aqtahcvbjvhvvjifmg4qsolc0kmklqm6f3o
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager publishKey
+INFORMAÇÕES: publishKey: storing key locator uIWzdvZFJ7Gfv1Siq6YKMA4AGNgl+yjOqf1pWoqcw4g= for key NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K=00B885B376F64527B19FBF54A2ABA60A300E0018D825FB28CEA9FD695A8A9CC388/=FD054AE7DE2000 KEY:-hrq9i4gjemo9pg41aqtahcvbjvhvvjifmg4qsolc0kmklqm6f3o
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager shutdown
+INFORMAÇÕES: NetworkManager 8: Shutdown requested
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel close
+INFORMAÇÕES: NetworkChannel 8: close(false)
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager run
+INFORMAÇÕES: NetworkManager 8: Shutdown complete for port: 63000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager saveSecureKeyCache
+INFORMAÇÕES: Not saving key manager secure key cache data in response to user configuration variable.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.KeyManager setDefaultKeyManager
+INFORMAÇÕES: Setting default key manager: new KeyManager org.ccnx.ccn.impl.security.keys.BasicKeyManager
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+ADVERTÊNCIA: NetworkManager 11: Non-standard CCN agent port 63000 per property ccn.agent.port
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+INFORMAÇÕES: NetworkManager 11: Contacting CCN agent at localhost:63000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel <init>
+INFORMAÇÕES: NetworkChannel 11: Starting up CCNNetworkChannel using TCP.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 11: open()
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 11: Contacting CCN agent at localhost:63000 on local port 40186
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.CCNHandle <init>
+INFORMAÇÕES: CCNHandle 11: Handle is now open
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: Flow controller addNameSpace: added namespace: /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K=00B885B376F64527B19FBF54A2ABA60A300E0018D825FB28CEA9FD695A8A9CC388
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K=00B885B376F64527B19FBF54A2ABA60A300E0018D825FB28CEA9FD695A8A9CC388/=FD054AE7DE2000 KEY:-hrq9i4gjemo9pg41aqtahcvbjvhvvjifmg4qsolc0kmklqm6f3o for key uIWzdvZFJ7Gfv1Siq6YKMA4AGNgl+yjOqf1pWoqcw4g=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.KeyManager publishKey
+INFORMAÇÕES: publishKey: key not previously published, making new key object /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K=00B885B376F64527B19FBF54A2ABA60A300E0018D825FB28CEA9FD695A8A9CC388 with version 2015-01-15 18:12:23.95703125 displayed as <no version>
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNAbstractOutputStream <init>
+INFORMAÇÕES: CCNAbstractOutputStream: /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K=00B885B376F64527B19FBF54A2ABA60A300E0018D825FB28CEA9FD695A8A9CC388/=FD054B82D37F50 blocksize is 4096
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNAbstractOutputStream startWrite
+INFORMAÇÕES: CCNAbstractOutputStream: startWrite -- searching for keys.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K=00B885B376F64527B19FBF54A2ABA60A300E0018D825FB28CEA9FD695A8A9CC388/=FD054B82D37F50 basenameindex =00; 162 bytes written, holding back 162 flushing final blocks? false.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 0
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K=00B885B376F64527B19FBF54A2ABA60A300E0018D825FB28CEA9FD695A8A9CC388/=FD054B82D37F50 basenameindex =00; 162 bytes written, holding back 0 flushing final blocks? true.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 1
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.io.CCNOutputStream close
+INFORMAÇÕES: CCNOutputStream close: /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K=00B885B376F64527B19FBF54A2ABA60A300E0018D825FB28CEA9FD695A8A9CC388/=FD054B82D37F50
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.KeyManager publishKey
+INFORMAÇÕES: Published key Sun RSA public key, 1024 bits
+  modulus: 124240715561206266021500651275685662978395953964789812484268231120095690332702473132488013391557608697851404297967505300657589063170388917333972480944520522222091754127480972711311592555555850215546067510884187860475572866606301563829419335209677756466876242486013074422509905366925568698099489298130565792643
+  public exponent: 65537 to name /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K=00B885B376F64527B19FBF54A2ABA60A300E0018D825FB28CEA9FD695A8A9CC388/=FD054B82D37F50 with key locator NAME: /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K=00B885B376F64527B19FBF54A2ABA60A300E0018D825FB28CEA9FD695A8A9CC388/=FD054B82D37F50 KEY:-hrq9i4gjemo9pg41aqtahcvbjvhvvjifmg4qsolc0kmklqm6f3o; ephemeral digest =B095A711508C05F09CD7431A99B22DF9FDC17D30F864B82FD8A22C0DC39C0436.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager publishKey
+INFORMAÇÕES: publishKey: published key uIWzdvZFJ7Gfv1Siq6YKMA4AGNgl+yjOqf1pWoqcw4g=
+ under specified key name /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K=00B885B376F64527B19FBF54A2ABA60A300E0018D825FB28CEA9FD695A8A9CC388/=FD054B82D37F50
+ key locator: NAME: /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K=00B885B376F64527B19FBF54A2ABA60A300E0018D825FB28CEA9FD695A8A9CC388/=FD054B82D37F50 KEY:-hrq9i4gjemo9pg41aqtahcvbjvhvvjifmg4qsolc0kmklqm6f3o
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: Flow controller addNameSpace: added namespace: /%C1.M.S.localhost/%C1.M.SRV/repository/KEY
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.LogStructRepoStore initialize
+INFORMAÇÕES: REPO: initializing repository: global prefix /parc.com/csl/ccn/repositories/TestRepository, local name TestRepository2
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.LogStructRepoStore initialize
+INFORMAÇÕES: REPO: initializing policy location: TestRepository2 for global prefix /parc.com/csl/ccn/repositories/TestRepository and local name TestRepository2
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K=00B885B376F64527B19FBF54A2ABA60A300E0018D825FB28CEA9FD695A8A9CC388/=FD054AE7DE2000 KEY:-hrq9i4gjemo9pg41aqtahcvbjvhvvjifmg4qsolc0kmklqm6f3o for key uIWzdvZFJ7Gfv1Siq6YKMA4AGNgl+yjOqf1pWoqcw4g=
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.LogStructRepoStore shutDown
+INFORMAÇÕES: LogStructRepoStore.shutdown()
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.RepositoryStoreBase shutDown
+INFORMAÇÕES: RespositoryStoreBase.shutdown()
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager shutdown
+INFORMAÇÕES: NetworkManager 11: Shutdown requested
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel close
+INFORMAÇÕES: NetworkChannel 11: close(false)
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager shutdown
+INFORMAÇÕES: NetworkManager 10: Shutdown requested
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager run
+INFORMAÇÕES: NetworkManager 10: Shutdown complete for port: 63000
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel close
+INFORMAÇÕES: NetworkChannel 10: close(false)
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager saveSecureKeyCache
+INFORMAÇÕES: Not saving key manager secure key cache data in response to user configuration variable.
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.LogStructRepoStore createIndex
+INFORMAÇÕES: at the end of the file
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.LogStructRepoStore shutDown
+INFORMAÇÕES: LogStructRepoStore.shutdown()
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.RepositoryStoreBase shutDown
+INFORMAÇÕES: RespositoryStoreBase.shutdown()
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkManager shutdown
+INFORMAÇÕES: NetworkManager 9: Shutdown requested
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.CCNNetworkChannel close
+INFORMAÇÕES: NetworkChannel 9: close(false)
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.repo.RFSTest testBulkImport
+INFORMAÇÕES: Completed testBulkImport
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.repo.RFSTest testPolicy
+INFORMAÇÕES: Starting testPolicy
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.LogStructRepoStore initialize
+INFORMAÇÕES: LogStructRepoStore.initialize()
+Jan 15, 2015 6:12:23 PM org.ccnx.ccn.impl.repo.BasicPolicy createPolicyXML
+INFORMAÇÕES: Creating policy file
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.repo.BasicPolicy update
+INFORMAÇÕES: Updating policy
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.repo.LogStructRepoStore initialize
+INFORMAÇÕES: LogStructRepoStore.initialize()
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.repo.BasicPolicy createPolicyXML
+INFORMAÇÕES: Creating policy file
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.repo.BasicPolicy update
+INFORMAÇÕES: Updating policy
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.repo.BasicPolicy update
+ADVERTÊNCIA: Bad version in policy file: foobar
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.repo.LogStructRepoStore initialize
+INFORMAÇÕES: LogStructRepoStore.initialize()
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.repo.BasicPolicy createPolicyXML
+INFORMAÇÕES: Creating policy file
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.repo.BasicPolicy update
+INFORMAÇÕES: Updating policy
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.repo.BasicPolicy update
+INFORMAÇÕES: Policy has been updated. New namespace is: /parc.com/csl/ccn/repositories/TestRepository:/testNameSpace:/testNameSpace2:
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.repo.LogStructRepoStore initialize
+ADVERTÊNCIA: Starting repository; repository root is: /home/barbara/jaime/ccnx-0.8.1/javasrc/testout/repotest
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadKeyStore
+INFORMAÇÕES: Loading CCN key store from /home/barbara/jaime/ccnx-0.8.1/javasrc/testout/repotest/ccnx_repository_keystore...last modified 1421356343000(ms).
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager readKeyStore
+INFORMAÇÕES: Loading CCN key store...
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadKeyStore
+INFORMAÇÕES: Loaded CCN key store from /home/barbara/jaime/ccnx-0.8.1/javasrc/testout/repotest/ccnx_repository_keystore...version 2015-01-15 18:12:23.0 ms: 1421356343000
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadValuesFromKeystore
+INFORMAÇÕES: Loading key store file:/home/barbara/jaime/ccnx-0.8.1/javasrc/testout/repotest/ccnx_repository_keystore version 2015-01-15 18:12:23.0 version component =FD054B82D37000 millis 1421356343000
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadValuesFromKeystore
+INFORMAÇÕES: Default key ID for user Repository: S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.security.keys.SecureKeyCache loadKeyStore
+INFORMAÇÕES: KeyCache: loading signing key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=, remembering public key in public key cache.
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.security.keys.SecureKeyCache addMySigningKey
+INFORMAÇÕES: SecureKeyCache: adding my private key 4b88bb633ad3703a8b229e3db316e7ebaa673879525261007f7bedca1d64ed4d
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadValuesFromConfiguration
+INFORMAÇÕES: Not loading key manager configuration data in response to user configuration variable.
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+ADVERTÊNCIA: NetworkManager 12: Non-standard CCN agent port 63000 per property ccn.agent.port
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+INFORMAÇÕES: NetworkManager 12: Contacting CCN agent at localhost:63000
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.CCNNetworkChannel <init>
+INFORMAÇÕES: NetworkChannel 12: Starting up CCNNetworkChannel using TCP.
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 12: open()
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 12: Contacting CCN agent at localhost:63000 on local port 40187
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.CCNHandle <init>
+INFORMAÇÕES: CCNHandle 12: Handle is now open
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.CCNNetworkManager run
+INFORMAÇÕES: NetworkManager 12: CCNNetworkManager processing thread started for port: 63000
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.security.keys.PublicKeyCache getPublicKey
+INFORMAÇÕES: Repository looking up a key that is contained in the locator...
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: Flow controller addNameSpace: added namespace: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator KEY: S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0= for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.KeyManager publishKey
+INFORMAÇÕES: publishKey: key not previously published, making new key object /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D with version 2015-01-15 18:12:23.0 displayed as =FD054B82D37000
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.io.CCNAbstractOutputStream <init>
+INFORMAÇÕES: CCNAbstractOutputStream: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 blocksize is 4096
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.io.CCNAbstractOutputStream startWrite
+INFORMAÇÕES: CCNAbstractOutputStream: startWrite -- searching for keys.
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 basenameindex =00; 162 bytes written, holding back 162 flushing final blocks? false.
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 0
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 basenameindex =00; 162 bytes written, holding back 0 flushing final blocks? true.
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 1
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.io.CCNOutputStream close
+INFORMAÇÕES: CCNOutputStream close: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.KeyManager publishKey
+INFORMAÇÕES: Published key Sun RSA public key, 1024 bits
+  modulus: 98729377285944538465654956187621095622677951714248211360140917608734483559715223520334906132288194480350362537812985517558301519177055488150813821216139774229467697924672398800354015829065146829515241059906091543682694035243938592326788092684795643863022466657863905576446292930838490580910344904710395128307
+  public exponent: 65537 to name /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 with key locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad; ephemeral digest %90r%20.=1D1A4B8FC3C8361BE9A2010330E9ED681A20564DFE55C7CF0F9BA6F2.
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager publishKey
+INFORMAÇÕES: publishKey: published key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+ under specified key name /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000
+ key locator: NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager publishKey
+INFORMAÇÕES: publishKey: storing key locator S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0= for key NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.KeyManager setDefaultKeyManager
+INFORMAÇÕES: Setting default key manager: new KeyManager org.ccnx.ccn.impl.security.keys.BasicKeyManager
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+ADVERTÊNCIA: NetworkManager 13: Non-standard CCN agent port 63000 per property ccn.agent.port
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+INFORMAÇÕES: NetworkManager 13: Contacting CCN agent at localhost:63000
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.CCNNetworkChannel <init>
+INFORMAÇÕES: NetworkChannel 13: Starting up CCNNetworkChannel using TCP.
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 13: open()
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 13: Contacting CCN agent at localhost:63000 on local port 40188
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.CCNHandle <init>
+INFORMAÇÕES: CCNHandle 13: Handle is now open
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: Flow controller addNameSpace: added namespace: /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/Repository/Keys/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D37000 KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad for key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.KeyManager publishKey
+INFORMAÇÕES: publishKey: key not previously published, making new key object /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D with version 2015-01-15 18:12:24.089111328 displayed as <no version>
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.io.CCNAbstractOutputStream <init>
+INFORMAÇÕES: CCNAbstractOutputStream: /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D3816D blocksize is 4096
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.io.CCNAbstractOutputStream startWrite
+INFORMAÇÕES: CCNAbstractOutputStream: startWrite -- searching for keys.
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D3816D basenameindex =00; 162 bytes written, holding back 162 flushing final blocks? false.
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 0
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D3816D basenameindex =00; 162 bytes written, holding back 0 flushing final blocks? true.
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 1
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.io.CCNOutputStream close
+INFORMAÇÕES: CCNOutputStream close: /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D3816D
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.KeyManager publishKey
+INFORMAÇÕES: Published key Sun RSA public key, 1024 bits
+  modulus: 98729377285944538465654956187621095622677951714248211360140917608734483559715223520334906132288194480350362537812985517558301519177055488150813821216139774229467697924672398800354015829065146829515241059906091543682694035243938592326788092684795643863022466657863905576446292930838490580910344904710395128307
+  public exponent: 65537 to name /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D3816D with key locator NAME: /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D3816D KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad; ephemeral digest =3A3A7F53F9668A926056B5A1C9EA7CEA9081CE5581CBB1587F198AC39C0D5800.
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager publishKey
+INFORMAÇÕES: publishKey: published key S4i7YzrTcDqLIp49sxbn66pnOHlSUmEAf3vtyh1k7U0=
+ under specified key name /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D3816D
+ key locator: NAME: /%C1.M.S.localhost/%C1.M.SRV/repository/KEY/%C1.M.K%00K=88BB633AD3703A8B229E3DB316E7EBAA673879525261007F7BEDCA1D64ED4D/=FD054B82D3816D KEY:is8ndhjlkrg7a5i57htmcbefqtacss7ikiic407uuvdp8em9rad
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: Flow controller addNameSpace: added namespace: /%C1.M.S.localhost/%C1.M.SRV/repository/KEY
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.repo.LogStructRepoStore createIndex
+INFORMAÇÕES: at the end of the file
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.repo.LogStructRepoStore createIndex
+INFORMAÇÕES: at the end of the file
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.repo.LogStructRepoStore initialize
+INFORMAÇÕES: REPO: initializing repository: global prefix /parc.com/csl/ccn/repositories/TestRepository, local name TestRepository
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.repo.LogStructRepoStore initialize
+INFORMAÇÕES: REPO: initializing policy location: TestRepository for global prefix /parc.com/csl/ccn/repositories/TestRepository and local name TestRepository
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.repo.LogStructRepoStore shutDown
+INFORMAÇÕES: LogStructRepoStore.shutdown()
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.repo.RepositoryStoreBase shutDown
+INFORMAÇÕES: RespositoryStoreBase.shutdown()
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.CCNNetworkManager shutdown
+INFORMAÇÕES: NetworkManager 13: Shutdown requested
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.CCNNetworkChannel close
+INFORMAÇÕES: NetworkChannel 13: close(false)
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.CCNNetworkManager shutdown
+INFORMAÇÕES: NetworkManager 12: Shutdown requested
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.CCNNetworkManager run
+INFORMAÇÕES: NetworkManager 12: Shutdown complete for port: 63000
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.CCNNetworkChannel close
+INFORMAÇÕES: NetworkChannel 12: close(false)
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager saveSecureKeyCache
+INFORMAÇÕES: Not saving key manager secure key cache data in response to user configuration variable.
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.repo.RFSTest testPolicy
+INFORMAÇÕES: Completed testPolicy
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.CCNNetworkManager shutdown
+INFORMAÇÕES: NetworkManager 2: Shutdown requested
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.CCNNetworkChannel close
+INFORMAÇÕES: NetworkChannel 2: close(false)
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.CCNNetworkManager shutdown
+INFORMAÇÕES: NetworkManager 3: Shutdown requested
+Jan 15, 2015 6:12:24 PM org.ccnx.ccn.impl.CCNNetworkChannel close
+INFORMAÇÕES: NetworkChannel 3: close(false)
+]]></system-err>
+</testsuite>

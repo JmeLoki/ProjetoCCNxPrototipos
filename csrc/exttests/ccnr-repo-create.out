@@ -1,0 +1,8 @@
+1421356318.872754 ccnr[4970]: CCNR_DEBUG=7 CCNR_DIRECTORY=./testrepo2 CCNR_STATUS_PORT=
+1421356318.932127 ccnr[4970]: New repository private key saved in ./testrepo2/ccnx_repository_keystore
+1421356318.932346 ccnr[4970]: Bad stable mark - 
+1421356318.932380 ccnr[4970]: Repository file is indexed
+1421356318.936596 ccnr[4970]: CCNR_SKIP_VERIFY=1
+1421356318.936648 ccnr[4970]: Creating new policy file.
+1421356318.942178 ccnr[4970]: lost connection to ccnd
+1421356318.942191 ccnr[4970]: exiting.

@@ -1,0 +1,95 @@
+.TH "lib/siphash24.c" 3 "9 Oct 2013" "Version 0.8.1" "Content-Centric Networking in C" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lib/siphash24.c \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBROTL\fP(x, b)   (uint64_t)(((x) << (b)) | ((x) >> (64 - (b))))"
+.br
+.ti -1c
+.RI "#define \fBU32TO8_LE\fP(p, v)"
+.br
+.ti -1c
+.RI "#define \fBU64TO8_LE\fP(p, v)"
+.br
+.ti -1c
+.RI "#define \fBU8TO64_LE\fP(p)"
+.br
+.ti -1c
+.RI "#define \fBSIPROUND\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "uint64_t \fBsiphash_2_4\fP (const unsigned char *in, size_t inlen, const unsigned char *k)"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define ROTL(x, b)   (uint64_t)(((x) << (b)) | ((x) >> (64 - (b))))"
+.PP
+Definition at line 21 of file siphash24.c.
+.SS "#define SIPROUND"\fBValue:\fP
+.PP
+.nf
+do {              \
+v0 += v1; v1=ROTL(v1,13); v1 ^= v0; v0=ROTL(v0,32); \
+v2 += v3; v3=ROTL(v3,16); v3 ^= v2;     \
+v0 += v3; v3=ROTL(v3,21); v3 ^= v0;     \
+v2 += v1; v1=ROTL(v1,17); v1 ^= v2; v2=ROTL(v2,32); \
+} while(0)
+.fi
+.PP
+Definition at line 41 of file siphash24.c.
+.PP
+Referenced by siphash_2_4().
+.SS "#define U32TO8_LE(p, v)"\fBValue:\fP
+.PP
+.nf
+(p)[0] = (uint8_t)((v)      ); (p)[1] = (uint8_t)((v) >>  8); \
+(p)[2] = (uint8_t)((v) >> 16); (p)[3] = (uint8_t)((v) >> 24);
+.fi
+.PP
+Definition at line 23 of file siphash24.c.
+.SS "#define U64TO8_LE(p, v)"\fBValue:\fP
+.PP
+.nf
+U32TO8_LE((p),     (uint32_t)((v)     ));   \
+U32TO8_LE((p) + 4, (uint32_t)((v) >> 32));
+.fi
+.PP
+Definition at line 27 of file siphash24.c.
+.SS "#define U8TO64_LE(p)"\fBValue:\fP
+.PP
+.nf
+(((uint64_t)((p)[0])      ) | \
+((uint64_t)((p)[1]) <<  8) | \
+((uint64_t)((p)[2]) << 16) | \
+((uint64_t)((p)[3]) << 24) | \
+((uint64_t)((p)[4]) << 32) | \
+((uint64_t)((p)[5]) << 40) | \
+((uint64_t)((p)[6]) << 48) | \
+((uint64_t)((p)[7]) << 56))
+.fi
+.PP
+Definition at line 31 of file siphash24.c.
+.PP
+Referenced by siphash_2_4().
+.SH "Function Documentation"
+.PP 
+.SS "uint64_t siphash_2_4 (const unsigned char * in, size_t inlen, const unsigned char * k)"
+.PP
+Definition at line 51 of file siphash24.c.
+.PP
+Referenced by hashtb_hash().
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Content-Centric Networking in C from the source code.

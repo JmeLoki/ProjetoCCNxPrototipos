@@ -1,0 +1,78 @@
+.TH "nonce_entry" 3 "9 Oct 2013" "Version 0.8.1" "Content-Centric Networking in C" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+nonce_entry \- 
+.PP
+The nonce hash table is keyed by the interest nonce.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "struct \fBncelinks\fP \fBll\fP"
+.br
+.ti -1c
+.RI "const unsigned char * \fBkey\fP"
+.br
+.RI "\fIdoubly-linked \fP"
+.ti -1c
+.RI "unsigned \fBsize\fP"
+.br
+.RI "\fIowned by hashtb \fP"
+.ti -1c
+.RI "unsigned \fBfaceid\fP"
+.br
+.RI "\fIsize of key \fP"
+.ti -1c
+.RI "\fBccn_wrappedtime\fP \fBexpiry\fP"
+.br
+.RI "\fIoriginating face \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+The nonce hash table is keyed by the interest nonce. 
+.PP
+Definition at line 320 of file ccnd_private.h.
+.SH "Field Documentation"
+.PP 
+.SS "\fBccn_wrappedtime\fP \fBnonce_entry::expiry\fP"
+.PP
+originating face 
+.PP
+Definition at line 325 of file ccnd_private.h.
+.PP
+Referenced by nonce_ok().
+.SS "unsigned \fBnonce_entry::faceid\fP"
+.PP
+size of key 
+.PP
+Definition at line 324 of file ccnd_private.h.
+.PP
+Referenced by nonce_ok().
+.SS "const unsigned char* \fBnonce_entry::key\fP"
+.PP
+doubly-linked 
+.PP
+Definition at line 322 of file ccnd_private.h.
+.PP
+Referenced by nonce_ok().
+.SS "struct \fBncelinks\fP \fBnonce_entry::ll\fP"
+.PP
+Definition at line 321 of file ccnd_private.h.
+.PP
+Referenced by finalize_nonce(), and nonce_ok().
+.SS "unsigned \fBnonce_entry::size\fP"
+.PP
+owned by hashtb 
+.PP
+Definition at line 323 of file ccnd_private.h.
+.PP
+Referenced by nonce_ok().
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Content-Centric Networking in C from the source code.

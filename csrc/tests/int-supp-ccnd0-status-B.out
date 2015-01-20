@@ -1,0 +1,30 @@
+barbara-Notebook ccnd[3625] local port 63000 api 8002 start 1421356260.874453 now 1421356272.385233
+Content items: 29 accessioned, 29 stored, 0 stale, 0 sparse, 0 duplicate, 32 sent
+Interests: 43 names, 0 pending, 0 propagating, 33 noted
+Interest totals: 43 accepted, 0 dropped, 29 sent, 0 stuffed
+Faces
+ face: 0 flags: 0xc pending: 0
+ face: 1 flags: 0x400c pending: 0
+ face: 2 flags: 0x5012 pending: 0 local: 0.0.0.0:63000
+ face: 3 flags: 0x5010 pending: 0 local: 0.0.0.0:63000
+ face: 4 flags: 0x4042 pending: 0 local: [::]:63000
+ face: 5 flags: 0x4040 pending: 0 local: [::]:63000
+ face: 20 flags: 0x412 pending: 0 remote: 10.211.55.8:9695 via: 2
+ face: 24 flags: 0xc pending: 0 activity: 11
+ face: 28 flags: 0x1014 pending: 0 activity: 2 remote: 127.0.0.1:40143
+Face Activity Rates
+         	 Bytes/sec In/Out	 recv data/intr sent	 sent data/intr recv
+ face: 0	     5 / 3		        0 / 0		        0 / 0
+ face: 20	     0 / 0		        0 / 0		        0 / 0
+ face: 24	   892 / 0		        0 / 0		        0 / 0
+ face: 28	     0 / 0		        0 / 0		        0 / 0
+Forwarding
+ ccnx:/%C1.M.S.neighborhood face: 0 flags: 0x3 expires: 2147483637
+ ccnx:/ccnx/ping face: 0 flags: 0x3 expires: 2147483637
+ ccnx:/ccnx/%D66=2AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B face: 0 flags: 0x17 expires: 2147483637
+ ccnx:/%C1.M.S.neighborhood/guest face: 0 flags: 0x3 expires: 2147483637
+ ccnx:/%C1.M.FACE face: 0 flags: 0x3 expires: 2147483637
+ ccnx:/test/long/jot face: 24 flags: 0x3 expires: 1999999990
+ ccnx:/%C1.M.S.localhost face: 0 flags: 0x23 expires: 2147483637
+ ccnx:/%C1.M.S.localhost/%C1.M.SRV/ccnd face: 0 flags: 0x3 expires: 2147483637
+

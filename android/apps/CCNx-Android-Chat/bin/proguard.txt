@@ -1,0 +1,6 @@
+# view AndroidManifest.xml #generated:7
+-keep class org.ccnx.android.apps.chat.CcnxChatMain { <init>(...); }
+
+# view AndroidManifest.xml #generated:15
+-keep class org.ccnx.android.apps.chat.ChatScreen { <init>(...); }
+

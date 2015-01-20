@@ -1,0 +1,167 @@
+.TH "lib/ccn_btree_content.c" 3 "9 Oct 2013" "Version 0.8.1" "Content-Centric Networking in C" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lib/ccn_btree_content.c \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMYFETCH\fP(p, f)   ccn_btree_fetchval(&((p)->f[0]), sizeof((p)->f))"
+.br
+.RI "\fIB-tree for indexing ccnx content objects. \fP"
+.ti -1c
+.RI "#define \fBMYSTORE\fP(p, f, v)   ccn_btree_storeval(&((p)->f[0]), sizeof((p)->f), (v))"
+.br
+.ti -1c
+.RI "#define \fBMYFETCH64\fP(p, f)   ccn_btree_fetchval64(&((p)->f[0]), sizeof((p)->f))"
+.br
+.ti -1c
+.RI "#define \fBMYSTORE64\fP(p, f, v)   ccn_btree_storeval64(&((p)->f[0]), sizeof((p)->f), (v))"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "static uint_least64_t \fBccn_btree_fetchval64\fP (const unsigned char *p, int size)"
+.br
+.ti -1c
+.RI "static void \fBccn_btree_storeval64\fP (unsigned char *p, int size, uint_least64_t v)"
+.br
+.ti -1c
+.RI "int \fBccn_btree_insert_content\fP (struct \fBccn_btree_node\fP *node, int ndx, uint_least64_t cobid, const unsigned char *content_object, struct \fBccn_parsed_ContentObject\fP *pc, struct \fBccn_charbuf\fP *flatname)"
+.br
+.RI "\fIInsert a ContentObject into a btree node. \fP"
+.ti -1c
+.RI "int \fBccn_btree_match_interest\fP (struct \fBccn_btree_node\fP *node, int ndx, const unsigned char *interest_msg, const struct \fBccn_parsed_interest\fP *pi, struct \fBccn_charbuf\fP *scratch)"
+.br
+.RI "\fITest for a match between the ContentObject described by a btree index entry and an Interest, assuming that it is already known that there is a prefix match. \fP"
+.ti -1c
+.RI "uint_least64_t \fBccn_btree_content_cobid\fP (struct \fBccn_btree_node\fP *node, int ndx)"
+.br
+.RI "\fIGet cobid from btree entry. \fP"
+.ti -1c
+.RI "int \fBccn_btree_content_set_cobid\fP (struct \fBccn_btree_node\fP *node, int ndx, uint_least64_t cobid)"
+.br
+.RI "\fISet cobid in a btree entry. \fP"
+.ti -1c
+.RI "int \fBccn_btree_content_cobsz\fP (struct \fBccn_btree_node\fP *node, int ndx)"
+.br
+.RI "\fIGet ContentObject size from btree entry. \fP"
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define MYFETCH(p, f)   ccn_btree_fetchval(&((p)->f[0]), sizeof((p)->f))"
+.PP
+B-tree for indexing ccnx content objects. 
+.PP
+Definition at line 28 of file ccn_btree_content.c.
+.SS "#define MYFETCH64(p, f)   ccn_btree_fetchval64(&((p)->f[0]), sizeof((p)->f))"
+.PP
+Definition at line 36 of file ccn_btree_content.c.
+.PP
+Referenced by ccn_btree_content_cobid().
+.SS "#define MYSTORE(p, f, v)   ccn_btree_storeval(&((p)->f[0]), sizeof((p)->f), (v))"
+.PP
+Definition at line 32 of file ccn_btree_content.c.
+.SS "#define MYSTORE64(p, f, v)   ccn_btree_storeval64(&((p)->f[0]), sizeof((p)->f), (v))"
+.PP
+Definition at line 50 of file ccn_btree_content.c.
+.PP
+Referenced by ccn_btree_content_set_cobid(), and ccn_btree_insert_content().
+.SH "Function Documentation"
+.PP 
+.SS "uint_least64_t ccn_btree_content_cobid (struct \fBccn_btree_node\fP * node, int ndx)"
+.PP
+Get cobid from btree entry. \fBReturns:\fP
+.RS 4
+the cobid field of the indexed entry of node, or 0 if error. 
+.RE
+.PP
+
+.PP
+Definition at line 226 of file ccn_btree_content.c.
+.PP
+Referenced by r_store_content_btree_insert(), and r_store_look().
+.SS "int ccn_btree_content_cobsz (struct \fBccn_btree_node\fP * node, int ndx)"
+.PP
+Get ContentObject size from btree entry. \fBReturns:\fP
+.RS 4
+the cobsz field of the indexed entry of node, or -1 if error. 
+.RE
+.PP
+
+.PP
+Definition at line 265 of file ccn_btree_content.c.
+.PP
+Referenced by r_store_look().
+.SS "int ccn_btree_content_set_cobid (struct \fBccn_btree_node\fP * node, int ndx, uint_least64_t cobid)"
+.PP
+Set cobid in a btree entry. \fBReturns:\fP
+.RS 4
+0 for success, -1 for failure 
+.RE
+.PP
+
+.PP
+Definition at line 243 of file ccn_btree_content.c.
+.PP
+Referenced by r_store_set_accession_from_offset().
+.SS "static uint_least64_t ccn_btree_fetchval64 (const unsigned char * p, int size)\fC [static]\fP"
+.PP
+Definition at line 39 of file ccn_btree_content.c.
+.SS "int ccn_btree_insert_content (struct \fBccn_btree_node\fP * node, int ndx, uint_least64_t cobid, const unsigned char * content_object, struct \fBccn_parsed_ContentObject\fP * pc, struct \fBccn_charbuf\fP * flatname)"
+.PP
+Insert a ContentObject into a btree node. The caller has presumably already done a lookup and found that the object is not there.
+.PP
+The caller is responsible for provinding a valid content parse (pc).
+.PP
+The flatname buffer should hold the correct full name, including the digest.
+.PP
+\fBReturns:\fP
+.RS 4
+the new entry count or, -1 for error. 
+.RE
+.PP
+
+.PP
+Definition at line 75 of file ccn_btree_content.c.
+.PP
+Referenced by r_store_content_btree_insert(), and test_insert_content().
+.SS "int ccn_btree_match_interest (struct \fBccn_btree_node\fP * node, int ndx, const unsigned char * interest_msg, const struct \fBccn_parsed_interest\fP * pi, struct \fBccn_charbuf\fP * scratch)"
+.PP
+Test for a match between the ContentObject described by a btree index entry and an Interest, assuming that it is already known that there is a prefix match. This does not need access to the actual ContentObject, since the index entry contains everything that we know to know to do the match.
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP leaf node 
+.br
+\fIndx\fP index of entry within leaf node 
+.br
+\fIinterest_msg\fP ccnb-encoded Interest 
+.br
+\fIpi\fP corresponding parsed interest 
+.br
+\fIscratch\fP for scratch use
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+1 for match, 0 for no match, -1 for error. 
+.RE
+.PP
+
+.PP
+Definition at line 142 of file ccn_btree_content.c.
+.PP
+Referenced by r_store_lookup(), r_store_lookup_backwards(), r_sync_enumerate_action(), and testhelp_count_matches().
+.SS "static void ccn_btree_storeval64 (unsigned char * p, int size, uint_least64_t v)\fC [static]\fP"
+.PP
+Definition at line 53 of file ccn_btree_content.c.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Content-Centric Networking in C from the source code.

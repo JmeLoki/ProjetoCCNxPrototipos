@@ -1,0 +1,1 @@
+1421356311.651588: stats for root#1, currentHash 826ef539085bfc119670905b94192b7818979deeee6a671ba5be426590e517c02f, lastHashChange 1421356310.765652, treeDepth 2, treeNames 256, treeBytes 21284, updatesDone 1, lastUpdateMicros 27231, nodesCreated 8, rootAdviseSent 2, maxrss 4964, utime 0.112893, stime 0.017368

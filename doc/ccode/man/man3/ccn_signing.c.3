@@ -1,0 +1,275 @@
+.TH "lib/ccn_signing.c" 3 "9 Oct 2013" "Version 0.8.1" "Content-Centric Networking in C" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lib/ccn_signing.c \- 
+.PP
+Support for signing.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBis_left\fP(x)   (0 == (x & 1))"
+.br
+.ti -1c
+.RI "#define \fBnode_lr\fP(x)   (x & 1)"
+.br
+.ti -1c
+.RI "#define \fBsibling_of\fP(x)   (x ^ 1)"
+.br
+.ti -1c
+.RI "#define \fBparent_of\fP(x)   (x >> 1)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void * \fBEVP_PKEY_get0\fP (EVP_PKEY *pkey)"
+.br
+.ti -1c
+.RI "int \fBccn_PKEY_assign\fP (EVP_PKEY *pkey, int type, char *key)"
+.br
+.ti -1c
+.RI "int \fBccn_hmac_init\fP (void *ctx, const void *key, int len, const EVP_MD *md)"
+.br
+.ti -1c
+.RI "int \fBccn_evp_sign_init\fP (void *ctx, const void *key, int len, const EVP_MD *md)"
+.br
+.ti -1c
+.RI "int \fBccn_evp_verify_init\fP (void *ctx, const void *key, int len, const EVP_MD *md)"
+.br
+.ti -1c
+.RI "int \fBccn_hmac_final\fP (void *ctx, unsigned char *sigret, unsigned int *siglen, EVP_PKEY *pkey)"
+.br
+.ti -1c
+.RI "int \fBccn_hmac_verify_final\fP (void *ctx, const unsigned char *sigret, unsigned int siglen, EVP_PKEY *pkey)"
+.br
+.ti -1c
+.RI "static void \fBcleanup_evp_ctx\fP (struct ccn_sigc *sigc)"
+.br
+.ti -1c
+.RI "static void \fBcleanup_hmac_ctx\fP (struct ccn_sigc *sigc)"
+.br
+.ti -1c
+.RI "static int \fBsigc_from_digest_and_pkey\fP (struct ccn_sigc *sigc, const char *digest, const struct ccn_pkey *pkey)"
+.br
+.ti -1c
+.RI "struct ccn_sigc * \fBccn_sigc_create\fP (void)"
+.br
+.ti -1c
+.RI "void \fBccn_sigc_destroy\fP (struct ccn_sigc **ctx)"
+.br
+.ti -1c
+.RI "int \fBccn_sigc_init\fP (struct ccn_sigc *ctx, const char *digest, const struct ccn_pkey *key)"
+.br
+.ti -1c
+.RI "int \fBccn_sigc_update\fP (struct ccn_sigc *ctx, const void *data, size_t size)"
+.br
+.ti -1c
+.RI "int \fBccn_sigc_final\fP (struct ccn_sigc *ctx, struct ccn_signature *signature, size_t *size, const struct ccn_pkey *priv_key)"
+.br
+.ti -1c
+.RI "size_t \fBccn_sigc_signature_max_size\fP (struct ccn_sigc *ctx, const struct ccn_pkey *key)"
+.br
+.ti -1c
+.RI "int \fBccn_merkle_root_hash\fP (const unsigned char *msg, size_t size, const struct \fBccn_parsed_ContentObject\fP *co, const EVP_MD *digest_type, \fBMP_info\fP *merkle_path_info, unsigned char *result, int result_size)"
+.br
+.ti -1c
+.RI "int \fBccn_verify_signature\fP (const unsigned char *msg, size_t size, const struct \fBccn_parsed_ContentObject\fP *co, const struct ccn_pkey *verification_key)"
+.br
+.ti -1c
+.RI "struct ccn_pkey * \fBccn_d2i_pubkey\fP (const unsigned char *p, size_t size)"
+.br
+.ti -1c
+.RI "void \fBccn_pubkey_free\fP (struct ccn_pkey *i_pubkey)"
+.br
+.ti -1c
+.RI "size_t \fBccn_pubkey_size\fP (const struct ccn_pkey *i_pubkey)"
+.br
+.ti -1c
+.RI "int \fBccn_append_pubkey_blob\fP (struct \fBccn_charbuf\fP *c, const struct ccn_pkey *i_pubkey)"
+.br
+.ti -1c
+.RI "void \fBccn_random_bytes\fP (unsigned char *buf, size_t size)"
+.br
+.RI "\fIGenerate pseudo-random bytes. \fP"
+.ti -1c
+.RI "void \fBccn_add_entropy\fP (const void *buf, size_t size, int bits_of_entropy)"
+.br
+.RI "\fIFeed some entropy to the random number generator. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Support for signing. 
+
+Part of the CCNx C Library.
+.PP
+Copyright (C) 2009-2010, 2013 Palo Alto Research Center, Inc.
+.PP
+This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License version 2.1 as published by the Free Software Foundation. This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details. You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA. 
+.PP
+Definition in file \fBccn_signing.c\fP.
+.SH "Define Documentation"
+.PP 
+.SS "#define is_left(x)   (0 == (x & 1))"
+.PP
+Definition at line 306 of file ccn_signing.c.
+.SS "#define node_lr(x)   (x & 1)"
+.PP
+Definition at line 307 of file ccn_signing.c.
+.SS "#define parent_of(x)   (x >> 1)"
+.PP
+Definition at line 309 of file ccn_signing.c.
+.PP
+Referenced by ccn_merkle_root_hash().
+.SS "#define sibling_of(x)   (x ^ 1)"
+.PP
+Definition at line 308 of file ccn_signing.c.
+.SH "Function Documentation"
+.PP 
+.SS "void ccn_add_entropy (const void * buf, size_t size, int bits_of_entropy)"
+.PP
+Feed some entropy to the random number generator. \fBParameters:\fP
+.RS 4
+\fIbuf\fP is the source buffer 
+.br
+\fIsize\fP is in bytes 
+.br
+\fIbits_of_entropy\fP is an estimate; use 0 to make me guess 
+.RE
+.PP
+
+.PP
+Definition at line 607 of file ccn_signing.c.
+.PP
+Referenced by main().
+.SS "int ccn_append_pubkey_blob (struct \fBccn_charbuf\fP * c, const struct ccn_pkey * i_pubkey)"
+.PP
+Definition at line 559 of file ccn_signing.c.
+.PP
+Referenced by ccn_get_public_key(), ccn_sign_content(), and main().
+.SS "struct ccn_pkey* ccn_d2i_pubkey (const unsigned char * p, size_t size)\fC [read]\fP"
+.PP
+Definition at line 534 of file ccn_signing.c.
+.PP
+Referenced by ccn_cache_key(), and ccn_locate_key().
+.SS "int ccn_evp_sign_init (void * ctx, const void * key, int len, const EVP_MD * md)"
+.PP
+Definition at line 96 of file ccn_signing.c.
+.PP
+Referenced by sigc_from_digest_and_pkey().
+.SS "int ccn_evp_verify_init (void * ctx, const void * key, int len, const EVP_MD * md)"
+.PP
+Definition at line 101 of file ccn_signing.c.
+.PP
+Referenced by sigc_from_digest_and_pkey().
+.SS "int ccn_hmac_final (void * ctx, unsigned char * sigret, unsigned int * siglen, EVP_PKEY * pkey)"
+.PP
+Definition at line 106 of file ccn_signing.c.
+.PP
+Referenced by sigc_from_digest_and_pkey().
+.SS "int ccn_hmac_init (void * ctx, const void * key, int len, const EVP_MD * md)"
+.PP
+Definition at line 90 of file ccn_signing.c.
+.PP
+Referenced by sigc_from_digest_and_pkey().
+.SS "int ccn_hmac_verify_final (void * ctx, const unsigned char * sigret, unsigned int siglen, EVP_PKEY * pkey)"
+.PP
+Definition at line 112 of file ccn_signing.c.
+.PP
+Referenced by sigc_from_digest_and_pkey().
+.SS "int ccn_merkle_root_hash (const unsigned char * msg, size_t size, const struct \fBccn_parsed_ContentObject\fP * co, const EVP_MD * digest_type, \fBMP_info\fP * merkle_path_info, unsigned char * result, int result_size)"
+.PP
+Definition at line 311 of file ccn_signing.c.
+.PP
+Referenced by ccn_verify_signature().
+.SS "int ccn_PKEY_assign (EVP_PKEY * pkey, int type, char * key)"
+.PP
+Definition at line 81 of file ccn_signing.c.
+.PP
+Referenced by ccn_aes_keystore_init().
+.SS "void ccn_pubkey_free (struct ccn_pkey * i_pubkey)"
+.PP
+Definition at line 543 of file ccn_signing.c.
+.PP
+Referenced by finalize_pkey().
+.SS "size_t ccn_pubkey_size (const struct ccn_pkey * i_pubkey)"
+.PP
+Definition at line 550 of file ccn_signing.c.
+.SS "void ccn_random_bytes (unsigned char * buf, size_t size)"
+.PP
+Generate pseudo-random bytes. \fBParameters:\fP
+.RS 4
+\fIbuf\fP is the destination buffer 
+.br
+\fIsize\fP is in bytes 
+.RE
+.PP
+
+.PP
+Definition at line 590 of file ccn_signing.c.
+.PP
+Referenced by ccn_name_append_nonce(), and main().
+.SS "struct ccn_sigc* ccn_sigc_create (void)\fC [read]\fP"
+.PP
+Definition at line 250 of file ccn_signing.c.
+.PP
+Referenced by ccn_encode_ContentObject(), and ccn_verify_signature().
+.SS "void ccn_sigc_destroy (struct ccn_sigc ** ctx)"
+.PP
+Definition at line 256 of file ccn_signing.c.
+.PP
+Referenced by ccn_encode_ContentObject(), and ccn_verify_signature().
+.SS "int ccn_sigc_final (struct ccn_sigc * ctx, struct ccn_signature * signature, size_t * size, const struct ccn_pkey * priv_key)"
+.PP
+Definition at line 286 of file ccn_signing.c.
+.PP
+Referenced by ccn_encode_ContentObject().
+.SS "int ccn_sigc_init (struct ccn_sigc * ctx, const char * digest, const struct ccn_pkey * key)"
+.PP
+Definition at line 267 of file ccn_signing.c.
+.PP
+Referenced by ccn_encode_ContentObject().
+.SS "size_t ccn_sigc_signature_max_size (struct ccn_sigc * ctx, const struct ccn_pkey * key)"
+.PP
+Definition at line 297 of file ccn_signing.c.
+.PP
+Referenced by ccn_encode_ContentObject().
+.SS "int ccn_sigc_update (struct ccn_sigc * ctx, const void * data, size_t size)"
+.PP
+Definition at line 278 of file ccn_signing.c.
+.PP
+Referenced by ccn_encode_ContentObject().
+.SS "int ccn_verify_signature (const unsigned char * msg, size_t size, const struct \fBccn_parsed_ContentObject\fP * co, const struct ccn_pkey * verification_key)"
+.PP
+Definition at line 388 of file ccn_signing.c.
+.PP
+Referenced by ccn_dispatch_message(), ccn_verify_content(), decode_message(), and main().
+.SS "static void cleanup_evp_ctx (struct ccn_sigc * sigc)\fC [static]\fP"
+.PP
+Definition at line 124 of file ccn_signing.c.
+.PP
+Referenced by sigc_from_digest_and_pkey().
+.SS "static void cleanup_hmac_ctx (struct ccn_sigc * sigc)\fC [static]\fP"
+.PP
+Definition at line 128 of file ccn_signing.c.
+.PP
+Referenced by sigc_from_digest_and_pkey().
+.SS "void* EVP_PKEY_get0 (EVP_PKEY * pkey)"
+.PP
+Definition at line 76 of file ccn_signing.c.
+.PP
+Referenced by ccn_sigc_init(), ccn_verify_signature(), and main().
+.SS "static int sigc_from_digest_and_pkey (struct ccn_sigc * sigc, const char * digest, const struct ccn_pkey * pkey)\fC [static]\fP"
+.PP
+Definition at line 133 of file ccn_signing.c.
+.PP
+Referenced by ccn_sigc_init(), and ccn_verify_signature().
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Content-Centric Networking in C from the source code.

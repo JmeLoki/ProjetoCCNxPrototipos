@@ -1,0 +1,433 @@
+.TH "lib/ccn_nametree.c" 3 "9 Oct 2013" "Version 0.8.1" "Content-Centric Networking in C" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lib/ccn_nametree.c \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBCCN_NAMETREE_IMPL\fP"
+.br
+.ti -1c
+.RI "#define \fBCCN_SKIPLIST_MAX_DEPTH\fP   16"
+.br
+.ti -1c
+.RI "#define \fBNAMETREE_PVT_PAYLOAD_OWNED\fP   0x40"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "struct \fBccn_nametree\fP * \fBccn_nametree_create\fP (int initial_limit)"
+.br
+.RI "\fICreate a new, empty nametree. \fP"
+.ti -1c
+.RI "struct ccny * \fBccny_create\fP (unsigned randombits, size_t payload_size)"
+.br
+.RI "\fICreate a new nametree entry, not hooked up to anything. \fP"
+.ti -1c
+.RI "int \fBccny_set_key\fP (struct ccny *y, const unsigned char *key, size_t size)"
+.br
+.RI "\fISet the key in a nametree entry. \fP"
+.ti -1c
+.RI "void \fBccny_set_key_fields\fP (struct ccny *y, unsigned char *key, unsigned size)"
+.br
+.RI "\fIDirectly assign the key and keylen in a nametree entry. \fP"
+.ti -1c
+.RI "struct ccny * \fBccny_from_cookie\fP (struct \fBccn_nametree\fP *h, \fBccn_cookie\fP cookie)"
+.br
+.RI "\fILook up an entry, given a cookie. \fP"
+.ti -1c
+.RI "static int \fBccny_skiplist_findbefore\fP (struct \fBccn_nametree\fP *h, const unsigned char *key, size_t size, struct ccny **ans)"
+.br
+.RI "\fIFind the entry, or the one just before where it would go. \fP"
+.ti -1c
+.RI "struct ccny * \fBccn_nametree_look_lt\fP (struct \fBccn_nametree\fP *h, const unsigned char *key, size_t size)"
+.br
+.RI "\fILook for an entry with a key less than the given key. \fP"
+.ti -1c
+.RI "struct ccny * \fBccn_nametree_look_le\fP (struct \fBccn_nametree\fP *h, const unsigned char *key, size_t size)"
+.br
+.RI "\fILook for an entry with a key less than or equal to the given key. \fP"
+.ti -1c
+.RI "struct ccny * \fBccn_nametree_lookup\fP (struct \fBccn_nametree\fP *h, const unsigned char *key, size_t size)"
+.br
+.RI "\fILook for an entry with a key equal to given key. \fP"
+.ti -1c
+.RI "struct ccny * \fBccn_nametree_look_ge\fP (struct \fBccn_nametree\fP *h, const unsigned char *key, size_t size)"
+.br
+.RI "\fILook for an entry with a key greater than or equal to the given key. \fP"
+.ti -1c
+.RI "struct ccny * \fBccn_nametree_look_gt\fP (struct \fBccn_nametree\fP *h, const unsigned char *key, size_t size)"
+.br
+.RI "\fILook for an entry with a key greater than the given key. \fP"
+.ti -1c
+.RI "static \fBccn_cookie\fP \fBccny_skiplist_insert\fP (struct \fBccn_nametree\fP *h, struct ccny *y)"
+.br
+.RI "\fIInsert an entry into the skiplist. \fP"
+.ti -1c
+.RI "static void \fBccny_skiplist_remove\fP (struct \fBccn_nametree\fP *h, struct ccny *y)"
+.br
+.RI "\fIRemove an entry from the skiplist. \fP"
+.ti -1c
+.RI "\fBccn_cookie\fP \fBccny_enroll\fP (struct \fBccn_nametree\fP *h, struct ccny *y)"
+.br
+.RI "\fIEnroll an entry into the nametree. \fP"
+.ti -1c
+.RI "int \fBccn_nametree_grow\fP (struct \fBccn_nametree\fP *h)"
+.br
+.RI "\fIDouble the size of the direct lookup table. \fP"
+.ti -1c
+.RI "void \fBccny_remove\fP (struct \fBccn_nametree\fP *h, struct ccny *y)"
+.br
+.RI "\fIRemove y from the nametree. \fP"
+.ti -1c
+.RI "void \fBccny_destroy\fP (struct \fBccn_nametree\fP *h, struct ccny **py)"
+.br
+.RI "\fIDestroy a nametree entry. \fP"
+.ti -1c
+.RI "void \fBccn_nametree_destroy\fP (struct \fBccn_nametree\fP **ph)"
+.br
+.RI "\fIDestroy a nametree, deleting all entries. \fP"
+.ti -1c
+.RI "void \fBccn_nametree_check\fP (struct \fBccn_nametree\fP *h)"
+.br
+.RI "\fICheck the nametree for consistency. \fP"
+.ti -1c
+.RI "int \fBccn_nametree_n\fP (struct \fBccn_nametree\fP *h)"
+.br
+.RI "\fIAccess the number of entries. \fP"
+.ti -1c
+.RI "int \fBccn_nametree_limit\fP (struct \fBccn_nametree\fP *h)"
+.br
+.RI "\fIAccess the current limit on the number of entries. \fP"
+.ti -1c
+.RI "\fBccn_cookie\fP \fBccny_cookie\fP (struct ccny *y)"
+.br
+.RI "\fIAccess the cookie. \fP"
+.ti -1c
+.RI "void * \fBccny_payload\fP (struct ccny *y)"
+.br
+.RI "\fIAccess the payload. \fP"
+.ti -1c
+.RI "void \fBccny_set_payload\fP (struct ccny *y, void *payload)"
+.br
+.RI "\fISet the payload. \fP"
+.ti -1c
+.RI "const unsigned char * \fBccny_key\fP (struct ccny *y)"
+.br
+.RI "\fIAccess the key. \fP"
+.ti -1c
+.RI "unsigned \fBccny_keylen\fP (struct ccny *y)"
+.br
+.RI "\fIAccess the key size. \fP"
+.ti -1c
+.RI "unsigned \fBccny_info\fP (struct ccny *y)"
+.br
+.RI "\fIGet the client info. \fP"
+.ti -1c
+.RI "void \fBccny_set_info\fP (struct ccny *y, unsigned info)"
+.br
+.RI "\fISet the client info. \fP"
+.ti -1c
+.RI "struct ccny * \fBccn_nametree_first\fP (struct \fBccn_nametree\fP *h)"
+.br
+.RI "\fIGet the first entry. \fP"
+.ti -1c
+.RI "struct ccny * \fBccny_next\fP (struct ccny *y)"
+.br
+.RI "\fIGet the next entry. \fP"
+.ti -1c
+.RI "struct ccny * \fBccny_prev\fP (struct ccny *y)"
+.br
+.RI "\fIGet the previous entry. \fP"
+.ti -1c
+.RI "struct ccny * \fBccn_nametree_last\fP (struct \fBccn_nametree\fP *h)"
+.br
+.RI "\fIGet the last entry. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+Definition in file \fBccn_nametree.c\fP.
+.SH "Define Documentation"
+.PP 
+.SS "#define CCN_NAMETREE_IMPL"
+.PP
+Definition at line 24 of file ccn_nametree.c.
+.SS "#define CCN_SKIPLIST_MAX_DEPTH   16"
+.PP
+Definition at line 27 of file ccn_nametree.c.
+.PP
+Referenced by ccn_nametree_create(), ccn_nametree_look_ge(), ccn_nametree_look_gt(), ccn_nametree_look_le(), ccn_nametree_look_lt(), ccn_nametree_lookup(), ccny_skiplist_insert(), and ccny_skiplist_remove().
+.SS "#define NAMETREE_PVT_PAYLOAD_OWNED   0x40"
+.PP
+Definition at line 28 of file ccn_nametree.c.
+.PP
+Referenced by ccny_create().
+.SH "Function Documentation"
+.PP 
+.SS "void ccn_nametree_check (struct \fBccn_nametree\fP * h)"
+.PP
+Check the nametree for consistency. 
+.PP
+Definition at line 526 of file ccn_nametree.c.
+.PP
+Referenced by test_inserts_from_stdin().
+.SS "struct \fBccn_nametree\fP* ccn_nametree_create (int initial_limit)\fC [read]\fP"
+.PP
+Create a new, empty nametree. The initial_limit is the number of entries that may be inserted before growing the table. 
+.PP
+Definition at line 37 of file ccn_nametree.c.
+.PP
+Referenced by ccnd_create(), and test_inserts_from_stdin().
+.SS "void ccn_nametree_destroy (struct \fBccn_nametree\fP ** ph)"
+.PP
+Destroy a nametree, deleting all entries. 
+.PP
+Definition at line 504 of file ccn_nametree.c.
+.PP
+Referenced by ccnd_destroy(), and test_inserts_from_stdin().
+.SS "struct ccny* ccn_nametree_first (struct \fBccn_nametree\fP * h)\fC [read]\fP"
+.PP
+Get the first entry. 
+.PP
+Definition at line 648 of file ccn_nametree.c.
+.PP
+Referenced by test_inserts_from_stdin().
+.SS "int ccn_nametree_grow (struct \fBccn_nametree\fP * h)"
+.PP
+Double the size of the direct lookup table. \fBReturns:\fP
+.RS 4
+0 for success, -1 for error. 
+.RE
+.PP
+
+.PP
+Definition at line 433 of file ccn_nametree.c.
+.PP
+Referenced by process_incoming_content(), test_inserts_from_stdin(), and update_ex_index().
+.SS "struct ccny* ccn_nametree_last (struct \fBccn_nametree\fP * h)\fC [read]\fP"
+.PP
+Get the last entry. 
+.PP
+Definition at line 669 of file ccn_nametree.c.
+.PP
+Referenced by test_inserts_from_stdin().
+.SS "int ccn_nametree_limit (struct \fBccn_nametree\fP * h)"
+.PP
+Access the current limit on the number of entries. 
+.PP
+Definition at line 589 of file ccn_nametree.c.
+.SS "struct ccny* ccn_nametree_look_ge (struct \fBccn_nametree\fP * h, const unsigned char * key, size_t size)\fC [read]\fP"
+.PP
+Look for an entry with a key greater than or equal to the given key. When there are multiple possibilities, the one with the smallest key is returned. Returns NULL if nothing matches. 
+.PP
+Definition at line 278 of file ccn_nametree.c.
+.PP
+Referenced by ccn_nametree_check(), find_first_match_candidate(), and next_child_at_level().
+.SS "struct ccny* ccn_nametree_look_gt (struct \fBccn_nametree\fP * h, const unsigned char * key, size_t size)\fC [read]\fP"
+.PP
+Look for an entry with a key greater than the given key. When there are multiple possibilities, the one with the smallest key is returned. Returns NULL if nothing matches. 
+.PP
+Definition at line 294 of file ccn_nametree.c.
+.PP
+Referenced by ccn_nametree_check().
+.SS "struct ccny* ccn_nametree_look_le (struct \fBccn_nametree\fP * h, const unsigned char * key, size_t size)\fC [read]\fP"
+.PP
+Look for an entry with a key less than or equal to the given key. When there are multiple possibilities, the one with the largest key is returned. Returns NULL if nothing matches. 
+.PP
+Definition at line 241 of file ccn_nametree.c.
+.PP
+Referenced by ccn_nametree_check(), and content_enqueuex().
+.SS "struct ccny* ccn_nametree_look_lt (struct \fBccn_nametree\fP * h, const unsigned char * key, size_t size)\fC [read]\fP"
+.PP
+Look for an entry with a key less than the given key. When there are multiple possibilities, the one with the largest key is returned. Returns NULL if nothing matches. 
+.PP
+Definition at line 223 of file ccn_nametree.c.
+.PP
+Referenced by ccn_nametree_check().
+.SS "struct ccny* ccn_nametree_lookup (struct \fBccn_nametree\fP * h, const unsigned char * key, size_t size)\fC [read]\fP"
+.PP
+Look for an entry with a key equal to given key. 
+.PP
+Definition at line 259 of file ccn_nametree.c.
+.PP
+Referenced by test_inserts_from_stdin(), and update_ex_index().
+.SS "int ccn_nametree_n (struct \fBccn_nametree\fP * h)"
+.PP
+Access the number of entries. 
+.PP
+Definition at line 582 of file ccn_nametree.c.
+.SS "\fBccn_cookie\fP ccny_cookie (struct ccny * y)"
+.PP
+Access the cookie. 
+.PP
+Definition at line 596 of file ccn_nametree.c.
+.PP
+Referenced by process_incoming_content(), test_inserts_from_stdin(), and update_ex_index().
+.SS "struct ccny* ccny_create (unsigned randombits, size_t payload_size)\fC [read]\fP"
+.PP
+Create a new nametree entry, not hooked up to anything. The skiplinks array needs to be sized with an appropriate random distribution; for this purpose the caller must provide a word of random bits.
+.PP
+If payload_size is non-zero, extra zero-initialized space will be allocated, and a pointer to it provided in the payload field. This will be automatically freed when the entry is destroyed.
+.PP
+If the payload size is zero, the caller assumes resonsibility for managing the payload memory, probably by providing a suitable finalize action. 
+.PP
+Definition at line 91 of file ccn_nametree.c.
+.PP
+Referenced by ccn_nametree_create(), process_incoming_content(), test_inserts_from_stdin(), and update_ex_index().
+.SS "void ccny_destroy (struct \fBccn_nametree\fP * h, struct ccny ** py)"
+.PP
+Destroy a nametree entry. The entry must not be in any nametree. 
+.PP
+Definition at line 486 of file ccn_nametree.c.
+.PP
+Referenced by ccn_nametree_destroy(), process_incoming_content(), remove_content(), test_inserts_from_stdin(), and update_ex_index().
+.SS "\fBccn_cookie\fP ccny_enroll (struct \fBccn_nametree\fP * h, struct ccny * y)"
+.PP
+Enroll an entry into the nametree. Although this detects a full table, caller should prevent that from ever happening by trimming or resizing as appropriate, to maintain some percentage of free slots.
+.PP
+\fBReturns:\fP
+.RS 4
+cookie of old entry in the case that one with the old key is present, or 0 upon success or a full table. The latter case may be disambiguated by examining y->cookie. 
+.RE
+.PP
+
+.PP
+Definition at line 395 of file ccn_nametree.c.
+.PP
+Referenced by process_incoming_content(), test_inserts_from_stdin(), and update_ex_index().
+.SS "struct ccny* ccny_from_cookie (struct \fBccn_nametree\fP * h, \fBccn_cookie\fP cookie)\fC [read]\fP"
+.PP
+Look up an entry, given a cookie. 
+.PP
+Definition at line 168 of file ccn_nametree.c.
+.PP
+Referenced by ccn_nametree_check(), ccnd_debug_content(), content_from_accession(), content_matches_prefix(), content_next(), match_interests(), next_child_at_level(), process_incoming_content(), and remove_content().
+.SS "unsigned ccny_info (struct ccny * y)"
+.PP
+Get the client info. 
+.PP
+Definition at line 634 of file ccn_nametree.c.
+.PP
+Referenced by content_enqueuex().
+.SS "const unsigned char* ccny_key (struct ccny * y)"
+.PP
+Access the key. 
+.PP
+Definition at line 620 of file ccn_nametree.c.
+.PP
+Referenced by ccnd_debug_content(), content_matches_prefix(), match_interests(), and next_child_at_level().
+.SS "unsigned ccny_keylen (struct ccny * y)"
+.PP
+Access the key size. 
+.PP
+Definition at line 627 of file ccn_nametree.c.
+.PP
+Referenced by ccnd_debug_content(), content_matches_prefix(), match_interests(), and next_child_at_level().
+.SS "struct ccny* ccny_next (struct ccny * y)\fC [read]\fP"
+.PP
+Get the next entry. 
+.PP
+Definition at line 655 of file ccn_nametree.c.
+.PP
+Referenced by content_next(), and test_inserts_from_stdin().
+.SS "void* ccny_payload (struct ccny * y)"
+.PP
+Access the payload. 
+.PP
+Definition at line 605 of file ccn_nametree.c.
+.PP
+Referenced by content_finalize(), content_from_accession(), content_next(), content_preremove(), find_first_match_candidate(), next_child_at_level(), and process_incoming_content().
+.SS "struct ccny* ccny_prev (struct ccny * y)\fC [read]\fP"
+.PP
+Get the previous entry. 
+.PP
+Definition at line 662 of file ccn_nametree.c.
+.PP
+Referenced by test_inserts_from_stdin().
+.SS "void ccny_remove (struct \fBccn_nametree\fP * h, struct ccny * y)"
+.PP
+Remove y from the nametree. If y is not in the nametree, nothing is changed. On success, y->cookie is cleared, but y is not freed. 
+.PP
+Definition at line 461 of file ccn_nametree.c.
+.PP
+Referenced by ccn_nametree_destroy(), remove_content(), test_inserts_from_stdin(), and update_ex_index().
+.SS "void ccny_set_info (struct ccny * y, unsigned info)"
+.PP
+Set the client info. 
+.PP
+Definition at line 641 of file ccn_nametree.c.
+.PP
+Referenced by update_ex_index().
+.SS "int ccny_set_key (struct ccny * y, const unsigned char * key, size_t size)"
+.PP
+Set the key in a nametree entry. This makes a copy. The entry must not be in a nametree. Any old key is freed before making the copy.
+.PP
+A client may choose to manage the key storage differently, but in such a case it must provide a finalize action that leaves y->key NULL.
+.PP
+\fBReturns:\fP
+.RS 4
+-1 for error, 0 for success. 
+.RE
+.PP
+
+.PP
+Definition at line 130 of file ccn_nametree.c.
+.PP
+Referenced by process_incoming_content(), and test_inserts_from_stdin().
+.SS "void ccny_set_key_fields (struct ccny * y, unsigned char * key, unsigned size)"
+.PP
+Directly assign the key and keylen in a nametree entry. This is for clients that are handling their own memory management. 
+.PP
+Definition at line 158 of file ccn_nametree.c.
+.PP
+Referenced by update_ex_index().
+.SS "void ccny_set_payload (struct ccny * y, void * payload)"
+.PP
+Set the payload. 
+.PP
+Definition at line 612 of file ccn_nametree.c.
+.SS "static int ccny_skiplist_findbefore (struct \fBccn_nametree\fP * h, const unsigned char * key, size_t size, struct ccny ** ans)\fC [static]\fP"
+.PP
+Find the entry, or the one just before where it would go. The ans array is populated with pointers to the skiplinks at each level.
+.PP
+\fBReturns:\fP
+.RS 4
+1 if an exact match was found 
+.RE
+.PP
+
+.PP
+Definition at line 187 of file ccn_nametree.c.
+.PP
+Referenced by ccn_nametree_look_ge(), ccn_nametree_look_gt(), ccn_nametree_look_le(), ccn_nametree_look_lt(), ccn_nametree_lookup(), ccny_skiplist_insert(), and ccny_skiplist_remove().
+.SS "static \fBccn_cookie\fP ccny_skiplist_insert (struct \fBccn_nametree\fP * h, struct ccny * y)\fC [static]\fP"
+.PP
+Insert an entry into the skiplist. \fBReturns:\fP
+.RS 4
+old cookie and does not insert if an exact key match is found 
+.RE
+.PP
+
+.PP
+Definition at line 312 of file ccn_nametree.c.
+.PP
+Referenced by ccny_enroll().
+.SS "static void ccny_skiplist_remove (struct \fBccn_nametree\fP * h, struct ccny * y)\fC [static]\fP"
+.PP
+Remove an entry from the skiplist. The entry must be present. 
+.PP
+Definition at line 348 of file ccn_nametree.c.
+.PP
+Referenced by ccny_remove().
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Content-Centric Networking in C from the source code.

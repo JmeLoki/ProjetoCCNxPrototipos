@@ -1,0 +1,5 @@
+# cache for current jar dependency. DO NOT EDIT.
+# format is <lastModified> <length> <SHA-1> <path>
+# Encoding is UTF-8
+1420720548000 1634573 09b6cdf6f3a4afaaec8637c468ba866fbd0bb009 /home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Lib/libs/ccn.jar
+1420720548000 1634573 09b6cdf6f3a4afaaec8637c468ba866fbd0bb009 /home/barbara/jaime/ccnx-0.8.1/android/apps/CCNx-Android-FileProxy/libs/ccn.jar

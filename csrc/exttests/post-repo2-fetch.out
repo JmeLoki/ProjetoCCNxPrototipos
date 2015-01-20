@@ -1,0 +1,116 @@
+barbara-Notebook ccnd[5722] local port 63001 api 8002 start 1420720745.536832 now 1420720746.844629
+Content items: 1226 accessioned, 100 stored, 0 stale, 0 sparse, 0 duplicate, 1226 sent
+Interests: 1259 names, 0 pending, 11 propagating, 1240 noted
+Interest totals: 1240 accepted, 0 dropped, 1237 sent, 0 stuffed
+Faces
+ face: 0 flags: 0xc pending: 0
+ face: 1 flags: 0x400c pending: 0
+ face: 2 flags: 0x5012 pending: 0 local: 0.0.0.0:63001
+ face: 3 flags: 0x5010 pending: 0 local: 0.0.0.0:63001
+ face: 4 flags: 0x4042 pending: 0 local: [::]:63001
+ face: 5 flags: 0x4040 pending: 0 local: [::]:63001
+ face: 6 flags: 0xc pending: 0 activity: 415
+Face Activity Rates
+         	 Bytes/sec In/Out	 recv data/intr sent	 sent data/intr recv
+ face: 0	  1348 / 656		        0 / 0		        0 / 0
+ face: 6	4612521 / 73427		     1024 / 1033		        0 / 0
+Forwarding
+ ccnx:/ccnx/ping face: 0 flags: 0x3 expires: 2147483647
+ ccnx:/%C1.M.FACE face: 0 flags: 0x3 expires: 2147483647
+ ccnx:/ccnx/n=9723937D1EBCC206C213A7F155121E1E6BF64080173594E7085887EF2B250C face: 0 flags: 0x17 expires: 2147483647
+ ccnx:/parc.com/csl/ccn/Repos face: 6 flags: 0x3 expires: 2000000000
+ ccnx:/%C1.M.S.localhost/%C1.M.SRV/ccnd face: 0 flags: 0x3 expires: 2147483647
+ ccnx:/ face: 6 flags: 0x3 expires: 2000000000
+ ccnx:/%C1.M.S.neighborhood/guest face: 0 flags: 0x3 expires: 2147483647
+ ccnx:/%C1.M.S.localhost face: 0 flags: 0x23 expires: 2147483647
+ ccnx:/%C1.M.S.localhost/%C1.M.SRV/repository face: 6 flags: 0x3 expires: 2000000000
+ ccnx:/%C1.M.S.neighborhood/%C1.M.SRV/repository face: 6 flags: 0x3 expires: 2000000000
+ ccnx:/%C1.M.S.neighborhood face: 0 flags: 0x3 expires: 2147483647
+
+barbara-Notebook ccnd[4416] local port 63001 api 8002 start 1420721215.195688 now 1420721216.470554
+Content items: 1226 accessioned, 100 stored, 0 stale, 0 sparse, 0 duplicate, 1226 sent
+Interests: 1259 names, 0 pending, 11 propagating, 1240 noted
+Interest totals: 1240 accepted, 0 dropped, 1237 sent, 0 stuffed
+Faces
+ face: 0 flags: 0xc pending: 0
+ face: 1 flags: 0x400c pending: 0
+ face: 2 flags: 0x5012 pending: 0 local: 0.0.0.0:63001
+ face: 3 flags: 0x5010 pending: 0 local: 0.0.0.0:63001
+ face: 4 flags: 0x4042 pending: 0 local: [::]:63001
+ face: 5 flags: 0x4040 pending: 0 local: [::]:63001
+ face: 6 flags: 0xc pending: 0 activity: 415
+Face Activity Rates
+         	 Bytes/sec In/Out	 recv data/intr sent	 sent data/intr recv
+ face: 0	  1179 / 574		        0 / 0		        0 / 0
+ face: 6	4361505 / 69322		      968 / 976		        0 / 0
+Forwarding
+ ccnx:/ccnx/ping face: 0 flags: 0x3 expires: 2147483647
+ ccnx:/%C1.M.FACE face: 0 flags: 0x3 expires: 2147483647
+ ccnx:/ccnx/n=9723937D1EBCC206C213A7F155121E1E6BF64080173594E7085887EF2B250C face: 0 flags: 0x17 expires: 2147483647
+ ccnx:/parc.com/csl/ccn/Repos face: 6 flags: 0x3 expires: 2000000000
+ ccnx:/%C1.M.S.localhost/%C1.M.SRV/ccnd face: 0 flags: 0x3 expires: 2147483647
+ ccnx:/ face: 6 flags: 0x3 expires: 2000000000
+ ccnx:/%C1.M.S.neighborhood/guest face: 0 flags: 0x3 expires: 2147483647
+ ccnx:/%C1.M.S.localhost face: 0 flags: 0x23 expires: 2147483647
+ ccnx:/%C1.M.S.localhost/%C1.M.SRV/repository face: 6 flags: 0x3 expires: 2000000000
+ ccnx:/%C1.M.S.neighborhood/%C1.M.SRV/repository face: 6 flags: 0x3 expires: 2000000000
+ ccnx:/%C1.M.S.neighborhood face: 0 flags: 0x3 expires: 2147483647
+
+barbara-Notebook ccnd[6968] local port 63001 api 8002 start 1420721620.406324 now 1420721621.705163
+Content items: 1226 accessioned, 100 stored, 0 stale, 0 sparse, 0 duplicate, 1226 sent
+Interests: 1259 names, 0 pending, 11 propagating, 1240 noted
+Interest totals: 1240 accepted, 0 dropped, 1237 sent, 0 stuffed
+Faces
+ face: 0 flags: 0xc pending: 0
+ face: 1 flags: 0x400c pending: 0
+ face: 2 flags: 0x5012 pending: 0 local: 0.0.0.0:63001
+ face: 3 flags: 0x5010 pending: 0 local: 0.0.0.0:63001
+ face: 4 flags: 0x4042 pending: 0 local: [::]:63001
+ face: 5 flags: 0x4040 pending: 0 local: [::]:63001
+ face: 6 flags: 0xc pending: 0 activity: 415
+Face Activity Rates
+         	 Bytes/sec In/Out	 recv data/intr sent	 sent data/intr recv
+ face: 0	  1348 / 656		        0 / 0		        0 / 0
+ face: 6	4631746 / 73725		     1029 / 1036		        0 / 0
+Forwarding
+ ccnx:/ccnx/ping face: 0 flags: 0x3 expires: 2147483647
+ ccnx:/%C1.M.FACE face: 0 flags: 0x3 expires: 2147483647
+ ccnx:/parc.com/csl/ccn/Repos face: 6 flags: 0x3 expires: 2000000000
+ ccnx:/%C1.M.S.localhost/%C1.M.SRV/ccnd face: 0 flags: 0x3 expires: 2147483647
+ ccnx:/ face: 6 flags: 0x3 expires: 2000000000
+ ccnx:/ccnx/r%96.%171-=7F01A03E1C42ABDC28F9EF621AA9FE4D1F2232E799B2CD4C238A face: 0 flags: 0x17 expires: 2147483647
+ ccnx:/%C1.M.S.neighborhood/guest face: 0 flags: 0x3 expires: 2147483647
+ ccnx:/%C1.M.S.localhost face: 0 flags: 0x23 expires: 2147483647
+ ccnx:/%C1.M.S.localhost/%C1.M.SRV/repository face: 6 flags: 0x3 expires: 2000000000
+ ccnx:/%C1.M.S.neighborhood/%C1.M.SRV/repository face: 6 flags: 0x3 expires: 2000000000
+ ccnx:/%C1.M.S.neighborhood face: 0 flags: 0x3 expires: 2147483647
+
+barbara-Notebook ccnd[4990] local port 63001 api 8002 start 1421356326.282043 now 1421356327.575676
+Content items: 1226 accessioned, 100 stored, 0 stale, 0 sparse, 0 duplicate, 1226 sent
+Interests: 1259 names, 0 pending, 11 propagating, 1240 noted
+Interest totals: 1240 accepted, 0 dropped, 1237 sent, 0 stuffed
+Faces
+ face: 0 flags: 0xc pending: 0
+ face: 1 flags: 0x400c pending: 0
+ face: 2 flags: 0x5012 pending: 0 local: 0.0.0.0:63001
+ face: 3 flags: 0x5010 pending: 0 local: 0.0.0.0:63001
+ face: 4 flags: 0x4042 pending: 0 local: [::]:63001
+ face: 5 flags: 0x4040 pending: 0 local: [::]:63001
+ face: 6 flags: 0xc pending: 0 activity: 415
+Face Activity Rates
+         	 Bytes/sec In/Out	 recv data/intr sent	 sent data/intr recv
+ face: 0	  1179 / 574		        0 / 0		        0 / 0
+ face: 6	4099030 / 65261		      910 / 917		        0 / 0
+Forwarding
+ ccnx:/ccnx/ping face: 0 flags: 0x3 expires: 2147483647
+ ccnx:/%C1.M.FACE face: 0 flags: 0x3 expires: 2147483647
+ ccnx:/parc.com/csl/ccn/Repos face: 6 flags: 0x3 expires: 2000000000
+ ccnx:/%C1.M.S.localhost/%C1.M.SRV/ccnd face: 0 flags: 0x3 expires: 2147483647
+ ccnx:/ face: 6 flags: 0x3 expires: 2000000000
+ ccnx:/ccnx/r%96.%171-=7F01A03E1C42ABDC28F9EF621AA9FE4D1F2232E799B2CD4C238A face: 0 flags: 0x17 expires: 2147483647
+ ccnx:/%C1.M.S.neighborhood/guest face: 0 flags: 0x3 expires: 2147483647
+ ccnx:/%C1.M.S.localhost face: 0 flags: 0x23 expires: 2147483647
+ ccnx:/%C1.M.S.localhost/%C1.M.SRV/repository face: 6 flags: 0x3 expires: 2000000000
+ ccnx:/%C1.M.S.neighborhood/%C1.M.SRV/repository face: 6 flags: 0x3 expires: 2000000000
+ ccnx:/%C1.M.S.neighborhood face: 0 flags: 0x3 expires: 2147483647
+

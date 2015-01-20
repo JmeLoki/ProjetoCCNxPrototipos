@@ -1,0 +1,153 @@
+.TH "ccn_nametree" 3 "9 Oct 2013" "Version 0.8.1" "Content-Centric Networking in C" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ccn_nametree \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "int \fBn\fP"
+.br
+.RI "\fInumber of enrolled entries \fP"
+.ti -1c
+.RI "int \fBlimit\fP"
+.br
+.RI "\fIrecommended maximum n \fP"
+.ti -1c
+.RI "\fBccn_cookie\fP \fBcookie\fP"
+.br
+.RI "\fInewest used cookie number \fP"
+.ti -1c
+.RI "unsigned \fBcookiemask\fP"
+.br
+.RI "\fIone less than a power of two \fP"
+.ti -1c
+.RI "struct ccny ** \fBnmentry_by_cookie\fP"
+.br
+.RI "\fIfor direct lookup by cookie \fP"
+.ti -1c
+.RI "struct ccny * \fBhead\fP"
+.br
+.RI "\fIhead for skiplist, etc. \fP"
+.ti -1c
+.RI "void * \fBdata\fP"
+.br
+.RI "\fIfor client use \fP"
+.ti -1c
+.RI "\fBccn_nametree_compare\fP \fBcompare\fP"
+.br
+.RI "\fIfor comparison \fP"
+.ti -1c
+.RI "\fBccn_nametree_action\fP \fBpost_enroll\fP"
+.br
+.RI "\fIcalled after enroll \fP"
+.ti -1c
+.RI "\fBccn_nametree_action\fP \fBpre_remove\fP"
+.br
+.RI "\fIcalled before removal \fP"
+.ti -1c
+.RI "\fBccn_nametree_action\fP \fBcheck\fP"
+.br
+.RI "\fIcalled to check client structures \fP"
+.ti -1c
+.RI "\fBccn_nametree_action\fP \fBfinalize\fP"
+.br
+.RI "\fIcalled from destroy \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 55 of file nametree.h.
+.SH "Field Documentation"
+.PP 
+.SS "\fBccn_nametree_action\fP \fBccn_nametree::check\fP"
+.PP
+called to check client structures 
+.PP
+Definition at line 66 of file nametree.h.
+.PP
+Referenced by ccn_nametree_check(), and ccn_nametree_create().
+.SS "\fBccn_nametree_compare\fP \fBccn_nametree::compare\fP"
+.PP
+for comparison 
+.PP
+Definition at line 63 of file nametree.h.
+.PP
+Referenced by ccn_nametree_check(), ccn_nametree_create(), ccnd_create(), and ccny_skiplist_findbefore().
+.SS "\fBccn_cookie\fP \fBccn_nametree::cookie\fP"
+.PP
+newest used cookie number 
+.PP
+Definition at line 58 of file nametree.h.
+.PP
+Referenced by ccn_nametree_check(), and ccny_enroll().
+.SS "unsigned \fBccn_nametree::cookiemask\fP"
+.PP
+one less than a power of two 
+.PP
+Definition at line 59 of file nametree.h.
+.PP
+Referenced by ccn_nametree_check(), ccn_nametree_create(), ccn_nametree_grow(), ccny_enroll(), ccny_from_cookie(), and ccny_remove().
+.SS "void* \fBccn_nametree::data\fP"
+.PP
+for client use 
+.PP
+Definition at line 62 of file nametree.h.
+.PP
+Referenced by ccn_nametree_create(), ccnd_create(), and content_preremove().
+.SS "\fBccn_nametree_action\fP \fBccn_nametree::finalize\fP"
+.PP
+called from destroy 
+.PP
+Definition at line 67 of file nametree.h.
+.PP
+Referenced by ccn_nametree_create(), ccnd_create(), and ccny_destroy().
+.SS "struct ccny* \fBccn_nametree::head\fP"
+.PP
+head for skiplist, etc. 
+.PP
+Definition at line 61 of file nametree.h.
+.PP
+Referenced by ccn_nametree_check(), ccn_nametree_create(), ccn_nametree_destroy(), ccn_nametree_first(), ccn_nametree_grow(), ccn_nametree_last(), ccn_nametree_look_le(), ccn_nametree_look_lt(), ccny_skiplist_findbefore(), ccny_skiplist_insert(), and ccny_skiplist_remove().
+.SS "int \fBccn_nametree::limit\fP"
+.PP
+recommended maximum n 
+.PP
+Definition at line 57 of file nametree.h.
+.PP
+Referenced by ccn_nametree_check(), ccn_nametree_create(), ccn_nametree_grow(), ccn_nametree_limit(), content_tree_trim(), process_incoming_content(), test_inserts_from_stdin(), and update_ex_index().
+.SS "int \fBccn_nametree::n\fP"
+.PP
+number of enrolled entries 
+.PP
+Definition at line 56 of file nametree.h.
+.PP
+Referenced by ccn_nametree_check(), ccn_nametree_create(), ccn_nametree_n(), ccnd_n_stale(), ccny_enroll(), ccny_remove(), collect_stats_html(), collect_stats_xml(), content_tree_trim(), process_incoming_content(), test_inserts_from_stdin(), and update_ex_index().
+.SS "struct ccny** \fBccn_nametree::nmentry_by_cookie\fP"
+.PP
+for direct lookup by cookie 
+.PP
+Definition at line 60 of file nametree.h.
+.PP
+Referenced by ccn_nametree_check(), ccn_nametree_create(), ccn_nametree_destroy(), ccn_nametree_grow(), ccny_enroll(), ccny_from_cookie(), and ccny_remove().
+.SS "\fBccn_nametree_action\fP \fBccn_nametree::post_enroll\fP"
+.PP
+called after enroll 
+.PP
+Definition at line 64 of file nametree.h.
+.PP
+Referenced by ccn_nametree_create(), and ccny_enroll().
+.SS "\fBccn_nametree_action\fP \fBccn_nametree::pre_remove\fP"
+.PP
+called before removal 
+.PP
+Definition at line 65 of file nametree.h.
+.PP
+Referenced by ccn_nametree_create(), ccnd_create(), and ccny_remove().
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Content-Centric Networking in C from the source code.

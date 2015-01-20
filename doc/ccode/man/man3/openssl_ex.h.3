@@ -1,0 +1,65 @@
+.TH "include/ccn/openssl_ex.h" 3 "9 Oct 2013" "Version 0.8.1" "Content-Centric Networking in C" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+include/ccn/openssl_ex.h \- 
+.PP
+OpenSSL extension interface.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBNEED_OPENSSL_1_0_COMPAT\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void * \fBEVP_PKEY_get0\fP (EVP_PKEY *pkey)"
+.br
+.ti -1c
+.RI "EVP_PKEY * \fBEVP_PKEY_new_mac_key\fP (int type, ENGINE *e, const unsigned char *key, int keylen)"
+.br
+.ti -1c
+.RI "int \fBccn_PKEY_assign\fP (EVP_PKEY *pkey, int type, char *key)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+OpenSSL extension interface. 
+
+Used to define our own OpenSSL 1.0.X extensions that will go away when we switch to OpenSSL 1.0.X
+.PP
+Part of the CCNx C Library.
+.PP
+Copyright (C) 2013 Palo Alto Research Center, Inc.
+.PP
+This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License version 2.1 as published by the Free Software Foundation. This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details. You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA. 
+.PP
+Definition in file \fBopenssl_ex.h\fP.
+.SH "Define Documentation"
+.PP 
+.SS "#define NEED_OPENSSL_1_0_COMPAT"
+.PP
+Definition at line 33 of file openssl_ex.h.
+.SH "Function Documentation"
+.PP 
+.SS "int ccn_PKEY_assign (EVP_PKEY * pkey, int type, char * key)"
+.PP
+Definition at line 81 of file ccn_signing.c.
+.PP
+Referenced by ccn_aes_keystore_init().
+.SS "void* EVP_PKEY_get0 (EVP_PKEY * pkey)"
+.PP
+Definition at line 76 of file ccn_signing.c.
+.PP
+Referenced by ccn_sigc_init(), ccn_verify_signature(), and main().
+.SS "EVP_PKEY* EVP_PKEY_new_mac_key (int type, ENGINE * e, const unsigned char * key, int keylen)"
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Content-Centric Networking in C from the source code.

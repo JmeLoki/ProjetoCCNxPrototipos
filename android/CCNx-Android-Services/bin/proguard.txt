@@ -1,0 +1,12 @@
+# view AndroidManifest.xml #generated:8
+-keep class org.ccnx.android.services.Controller { <init>(...); }
+
+# view AndroidManifest.xml #generated:17
+-keep class org.ccnx.android.services.ccnd.CcndService { <init>(...); }
+
+# view AndroidManifest.xml #generated:23
+-keep class org.ccnx.android.services.repo.RepoService { <init>(...); }
+
+# onClick res/layout/aboutview.xml #generated:36
+-keepclassmembers class * { *** aboutviewButtonListener(...); }
+

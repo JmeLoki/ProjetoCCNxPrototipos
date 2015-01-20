@@ -1,0 +1,9 @@
+# view AndroidManifest.xml #generated:17
+-keep class org.ccnx.android.examples.startup.BlockingStartup { <init>(...); }
+
+# view AndroidManifest.xml #generated:22
+-keep class org.ccnx.android.examples.startup.NonBlockingStartup { <init>(...); }
+
+# view AndroidManifest.xml #generated:9
+-keep class org.ccnx.android.examples.startup.StartScreen { <init>(...); }
+

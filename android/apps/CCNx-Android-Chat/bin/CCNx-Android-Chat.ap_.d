@@ -1,0 +1,21 @@
+/home/barbara/jaime/ccnx-0.8.1/android/apps/CCNx-Android-Chat/bin/CCNx-Android-Chat.ap_ \
+ : /home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Lib/res/drawable-hdpi/icon.png \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Lib/res/values/strings.xml \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Lib/res/drawable-mdpi/icon.png \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Lib/res/drawable-ldpi/icon.png \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Lib/res/layout/main.xml \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Lib/bin/res/drawable-hdpi/icon.png \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Lib/bin/res/drawable-mdpi/icon.png \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Lib/bin/res/drawable-ldpi/icon.png \
+/home/barbara/jaime/ccnx-0.8.1/android/apps/CCNx-Android-Chat/res/drawable-hdpi/icon.png \
+/home/barbara/jaime/ccnx-0.8.1/android/apps/CCNx-Android-Chat/res/values/strings.xml \
+/home/barbara/jaime/ccnx-0.8.1/android/apps/CCNx-Android-Chat/res/drawable-mdpi/crystal_clear_app_aim_ccnx.png \
+/home/barbara/jaime/ccnx-0.8.1/android/apps/CCNx-Android-Chat/res/drawable-ldpi/icon.png \
+/home/barbara/jaime/ccnx-0.8.1/android/apps/CCNx-Android-Chat/res/layout/ccnchat_settings.xml \
+/home/barbara/jaime/ccnx-0.8.1/android/apps/CCNx-Android-Chat/res/layout/ccnchat_chat.xml \
+/home/barbara/jaime/ccnx-0.8.1/android/apps/CCNx-Android-Chat/res/layout/chat_row.xml \
+/home/barbara/jaime/ccnx-0.8.1/android/apps/CCNx-Android-Chat/res/layout/main.xml \
+/home/barbara/jaime/ccnx-0.8.1/android/apps/CCNx-Android-Chat/bin/res/drawable-hdpi/icon.png \
+/home/barbara/jaime/ccnx-0.8.1/android/apps/CCNx-Android-Chat/bin/res/drawable-mdpi/crystal_clear_app_aim_ccnx.png \
+/home/barbara/jaime/ccnx-0.8.1/android/apps/CCNx-Android-Chat/bin/res/drawable-ldpi/icon.png \
+/home/barbara/jaime/ccnx-0.8.1/android/apps/CCNx-Android-Chat/bin/AndroidManifest.xml \

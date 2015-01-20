@@ -1,0 +1,27 @@
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Services/bin/classes.dex : \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Services/bin/classes/org/ccnx/android/services/R$string.class \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Services/bin/classes/org/ccnx/android/services/BuildConfig.class \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Services/bin/classes/org/ccnx/android/services/Controller$2.class \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Services/bin/classes/org/ccnx/android/services/Controller$ToggleOptionChangeListener.class \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Services/bin/classes/org/ccnx/android/services/ccnd/CcndService.class \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Services/bin/classes/org/ccnx/android/services/R$attr.class \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Services/bin/classes/org/ccnx/android/services/CCNxService$1.class \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Services/bin/classes/org/ccnx/android/services/R$layout.class \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Services/bin/classes/org/ccnx/android/services/repo/RepoService.class \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Services/bin/classes/org/ccnx/android/services/Controller$GetIPAddrAsyncTask.class \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Services/bin/classes/org/ccnx/android/services/R$array.class \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Services/bin/classes/org/ccnx/android/services/Controller$3.class \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Services/bin/classes/org/ccnx/android/services/R$id.class \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Services/bin/classes/org/ccnx/android/services/Controller.class \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Services/bin/classes/org/ccnx/android/services/R$menu.class \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Services/bin/classes/org/ccnx/android/services/R$drawable.class \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Services/bin/classes/org/ccnx/android/services/R.class \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Services/bin/classes/org/ccnx/android/services/Controller$1.class \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Services/bin/classes/org/ccnx/android/services/CCNxService.class \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Services/bin/classes/org/ccnx/android/ccnlib/R$string.class \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Services/bin/classes/org/ccnx/android/ccnlib/R$layout.class \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Services/bin/classes/org/ccnx/android/ccnlib/R$drawable.class \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Services/bin/classes/org/ccnx/android/ccnlib/R.class \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Services/bin/dexedLibs/classes-76939cd5d0fe2107c1dc837d8e353b4b.jar \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Services/bin/dexedLibs/annotations-8261c4c13d8756b02683bc614570d20a.jar \
+/home/barbara/jaime/ccnx-0.8.1/android/CCNx-Android-Services/bin/dexedLibs/ccn-1558da40d6d27fb7620fff2674c15404.jar \

@@ -1,0 +1,71 @@
+.TH "lib/nametreetest.c" 3 "9 Oct 2013" "Version 0.8.1" "Content-Centric Networking in C" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lib/nametreetest.c \- 
+.PP
+Unit tests for nametree functions.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFAILIF\fP(cond)   do {} while ((cond) && fatal(__func__, __LINE__))"
+.br
+.ti -1c
+.RI "#define \fBCHKSYS\fP(res)   FAILIF((res) == -1)"
+.br
+.ti -1c
+.RI "#define \fBCHKPTR\fP(p)   FAILIF((p) == NULL)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "static int \fBfatal\fP (const char *fn, int lineno)"
+.br
+.ti -1c
+.RI "int \fBtest_inserts_from_stdin\fP (void)"
+.br
+.ti -1c
+.RI "int \fBnametreetest_main\fP (int argc, char **argv)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Unit tests for nametree functions. 
+
+
+.PP
+Definition in file \fBnametreetest.c\fP.
+.SH "Define Documentation"
+.PP 
+.SS "#define CHKPTR(p)   FAILIF((p) == NULL)"
+.PP
+Definition at line 40 of file nametreetest.c.
+.SS "#define CHKSYS(res)   FAILIF((res) == -1)"
+.PP
+Definition at line 39 of file nametreetest.c.
+.SS "#define FAILIF(cond)   do {} while ((cond) && fatal(__func__, __LINE__))"
+.PP
+Definition at line 38 of file nametreetest.c.
+.SH "Function Documentation"
+.PP 
+.SS "static int fatal (const char * fn, int lineno)\fC [static]\fP"
+.PP
+Definition at line 43 of file nametreetest.c.
+.SS "int nametreetest_main (int argc, char ** argv)"
+.PP
+Definition at line 150 of file nametreetest.c.
+.SS "int test_inserts_from_stdin (void)"
+.PP
+Definition at line 53 of file nametreetest.c.
+.PP
+Referenced by nametreetest_main().
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Content-Centric Networking in C from the source code.

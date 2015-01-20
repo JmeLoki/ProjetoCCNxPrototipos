@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="barbara-Notebook" name="org.ccnx.ccn.io.CCNInputStreamTest" skipped="0" tests="5" time="58.382" timestamp="2015-01-15T21:21:57">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="src.test.dir" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/src/test" />
+    <property name="jarfile" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/ccn.jar" />
+    <property name="PROTOCOL_KEY" value="ccn.agent.protocol" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="ccnr" value="/home/barbara/jaime/ccnx-0.8.1/csrc/ccnr/ccnr" />
+    <property name="jarfile-base" value="ccn.jar" />
+    <property name="env.MAKELEVEL" value="2" />
+    <property name="ccn-libs-basedir" value="/home/barbara/jaime/ccnx-0.8.1/javasrc" />
+    <property name="env.SUDO_COMMAND" value="/usr/bin/make test" />
+    <property name="ant.file.type.java-ccnx" value="file" />
+    <property name="REPO_GLOBAL" value="/parc.com/csl/ccn/repositories/TestRepository" />
+    <property name="CCND_CAP" value="50000" />
+    <property name="lib" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/lib" />
+    <property name="SYNC_NOISY" value="FINEST" />
+    <property name="os.name" value="Linux" />
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/classes" />
+    <property name="env.PWD" value="/home/barbara/jaime/ccnx-0.8.1/javasrc" />
+    <property name="JAVA_MEMORY" value="1g" />
+    <property name="env.LANG" value="pt_BR.UTF-8" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ccnd" value="/home/barbara/jaime/ccnx-0.8.1/csrc/ccnd/ccnd" />
+    <property name="ant.home" value="/usr/share/ant" />
+    <property name="java.runtime.version" value="1.7.0_65-b32" />
+    <property name="org.ccnx.ccn.LogDir" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/testout/log" />
+    <property name="env.DISPLAY" value=":0" />
+    <property name="REPO_ROOT" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/testout/repotest" />
+    <property name="user.name" value="root" />
+    <property name="CCND_CMD" value="../../csrc/ccnd/ccnd" />
+    <property name="env.USER" value="root" />
+    <property name="env.SHELL" value="/bin/bash" />
+    <property name="DEBUG_OPTIONS" value="" />
+    <property name="env.PATH" value="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin" />
+    <property name="user.language" value="pt" />
+    <property name="build" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/build" />
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64" />
+    <property name="ant.project.default-target" value="jar" />
+    <property name="ant.project.name" value="java-ccnx" />
+    <property name="java.version" value="1.7.0_65" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="testout" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/testout" />
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="showoutput" value="no" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="USE_KEY_CONFIG_VAL" value="false" />
+    <property name="repo2" value="true" />
+    <property name="java.class.version" value="51.0" />
+    <property name="TOP_DIR" value="../src/systemtest" />
+    <property name="user.country" value="BR" />
+    <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="env.LOGNAME" value="root" />
+    <property name="ant.file" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/build.xml" />
+    <property name="os.version" value="3.16.0-29-generic" />
+    <property name="REPO_LOCAL_ROOT" value="repotest" />
+    <property name="ant.file.type.ccn-libs" value="file" />
+    <property name="REPO_LOCAL" value="TestRepository" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="24.65-b04" />
+    <property name="env.LANGUAGE" value="pt_BR:pt:en" />
+    <property name="EXIT_ON_ERROR" value="org.ccnx.ExitOnNetworkError" />
+    <property name="ant.library.dir" value="/usr/share/ant/lib" />
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+    <property name="env.TERM" value="xterm" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="env.SUDO_UID" value="1000" />
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+    <property name="build-excludes" value="bin/**, log/**, lib/**, libsrc/**, repository/**, build/**, testout/**, ktrace.out, CCN_DEBUG_DATA/**" />
+    <property name="user.home" value="/root" />
+    <property name="env.OLDPWD" value="/home/barbara/jaime/ccnx-0.8.1" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="env.MFLAGS" value="-w" />
+    <property name="LOGDIR_KEY" value="org.ccnx.ccn.LogDir" />
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="org.ccnx.ExitOnNetworkError" value="true" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="CCND_DEBUG" value="87" />
+    <property name="env.MAKEFLAGS" value="w" />
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.4 compiled on May 9 2014" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/home/barbara/jaime/ccnx-0.8.1/javasrc/junittestcases3871688203603075766.properties skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/barbara/jaime/ccnx-0.8.1/javasrc/testout/IGNORETHIS.xml crashfile=/home/barbara/jaime/ccnx-0.8.1/javasrc/junitvmwatcher4337149314392912869.properties propsfile=/home/barbara/jaime/ccnx-0.8.1/javasrc/junit3231293529083457333.properties" />
+    <property name="java.class.path" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/lib/bcprov-jdk16-143.jar:/home/barbara/jaime/ccnx-0.8.1/javasrc/lib/kxml2-2.3.0.jar:/home/barbara/jaime/ccnx-0.8.1/javasrc/lib/junit-4.3.1.jar:/home/barbara/jaime/ccnx-0.8.1/javasrc/ccn.jar:/usr/share/java/ant-launcher-1.9.4.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+    <property name="xml-jar" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/lib/kxml2-2.3.0.jar" />
+    <property name="junit-jar" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/lib/junit-4.3.1.jar" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="bcprov-jar" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/lib/bcprov-jdk16-143.jar" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.7" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="cmddir" value="/home/barbara/jaime/ccnx-0.8.1/csrc/cmd" />
+    <property name="env.HOME" value="/home/barbara" />
+    <property name="env.LS_COLORS" value="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="repozip" value="repotest.zip" />
+    <property name="ccn.agent.port" value="63000" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="UNIT_TOP_DIR" value="../src/test" />
+    <property name="ant.file.ccn-libs" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/libs.xml" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext" />
+    <property name="env.SUDO_USER" value="barbara" />
+    <property name="user.dir" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/testout" />
+    <property name="env.XAUTHORITY" value="/home/barbara/.Xauthority" />
+    <property name="ant.file.java-ccnx" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/build.xml" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+    <property name="env.COLORTERM" value="gnome-terminal" />
+    <property name="TEST_PORT" value="63000" />
+    <property name="basedir" value="/home/barbara/jaime/ccnx-0.8.1/javasrc" />
+    <property name="ant.java.version" value="1.7" />
+    <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
+    <property name="env.USERNAME" value="root" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="env.MAIL" value="/var/mail/root" />
+    <property name="src.systemtest.dir" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/src/systemtest" />
+    <property name="env.SUDO_GID" value="1000" />
+    <property name="testoutlog" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/testout/log" />
+    <property name="java.specification.version" value="1.7" />
+    <property name="src.dir" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/src/main" />
+    <property name="ant.project.invoked-targets" value="test" />
+    <property name="USE_KEY_CONFIG_KEY" value="org.ccnx.config.UseKeyConfiguration" />
+    <property name="REPO_ROOT2" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/testout/repotest2" />
+    <property name="org.ccnx.config.UseKeyConfiguration" value="false" />
+  </properties>
+  <testcase classname="org.ccnx.ccn.io.CCNInputStreamTest" name="testBlocking" time="12.24" />
+  <testcase classname="org.ccnx.ccn.io.CCNInputStreamTest" name="testBlockAfterFirstSegment" time="12.12" />
+  <testcase classname="org.ccnx.ccn.io.CCNInputStreamTest" name="testBasename" time="0.01" />
+  <testcase classname="org.ccnx.ccn.io.CCNInputStreamTest" name="testKeyRetrieval" time="12.471" />
+  <testcase classname="org.ccnx.ccn.io.CCNInputStreamTest" name="testTimeouts" time="21.02" />
+  <system-out><![CDATA[Writing log records to /home/barbara/jaime/ccnx-0.8.1/javasrc/testout/log/ccn_15-01-15-182157-5811.log
+]]></system-out>
+  <system-err><![CDATA[Jan 15, 2015 6:21:57 PM org.ccnx.ccn.CCNTestHelper <init>
+INFORMAÇÕES: Initializing test org.ccnx.ccn.io.CCNInputStreamTest, data can be found under /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57.
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadKeyStore
+INFORMAÇÕES: Loading CCN key store from /root/.ccnx/.ccnx_keystore...last modified 1420721633000(ms).
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager readKeyStore
+INFORMAÇÕES: Loading CCN key store...
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadKeyStore
+INFORMAÇÕES: Loaded CCN key store from /root/.ccnx/.ccnx_keystore...version 2015-01-08 09:53:53.0 ms: 1420721633000
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadValuesFromKeystore
+INFORMAÇÕES: Loading key store file:/root/.ccnx/.ccnx_keystore version 2015-01-08 09:53:53.0 version component =FD054AE7DE1000 millis 1420721633000
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadValuesFromKeystore
+INFORMAÇÕES: Default key ID for user root: kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.security.keys.SecureKeyCache loadKeyStore
+INFORMAÇÕES: KeyCache: loading signing key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=, remembering public key in public key cache.
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.security.keys.SecureKeyCache addMySigningKey
+INFORMAÇÕES: SecureKeyCache: adding my private key 9234adec47d19e3e6a2af362d44e09ab6b71f43b1900ba0622fb45f2a5b7d9f6
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadValuesFromConfiguration
+INFORMAÇÕES: Not loading key manager configuration data in response to user configuration variable.
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+ADVERTÊNCIA: NetworkManager 1: Non-standard CCN agent port 63000 per property ccn.agent.port
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+INFORMAÇÕES: NetworkManager 1: Contacting CCN agent at localhost:63000
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.CCNNetworkChannel <init>
+INFORMAÇÕES: NetworkChannel 1: Starting up CCNNetworkChannel using TCP.
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 1: open()
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 1: Contacting CCN agent at localhost:63000 on local port 40590
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.CCNHandle <init>
+INFORMAÇÕES: CCNHandle 1: Handle is now open
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.CCNNetworkManager run
+INFORMAÇÕES: NetworkManager 1: CCNNetworkManager processing thread started for port: 63000
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.security.keys.PublicKeyCache getPublicKeyObject
+INFORMAÇÕES: Retrieved key 1jYqtWb54a3hYuudALlY+uWoa+H6XEFakodAe1T6/ws= using locator NAME: /%C1.M.S.localhost/%C1.M.SRV/ccnd/KEY/%C1.M.K=00D6362AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B/=FD054B82D339C9.
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.security.keys.PublicKeyCache getPublicKeyObject
+INFORMAÇÕES: Retrieved key 1jYqtWb54a3hYuudALlY+uWoa+H6XEFakodAe1T6/ws= using locator NAME: /%C1.M.S.localhost/%C1.M.SRV/ccnd/KEY/%C1.M.K=00D6362AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B/=FD054B82D339C9 - got /%C1.M.S.localhost/%C1.M.SRV/ccnd/KEY/%C1.M.K=00D6362AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B/=FD054B82D339C9/=00
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.io.CCNAbstractInputStream <init>
+INFORMAÇÕES: CCNAbstractInputStream: /%C1.M.S.localhost/%C1.M.SRV/ccnd/KEY/%C1.M.K=00D6362AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B/=FD054B82D339C9 segment 0
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.security.keys.PublicKeyCache getPublicKeyObject
+INFORMAÇÕES: Retrieved public key using name: /%C1.M.S.localhost/%C1.M.SRV/ccnd/KEY/%C1.M.K=00D6362AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B/=FD054B82D339C9
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.security.keys.PublicKeyCache getPublicKey
+INFORMAÇÕES: Retrieved key 1jYqtWb54a3hYuudALlY+uWoa+H6XEFakodAe1T6/ws= from network with locator NAME: /%C1.M.S.localhost/%C1.M.SRV/ccnd/KEY/%C1.M.K=00D6362AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B/=FD054B82D339C9!
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.config.PlatformConfiguration <clinit>
+INFORMAÇÕES: BC provider: BC
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.config.PlatformConfiguration <clinit>
+INFORMAÇÕES: Provider info: BouncyCastle Security Provider v1.43 version: 1.43
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.config.PlatformConfiguration <clinit>
+INFORMAÇÕES: java.vm.name = OpenJDK 64-Bit Server VM
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: Flow controller addNameSpace: added namespace: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator KEY: kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY= for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.KeyManager publishKey
+INFORMAÇÕES: publishKey: key not previously published, making new key object /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6 with version 2015-01-08 09:53:53.0 displayed as =FD054AE7DE1000
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.io.CCNAbstractOutputStream <init>
+INFORMAÇÕES: CCNAbstractOutputStream: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 blocksize is 4096
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.io.CCNAbstractOutputStream startWrite
+INFORMAÇÕES: CCNAbstractOutputStream: startWrite -- searching for keys.
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.profiles.security.access.AccessControlManager keysForOutput
+INFORMAÇÕES: keysForOutput: found an acm: (null)
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 basenameindex =00; 162 bytes written, holding back 162 flushing final blocks? false.
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 0
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 basenameindex =00; 162 bytes written, holding back 0 flushing final blocks? true.
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 1
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.io.CCNOutputStream close
+INFORMAÇÕES: CCNOutputStream close: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.KeyManager publishKey
+INFORMAÇÕES: Published key Sun RSA public key, 1024 bits
+  modulus: 110921138301212145392004253279917995950258669333863662056871643271976607790547016315269834949391078948318860805625603844022322721344201027571021917379901461301585327002407293702110801478794762434747364279565414349376821790585553127606947398240644540011141381284624017866806283409148649866001587866016004087361
+  public exponent: 65537 to name /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 with key locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga; ephemeral digest =F8C8FB7992ECB6E6D383474CB88178C4205E5DCEA3E44013B14EAEB5395BDF17.
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager publishKey
+INFORMAÇÕES: publishKey: published key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+ under specified key name /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000
+ key locator: NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager publishKey
+INFORMAÇÕES: publishKey: storing key locator kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY= for key NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+ADVERTÊNCIA: NetworkManager 2: Non-standard CCN agent port 63000 per property ccn.agent.port
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+INFORMAÇÕES: NetworkManager 2: Contacting CCN agent at localhost:63000
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.CCNNetworkChannel <init>
+INFORMAÇÕES: NetworkChannel 2: Starting up CCNNetworkChannel using TCP.
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 2: open()
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 2: Contacting CCN agent at localhost:63000 on local port 40591
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.CCNHandle <init>
+INFORMAÇÕES: CCNHandle 2: Handle is now open
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+ADVERTÊNCIA: NetworkManager 3: Non-standard CCN agent port 63000 per property ccn.agent.port
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+INFORMAÇÕES: NetworkManager 3: Contacting CCN agent at localhost:63000
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.CCNNetworkChannel <init>
+INFORMAÇÕES: NetworkChannel 3: Starting up CCNNetworkChannel using TCP.
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 3: open()
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 3: Contacting CCN agent at localhost:63000 on local port 40592
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.CCNHandle <init>
+INFORMAÇÕES: CCNHandle 3: Handle is now open
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.io.CCNInputStreamTest testBlocking
+INFORMAÇÕES: Started testBlocking
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.io.CCNAbstractInputStream <init>
+INFORMAÇÕES: CCNAbstractInputStream: /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2Fblocking segment 0
+Jan 15, 2015 6:21:58 PM org.ccnx.ccn.impl.CCNNetworkManager run
+INFORMAÇÕES: NetworkManager 3: CCNNetworkManager processing thread started for port: 63000
+Jan 15, 2015 6:22:10 PM org.ccnx.ccn.impl.CCNFlowControl <init>
+INFORMAÇÕES: adding namespace: /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2Fblocking
+Jan 15, 2015 6:22:10 PM org.ccnx.ccn.impl.CCNNetworkManager run
+INFORMAÇÕES: NetworkManager 2: CCNNetworkManager processing thread started for port: 63000
+Jan 15, 2015 6:22:10 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:22:10 PM org.ccnx.ccn.io.CCNAbstractOutputStream <init>
+INFORMAÇÕES: CCNAbstractOutputStream: /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2Fblocking blocksize is 4096
+Jan 15, 2015 6:22:10 PM org.ccnx.ccn.io.CCNAbstractOutputStream startWrite
+INFORMAÇÕES: CCNAbstractOutputStream: startWrite -- searching for keys.
+Jan 15, 2015 6:22:10 PM org.ccnx.ccn.profiles.security.access.AccessControlManager keysForOutput
+INFORMAÇÕES: keysForOutput: found an acm: (null)
+Jan 15, 2015 6:22:10 PM org.ccnx.ccn.io.CCNOutputStream writeToNetwork
+INFORMAÇÕES: Adding namespace in writeToNetwork. Namespace: /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2Fblocking
+Jan 15, 2015 6:22:10 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2Fblocking already monitoring prefix: /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2Fblocking
+Jan 15, 2015 6:22:10 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2Fblocking basenameindex =0004; 0 bytes written, holding back 0 flushing final blocks? true.
+Jan 15, 2015 6:22:10 PM org.ccnx.ccn.impl.CCNSegmenter outputCurrentBlocks
+INFORMAÇÕES: flush: putting merkle tree to the network, name starts with /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2Fblocking/=00; 5 blocks
+Jan 15, 2015 6:22:10 PM org.ccnx.ccn.impl.security.crypto.CCNMerkleTreeSigner signBlocks
+INFORMAÇÕES: Signed tree of 5 leaves, 9 nodes.
+Jan 15, 2015 6:22:10 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 5
+Jan 15, 2015 6:22:10 PM org.ccnx.ccn.io.CCNOutputStream close
+INFORMAÇÕES: CCNOutputStream close: /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2Fblocking
+Jan 15, 2015 6:22:10 PM org.ccnx.ccn.io.CCNAbstractInputStream close
+INFORMAÇÕES: CCNAbstractInputStream: close /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2Fblocking:  shutting down pipelining
+Jan 15, 2015 6:22:10 PM org.ccnx.ccn.io.CCNInputStreamTest testBlocking
+INFORMAÇÕES: Completed testBlocking
+Jan 15, 2015 6:22:10 PM org.ccnx.ccn.io.CCNInputStreamTest testBlockAfterFirstSegment
+INFORMAÇÕES: Started testBlockAfterFirstSegment
+Jan 15, 2015 6:22:10 PM org.ccnx.ccn.io.CCNAbstractInputStream <init>
+INFORMAÇÕES: CCNAbstractInputStream: /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2FblockAfterFirst segment 0
+Jan 15, 2015 6:22:10 PM org.ccnx.ccn.impl.CCNFlowControl <init>
+INFORMAÇÕES: adding namespace: /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2FblockAfterFirst
+Jan 15, 2015 6:22:10 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:22:10 PM org.ccnx.ccn.io.CCNAbstractOutputStream <init>
+INFORMAÇÕES: CCNAbstractOutputStream: /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2FblockAfterFirst blocksize is 4096
+Jan 15, 2015 6:22:10 PM org.ccnx.ccn.io.CCNAbstractOutputStream startWrite
+INFORMAÇÕES: CCNAbstractOutputStream: startWrite -- searching for keys.
+Jan 15, 2015 6:22:10 PM org.ccnx.ccn.profiles.security.access.AccessControlManager keysForOutput
+INFORMAÇÕES: keysForOutput: found an acm: (null)
+Jan 15, 2015 6:22:10 PM org.ccnx.ccn.io.CCNOutputStream writeToNetwork
+INFORMAÇÕES: Adding namespace in writeToNetwork. Namespace: /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2FblockAfterFirst
+Jan 15, 2015 6:22:10 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2FblockAfterFirst already monitoring prefix: /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2FblockAfterFirst
+Jan 15, 2015 6:22:10 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2FblockAfterFirst basenameindex =0004; 0 bytes written, holding back 0 flushing final blocks? false.
+Jan 15, 2015 6:22:10 PM org.ccnx.ccn.impl.CCNSegmenter outputCurrentBlocks
+INFORMAÇÕES: flush: putting merkle tree to the network, name starts with /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2FblockAfterFirst/=00; 4 blocks
+Jan 15, 2015 6:22:10 PM org.ccnx.ccn.impl.security.crypto.CCNMerkleTreeSigner signBlocks
+INFORMAÇÕES: Signed tree of 4 leaves, 7 nodes.
+Jan 15, 2015 6:22:10 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 4
+Jan 15, 2015 6:22:14 PM org.ccnx.ccn.impl.CCNFlowControl removeUnmatchedInterests
+INFORMAÇÕES: Removing unmatched interest /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2FblockAfterFirst/=0004
+Jan 15, 2015 6:22:18 PM org.ccnx.ccn.impl.CCNFlowControl removeUnmatchedInterests
+INFORMAÇÕES: Removing unmatched interest /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2FblockAfterFirst/=0004
+Jan 15, 2015 6:22:18 PM org.ccnx.ccn.impl.CCNFlowControl removeUnmatchedInterests
+INFORMAÇÕES: Removing unmatched interest /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2FblockAfterFirst/=0005
+Jan 15, 2015 6:22:22 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2FblockAfterFirst basenameindex =0008; 0 bytes written, holding back 0 flushing final blocks? true.
+Jan 15, 2015 6:22:22 PM org.ccnx.ccn.impl.CCNSegmenter outputCurrentBlocks
+INFORMAÇÕES: flush: putting merkle tree to the network, name starts with /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2FblockAfterFirst/=0004; 5 blocks
+Jan 15, 2015 6:22:22 PM org.ccnx.ccn.impl.CCNFlowControl removeUnmatchedInterests
+INFORMAÇÕES: Removing unmatched interest /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2FblockAfterFirst/=0004
+Jan 15, 2015 6:22:22 PM org.ccnx.ccn.impl.security.crypto.CCNMerkleTreeSigner signBlocks
+INFORMAÇÕES: Signed tree of 5 leaves, 9 nodes.
+Jan 15, 2015 6:22:22 PM org.ccnx.ccn.impl.CCNFlowControl removeUnmatchedInterests
+INFORMAÇÕES: Removing unmatched interest /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2FblockAfterFirst/=0005
+Jan 15, 2015 6:22:22 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 9
+Jan 15, 2015 6:22:22 PM org.ccnx.ccn.io.CCNOutputStream close
+INFORMAÇÕES: CCNOutputStream close: /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2FblockAfterFirst
+Jan 15, 2015 6:22:22 PM org.ccnx.ccn.io.CCNAbstractInputStream close
+INFORMAÇÕES: CCNAbstractInputStream: close /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2FblockAfterFirst:  shutting down pipelining
+Jan 15, 2015 6:22:22 PM org.ccnx.ccn.io.CCNInputStreamTest testBlockAfterFirstSegment
+INFORMAÇÕES: Completed testBlockAfterFirstSegment
+Jan 15, 2015 6:22:22 PM org.ccnx.ccn.io.CCNInputStreamTest testBasename
+INFORMAÇÕES: Started testBasename
+Jan 15, 2015 6:22:22 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:22:22 PM org.ccnx.ccn.io.CCNAbstractInputStream <init>
+INFORMAÇÕES: CCNAbstractInputStream: /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testBasename/=FD054B82F8EBE3 segment 0
+Jan 15, 2015 6:22:22 PM org.ccnx.ccn.io.CCNInputStreamTest testBasename
+INFORMAÇÕES: Completed testBasename
+Jan 15, 2015 6:22:22 PM org.ccnx.ccn.io.CCNInputStreamTest testKeyRetrieval
+INFORMAÇÕES: Started testKeyRetrieval
+Jan 15, 2015 6:22:22 PM org.ccnx.ccn.utils.CreateUserData <init>
+INFORMAÇÕES: Loading user: Alice from /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/TestInputUser/Alice
+Jan 15, 2015 6:22:22 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+ADVERTÊNCIA: NetworkManager 4: Non-standard CCN agent port 63000 per property ccn.agent.port
+Jan 15, 2015 6:22:22 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+INFORMAÇÕES: NetworkManager 4: Contacting CCN agent at localhost:63000
+Jan 15, 2015 6:22:22 PM org.ccnx.ccn.impl.CCNNetworkChannel <init>
+INFORMAÇÕES: NetworkChannel 4: Starting up CCNNetworkChannel using TCP.
+Jan 15, 2015 6:22:22 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 4: open()
+Jan 15, 2015 6:22:22 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 4: Contacting CCN agent at localhost:63000 on local port 40594
+Jan 15, 2015 6:22:22 PM org.ccnx.ccn.CCNHandle <init>
+INFORMAÇÕES: CCNHandle 4: Handle is now open
+Jan 15, 2015 6:22:22 PM org.ccnx.ccn.impl.CCNNetworkManager run
+INFORMAÇÕES: NetworkManager 4: CCNNetworkManager processing thread started for port: 63000
+Jan 15, 2015 6:22:28 PM org.ccnx.ccn.profiles.VersioningProfile getLatestVersion
+INFORMAÇÕES: getFirstBlockOfLatestVersion: no block available for later version of /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/TestInputUser/Alice
+Jan 15, 2015 6:22:28 PM org.ccnx.ccn.impl.security.keys.NetworkKeyManager loadKeyStore
+INFORMAÇÕES: Creating new CCN key store.../ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/TestInputUser/Alice
+Jan 15, 2015 6:22:28 PM org.ccnx.ccn.impl.CCNFlowControl <init>
+INFORMAÇÕES: adding namespace: /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/TestInputUser/Alice
+Jan 15, 2015 6:22:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:22:28 PM org.ccnx.ccn.io.CCNAbstractOutputStream <init>
+INFORMAÇÕES: CCNAbstractOutputStream: /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/TestInputUser/Alice/=FD054B82F94CB4 blocksize is 4096
+Jan 15, 2015 6:22:28 PM org.ccnx.ccn.io.CCNAbstractOutputStream startWrite
+INFORMAÇÕES: CCNAbstractOutputStream: startWrite -- searching for keys.
+Jan 15, 2015 6:22:28 PM org.ccnx.ccn.profiles.security.access.AccessControlManager keysForOutput
+INFORMAÇÕES: keysForOutput: found an acm: (null)
+Jan 15, 2015 6:22:28 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/TestInputUser/Alice/=FD054B82F94CB4 basenameindex =00; 1672 bytes written, holding back 1672 flushing final blocks? false.
+Jan 15, 2015 6:22:28 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 0
+Jan 15, 2015 6:22:28 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/TestInputUser/Alice/=FD054B82F94CB4 basenameindex =00; 1672 bytes written, holding back 0 flushing final blocks? true.
+Jan 15, 2015 6:22:28 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 1
+Jan 15, 2015 6:22:28 PM org.ccnx.ccn.io.CCNOutputStream close
+INFORMAÇÕES: CCNOutputStream close: /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/TestInputUser/Alice/=FD054B82F94CB4
+Jan 15, 2015 6:22:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadValuesFromKeystore
+INFORMAÇÕES: Loading key store ccnx:/ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/TestInputUser/Alice version 2015-01-15 18:22:28.793945312 version component =FD054B82F94CB4 millis 1421356948793
+Jan 15, 2015 6:22:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadValuesFromKeystore
+INFORMAÇÕES: Default key ID for user Alice: UuKrO8zb9rruTqaZFOXniK3AWigEOxeQKLpS3AXEBMk=
+Jan 15, 2015 6:22:28 PM org.ccnx.ccn.impl.security.keys.SecureKeyCache loadKeyStore
+INFORMAÇÕES: KeyCache: loading signing key UuKrO8zb9rruTqaZFOXniK3AWigEOxeQKLpS3AXEBMk=, remembering public key in public key cache.
+Jan 15, 2015 6:22:28 PM org.ccnx.ccn.impl.security.keys.SecureKeyCache addMySigningKey
+INFORMAÇÕES: SecureKeyCache: adding my private key 52e2ab3bccdbf6baee4ea69914e5e788adc05a28043b179028ba52dc05c404c9
+Jan 15, 2015 6:22:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadValuesFromConfiguration
+INFORMAÇÕES: Not loading key manager configuration data in response to user configuration variable.
+Jan 15, 2015 6:22:28 PM org.ccnx.ccn.impl.security.keys.PublicKeyCache getPublicKey
+INFORMAÇÕES: Repository looking up a key that is contained in the locator...
+Jan 15, 2015 6:22:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: Flow controller addNameSpace: added namespace: /ccnx.org/Users/Alice/Keys/%C1.M.K%00R=E2AB3BCCDBF6BAEE4EA69914E5E788ADC05A28043B179028BA52DC05C404C9/=FD054B82F94CB4
+Jan 15, 2015 6:22:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator KEY: UuKrO8zb9rruTqaZFOXniK3AWigEOxeQKLpS3AXEBMk= for key UuKrO8zb9rruTqaZFOXniK3AWigEOxeQKLpS3AXEBMk=
+Jan 15, 2015 6:22:28 PM org.ccnx.ccn.KeyManager publishKey
+INFORMAÇÕES: publishKey: key not previously published, making new key object /ccnx.org/Users/Alice/Keys/%C1.M.K%00R=E2AB3BCCDBF6BAEE4EA69914E5E788ADC05A28043B179028BA52DC05C404C9 with version 2015-01-15 18:22:28.793945312 displayed as =FD054B82F94CB4
+Jan 15, 2015 6:22:28 PM org.ccnx.ccn.io.CCNAbstractOutputStream <init>
+INFORMAÇÕES: CCNAbstractOutputStream: /ccnx.org/Users/Alice/Keys/%C1.M.K%00R=E2AB3BCCDBF6BAEE4EA69914E5E788ADC05A28043B179028BA52DC05C404C9/=FD054B82F94CB4 blocksize is 4096
+Jan 15, 2015 6:22:28 PM org.ccnx.ccn.io.CCNAbstractOutputStream startWrite
+INFORMAÇÕES: CCNAbstractOutputStream: startWrite -- searching for keys.
+Jan 15, 2015 6:22:28 PM org.ccnx.ccn.profiles.security.access.AccessControlManager keysForOutput
+INFORMAÇÕES: keysForOutput: found an acm: (null)
+Jan 15, 2015 6:22:28 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /ccnx.org/Users/Alice/Keys/%C1.M.K%00R=E2AB3BCCDBF6BAEE4EA69914E5E788ADC05A28043B179028BA52DC05C404C9/=FD054B82F94CB4 basenameindex =00; 162 bytes written, holding back 162 flushing final blocks? false.
+Jan 15, 2015 6:22:28 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 0
+Jan 15, 2015 6:22:28 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /ccnx.org/Users/Alice/Keys/%C1.M.K%00R=E2AB3BCCDBF6BAEE4EA69914E5E788ADC05A28043B179028BA52DC05C404C9/=FD054B82F94CB4 basenameindex =00; 162 bytes written, holding back 0 flushing final blocks? true.
+Jan 15, 2015 6:22:28 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 1
+Jan 15, 2015 6:22:28 PM org.ccnx.ccn.io.CCNOutputStream close
+INFORMAÇÕES: CCNOutputStream close: /ccnx.org/Users/Alice/Keys/%C1.M.K%00R=E2AB3BCCDBF6BAEE4EA69914E5E788ADC05A28043B179028BA52DC05C404C9/=FD054B82F94CB4
+Jan 15, 2015 6:22:28 PM org.ccnx.ccn.KeyManager publishKey
+INFORMAÇÕES: Published key RSA Public Key
+            modulus: e8a8b665ee3a14720060232f42f7cb87c30075e5e8cb962b27ad37c451a8430103a71b0e29225f91b719d2ee5c90b6939f7855ff165f0980f20272a6440cfa678b02b922993a5c5bbe7ce4cc043626aabc73eb0eb60c5b1a180dbfc74d0c33e2b00cf34a59c4587946b2190986dbad23263a74699f7d7139fefd128be00a65b9
+    public exponent: 10001
+ to name /ccnx.org/Users/Alice/Keys/%C1.M.K%00R=E2AB3BCCDBF6BAEE4EA69914E5E788ADC05A28043B179028BA52DC05C404C9/=FD054B82F94CB4 with key locator NAME: /ccnx.org/Users/Alice/Keys/%C1.M.K%00R=E2AB3BCCDBF6BAEE4EA69914E5E788ADC05A28043B179028BA52DC05C404C9/=FD054B82F94CB4 KEY:kn2lctspmvmnbn4t9kp2jiuf25do1d2g11r2u82heiirg2s8169; ephemeral digest =E5B4A6D518DB760DFB6B65C6B3D52307D66EE1DBCD45D1A2F20F2C4450181CA4.
+Jan 15, 2015 6:22:29 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager publishKey
+INFORMAÇÕES: publishKey: published key UuKrO8zb9rruTqaZFOXniK3AWigEOxeQKLpS3AXEBMk=
+ under specified key name /ccnx.org/Users/Alice/Keys/%C1.M.K%00R=E2AB3BCCDBF6BAEE4EA69914E5E788ADC05A28043B179028BA52DC05C404C9/=FD054B82F94CB4
+ key locator: NAME: /ccnx.org/Users/Alice/Keys/%C1.M.K%00R=E2AB3BCCDBF6BAEE4EA69914E5E788ADC05A28043B179028BA52DC05C404C9/=FD054B82F94CB4 KEY:kn2lctspmvmnbn4t9kp2jiuf25do1d2g11r2u82heiirg2s8169
+Jan 15, 2015 6:22:29 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager publishKey
+INFORMAÇÕES: publishKey: storing key locator UuKrO8zb9rruTqaZFOXniK3AWigEOxeQKLpS3AXEBMk= for key NAME: /ccnx.org/Users/Alice/Keys/%C1.M.K%00R=E2AB3BCCDBF6BAEE4EA69914E5E788ADC05A28043B179028BA52DC05C404C9/=FD054B82F94CB4 KEY:kn2lctspmvmnbn4t9kp2jiuf25do1d2g11r2u82heiirg2s8169
+Jan 15, 2015 6:22:29 PM org.ccnx.ccn.utils.CreateUserData <init>
+INFORMAÇÕES: Loading user: Bob from /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/TestInputUser/Bob
+Jan 15, 2015 6:22:29 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+ADVERTÊNCIA: NetworkManager 5: Non-standard CCN agent port 63000 per property ccn.agent.port
+Jan 15, 2015 6:22:29 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+INFORMAÇÕES: NetworkManager 5: Contacting CCN agent at localhost:63000
+Jan 15, 2015 6:22:29 PM org.ccnx.ccn.impl.CCNNetworkChannel <init>
+INFORMAÇÕES: NetworkChannel 5: Starting up CCNNetworkChannel using TCP.
+Jan 15, 2015 6:22:29 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 5: open()
+Jan 15, 2015 6:22:29 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 5: Contacting CCN agent at localhost:63000 on local port 40595
+Jan 15, 2015 6:22:29 PM org.ccnx.ccn.CCNHandle <init>
+INFORMAÇÕES: CCNHandle 5: Handle is now open
+Jan 15, 2015 6:22:29 PM org.ccnx.ccn.impl.CCNNetworkManager run
+INFORMAÇÕES: NetworkManager 5: CCNNetworkManager processing thread started for port: 63000
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.profiles.VersioningProfile getLatestVersion
+INFORMAÇÕES: getFirstBlockOfLatestVersion: no block available for later version of /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/TestInputUser/Bob
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.impl.security.keys.NetworkKeyManager loadKeyStore
+INFORMAÇÕES: Creating new CCN key store.../ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/TestInputUser/Bob
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.impl.CCNFlowControl <init>
+INFORMAÇÕES: adding namespace: /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/TestInputUser/Bob
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.io.CCNAbstractOutputStream <init>
+INFORMAÇÕES: CCNAbstractOutputStream: /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/TestInputUser/Bob/=FD054B82F9B04A blocksize is 4096
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.io.CCNAbstractOutputStream startWrite
+INFORMAÇÕES: CCNAbstractOutputStream: startWrite -- searching for keys.
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.profiles.security.access.AccessControlManager keysForOutput
+INFORMAÇÕES: keysForOutput: found an acm: (null)
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/TestInputUser/Bob/=FD054B82F9B04A basenameindex =00; 1672 bytes written, holding back 1672 flushing final blocks? false.
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 0
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/TestInputUser/Bob/=FD054B82F9B04A basenameindex =00; 1672 bytes written, holding back 0 flushing final blocks? true.
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 1
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.io.CCNOutputStream close
+INFORMAÇÕES: CCNOutputStream close: /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/TestInputUser/Bob/=FD054B82F9B04A
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadValuesFromKeystore
+INFORMAÇÕES: Loading key store ccnx:/ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/TestInputUser/Bob version 2015-01-15 18:22:35.018066406 version component =FD054B82F9B04A millis 1421356955018
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadValuesFromKeystore
+INFORMAÇÕES: Default key ID for user Bob: tuSnd1E+hFzIyLMWNk3jAuVZcSEspdefed6Kd3DxiUI=
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.impl.security.keys.SecureKeyCache loadKeyStore
+INFORMAÇÕES: KeyCache: loading signing key tuSnd1E+hFzIyLMWNk3jAuVZcSEspdefed6Kd3DxiUI=, remembering public key in public key cache.
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.impl.security.keys.SecureKeyCache addMySigningKey
+INFORMAÇÕES: SecureKeyCache: adding my private key b6e4a777513e845cc8c8b316364de302e55971212ca5d79f79de8a7770f18942
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadValuesFromConfiguration
+INFORMAÇÕES: Not loading key manager configuration data in response to user configuration variable.
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.impl.security.keys.PublicKeyCache getPublicKey
+INFORMAÇÕES: Repository looking up a key that is contained in the locator...
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: Flow controller addNameSpace: added namespace: /ccnx.org/Users/Bob/Keys/%C1.M.K=00B6E4A777513E845CC8C8B316364DE302E55971212CA5D79F79DE8A7770F18942/=FD054B82F9B04A
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator KEY: tuSnd1E+hFzIyLMWNk3jAuVZcSEspdefed6Kd3DxiUI= for key tuSnd1E+hFzIyLMWNk3jAuVZcSEspdefed6Kd3DxiUI=
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.KeyManager publishKey
+INFORMAÇÕES: publishKey: key not previously published, making new key object /ccnx.org/Users/Bob/Keys/%C1.M.K=00B6E4A777513E845CC8C8B316364DE302E55971212CA5D79F79DE8A7770F18942 with version 2015-01-15 18:22:35.018066406 displayed as =FD054B82F9B04A
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.io.CCNAbstractOutputStream <init>
+INFORMAÇÕES: CCNAbstractOutputStream: /ccnx.org/Users/Bob/Keys/%C1.M.K=00B6E4A777513E845CC8C8B316364DE302E55971212CA5D79F79DE8A7770F18942/=FD054B82F9B04A blocksize is 4096
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.io.CCNAbstractOutputStream startWrite
+INFORMAÇÕES: CCNAbstractOutputStream: startWrite -- searching for keys.
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.profiles.security.access.AccessControlManager keysForOutput
+INFORMAÇÕES: keysForOutput: found an acm: (null)
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /ccnx.org/Users/Bob/Keys/%C1.M.K=00B6E4A777513E845CC8C8B316364DE302E55971212CA5D79F79DE8A7770F18942/=FD054B82F9B04A basenameindex =00; 162 bytes written, holding back 162 flushing final blocks? false.
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 0
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /ccnx.org/Users/Bob/Keys/%C1.M.K=00B6E4A777513E845CC8C8B316364DE302E55971212CA5D79F79DE8A7770F18942/=FD054B82F9B04A basenameindex =00; 162 bytes written, holding back 0 flushing final blocks? true.
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 1
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.io.CCNOutputStream close
+INFORMAÇÕES: CCNOutputStream close: /ccnx.org/Users/Bob/Keys/%C1.M.K=00B6E4A777513E845CC8C8B316364DE302E55971212CA5D79F79DE8A7770F18942/=FD054B82F9B04A
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.KeyManager publishKey
+INFORMAÇÕES: Published key RSA Public Key
+            modulus: a34cd6236d932dbb430951f097f07324c01714f9e1277223bd774a157f32c2a44e51851e3eae1a277ee4b50ca9ffddc8a277ce29b93e32b5840f1200b4f6c9a920f721fe43c02a1981695638cd6a32ac20e848ced550ebf825b45b22a36dcf5c34152373ebdf483cf6e8f3c9fe2943386adaa360ea9a4989f39070637a841287
+    public exponent: 10001
+ to name /ccnx.org/Users/Bob/Keys/%C1.M.K=00B6E4A777513E845CC8C8B316364DE302E55971212CA5D79F79DE8A7770F18942/=FD054B82F9B04A with key locator NAME: /ccnx.org/Users/Bob/Keys/%C1.M.K=00B6E4A777513E845CC8C8B316364DE302E55971212CA5D79F79DE8A7770F18942/=FD054B82F9B04A KEY:-i8rb24atgbrkcrjej79p6p1pv8qkq7dtkqq51g8c8blh27gstlu; ephemeral digest =3CADB2BD308CC8AC9424C5DF4D244D9836D191FDC9B068BA66FDC5119F555544.
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager publishKey
+INFORMAÇÕES: publishKey: published key tuSnd1E+hFzIyLMWNk3jAuVZcSEspdefed6Kd3DxiUI=
+ under specified key name /ccnx.org/Users/Bob/Keys/%C1.M.K=00B6E4A777513E845CC8C8B316364DE302E55971212CA5D79F79DE8A7770F18942/=FD054B82F9B04A
+ key locator: NAME: /ccnx.org/Users/Bob/Keys/%C1.M.K=00B6E4A777513E845CC8C8B316364DE302E55971212CA5D79F79DE8A7770F18942/=FD054B82F9B04A KEY:-i8rb24atgbrkcrjej79p6p1pv8qkq7dtkqq51g8c8blh27gstlu
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager publishKey
+INFORMAÇÕES: publishKey: storing key locator tuSnd1E+hFzIyLMWNk3jAuVZcSEspdefed6Kd3DxiUI= for key NAME: /ccnx.org/Users/Bob/Keys/%C1.M.K=00B6E4A777513E845CC8C8B316364DE302E55971212CA5D79F79DE8A7770F18942/=FD054B82F9B04A KEY:-i8rb24atgbrkcrjej79p6p1pv8qkq7dtkqq51g8c8blh27gstlu
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.io.CCNAbstractInputStream <init>
+INFORMAÇÕES: CCNAbstractInputStream: /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testKeyRetrieval/=FD054B82F8EC10 segment 0
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.impl.CCNFlowControl <init>
+INFORMAÇÕES: adding namespace: /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testKeyRetrieval/=FD054B82F8EC10
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.io.CCNAbstractOutputStream <init>
+INFORMAÇÕES: CCNAbstractOutputStream: /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testKeyRetrieval/=FD054B82F8EC10 blocksize is 4096
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.io.CCNAbstractOutputStream startWrite
+INFORMAÇÕES: CCNAbstractOutputStream: startWrite -- searching for keys.
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.profiles.security.access.AccessControlManager keysForOutput
+INFORMAÇÕES: keysForOutput: found an acm: (null)
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.io.CCNOutputStream writeToNetwork
+INFORMAÇÕES: Adding namespace in writeToNetwork. Namespace: /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testKeyRetrieval/=FD054B82F8EC10
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testKeyRetrieval/=FD054B82F8EC10 already monitoring prefix: /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testKeyRetrieval/=FD054B82F8EC10
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testKeyRetrieval/=FD054B82F8EC10 basenameindex =0004; 0 bytes written, holding back 0 flushing final blocks? true.
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.impl.CCNSegmenter outputCurrentBlocks
+INFORMAÇÕES: flush: putting merkle tree to the network, name starts with /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testKeyRetrieval/=FD054B82F8EC10/=00; 5 blocks
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.impl.security.crypto.CCNMerkleTreeSigner signBlocks
+INFORMAÇÕES: Signed tree of 5 leaves, 9 nodes.
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 5
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.impl.security.keys.PublicKeyCache getPublicKeyObject
+INFORMAÇÕES: Retrieved key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY= using locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga.
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.impl.security.keys.PublicKeyCache getPublicKeyObject
+INFORMAÇÕES: Retrieved key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY= using locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga - got /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000/=00
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.io.CCNAbstractInputStream <init>
+INFORMAÇÕES: CCNAbstractInputStream: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 segment 0
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.impl.security.keys.PublicKeyCache getPublicKeyObject
+INFORMAÇÕES: Retrieved public key using name: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.impl.security.keys.PublicKeyCache getPublicKey
+INFORMAÇÕES: Retrieved key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY= from network with locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga!
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.io.CCNOutputStream close
+INFORMAÇÕES: CCNOutputStream close: /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testKeyRetrieval/=FD054B82F8EC10
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.io.CCNAbstractInputStream close
+INFORMAÇÕES: CCNAbstractInputStream: close /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testKeyRetrieval/=FD054B82F8EC10:  shutting down pipelining
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.io.CCNInputStreamTest testKeyRetrieval
+INFORMAÇÕES: Completed testKeyRetrieval
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.io.CCNInputStreamTest testTimeouts
+INFORMAÇÕES: Started testTimeouts
+Jan 15, 2015 6:22:35 PM org.ccnx.ccn.io.CCNAbstractInputStream <init>
+INFORMAÇÕES: CCNAbstractInputStream: /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2Ftimeouts segment 0
+Jan 15, 2015 6:22:44 PM org.ccnx.ccn.io.CCNAbstractInputStream close
+INFORMAÇÕES: CCNAbstractInputStream: close /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2Ftimeouts:  shutting down pipelining
+Jan 15, 2015 6:22:44 PM org.ccnx.ccn.io.CCNAbstractInputStream <init>
+INFORMAÇÕES: CCNAbstractInputStream: /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2Fno%2Ftimeout segment 0
+Jan 15, 2015 6:22:56 PM org.ccnx.ccn.io.CCNAbstractInputStream close
+INFORMAÇÕES: CCNAbstractInputStream: close /ccnx.org/test/CCNInputStreamTest-15-01-15-18.21.57/testInput%2Fno%2Ftimeout:  shutting down pipelining
+Jan 15, 2015 6:22:56 PM org.ccnx.ccn.io.CCNInputStreamTest testTimeouts
+INFORMAÇÕES: Completed testTimeouts
+Jan 15, 2015 6:22:56 PM org.ccnx.ccn.impl.CCNNetworkManager shutdown
+INFORMAÇÕES: NetworkManager 2: Shutdown requested
+Jan 15, 2015 6:22:56 PM org.ccnx.ccn.impl.CCNNetworkChannel close
+INFORMAÇÕES: NetworkChannel 2: close(false)
+Jan 15, 2015 6:22:56 PM org.ccnx.ccn.impl.CCNNetworkManager run
+INFORMAÇÕES: NetworkManager 2: Shutdown complete for port: 63000
+Jan 15, 2015 6:22:56 PM org.ccnx.ccn.impl.CCNNetworkManager shutdown
+INFORMAÇÕES: NetworkManager 3: Shutdown requested
+Jan 15, 2015 6:22:56 PM org.ccnx.ccn.impl.CCNNetworkChannel close
+INFORMAÇÕES: NetworkChannel 3: close(false)
+Jan 15, 2015 6:22:56 PM org.ccnx.ccn.impl.CCNNetworkManager run
+INFORMAÇÕES: NetworkManager 3: Shutdown complete for port: 63000
+Jan 15, 2015 6:22:56 PM org.ccnx.ccn.io.CCNAbstractInputStream attemptHoleFilling
+ADVERTÊNCIA: failed to express interest for CCNAbstractInputStream pipeline
+Jan 15, 2015 6:22:56 PM org.ccnx.ccn.impl.CCNNetworkManager shutdown
+INFORMAÇÕES: NetworkManager 1: Shutdown requested
+Jan 15, 2015 6:22:56 PM org.ccnx.ccn.impl.CCNNetworkChannel close
+INFORMAÇÕES: NetworkChannel 1: close(false)
+Jan 15, 2015 6:22:56 PM org.ccnx.ccn.impl.CCNNetworkManager run
+INFORMAÇÕES: NetworkManager 1: Shutdown complete for port: 63000
+Jan 15, 2015 6:22:56 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager saveSecureKeyCache
+INFORMAÇÕES: Not saving key manager secure key cache data in response to user configuration variable.
+]]></system-err>
+</testsuite>

@@ -1,0 +1,1131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="barbara-Notebook" name="org.ccnx.ccn.endtoend.EndToEndTestSource" skipped="0" tests="1" time="6.925" timestamp="2015-01-15T21:26:22">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="src.test.dir" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/src/test" />
+    <property name="jarfile" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/ccn.jar" />
+    <property name="PROTOCOL_KEY" value="ccn.agent.protocol" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="ccnr" value="/home/barbara/jaime/ccnx-0.8.1/csrc/ccnr/ccnr" />
+    <property name="jarfile-base" value="ccn.jar" />
+    <property name="env.MAKELEVEL" value="2" />
+    <property name="ccn-libs-basedir" value="/home/barbara/jaime/ccnx-0.8.1/javasrc" />
+    <property name="env.SUDO_COMMAND" value="/usr/bin/make test" />
+    <property name="ant.file.type.java-ccnx" value="file" />
+    <property name="REPO_GLOBAL" value="/parc.com/csl/ccn/repositories/TestRepository" />
+    <property name="CCND_CAP" value="50000" />
+    <property name="lib" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/lib" />
+    <property name="SYNC_NOISY" value="FINEST" />
+    <property name="os.name" value="Linux" />
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/classes" />
+    <property name="env.PWD" value="/home/barbara/jaime/ccnx-0.8.1/javasrc" />
+    <property name="JAVA_MEMORY" value="1g" />
+    <property name="env.LANG" value="pt_BR.UTF-8" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ccnd" value="/home/barbara/jaime/ccnx-0.8.1/csrc/ccnd/ccnd" />
+    <property name="ant.home" value="/usr/share/ant" />
+    <property name="java.runtime.version" value="1.7.0_65-b32" />
+    <property name="org.ccnx.ccn.LogDir" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/testout/log" />
+    <property name="env.DISPLAY" value=":0" />
+    <property name="REPO_ROOT" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/testout/repotest" />
+    <property name="user.name" value="root" />
+    <property name="CCND_CMD" value="../../csrc/ccnd/ccnd" />
+    <property name="env.USER" value="root" />
+    <property name="env.SHELL" value="/bin/bash" />
+    <property name="DEBUG_OPTIONS" value="" />
+    <property name="env.PATH" value="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin" />
+    <property name="user.language" value="pt" />
+    <property name="build" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/build" />
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64" />
+    <property name="ant.project.default-target" value="jar" />
+    <property name="ant.project.name" value="java-ccnx" />
+    <property name="java.version" value="1.7.0_65" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="testout" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/testout" />
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="showoutput" value="no" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="USE_KEY_CONFIG_VAL" value="false" />
+    <property name="repo2" value="true" />
+    <property name="java.class.version" value="51.0" />
+    <property name="TOP_DIR" value="../src/systemtest" />
+    <property name="user.country" value="BR" />
+    <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="env.LOGNAME" value="root" />
+    <property name="ant.file" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/build.xml" />
+    <property name="os.version" value="3.16.0-29-generic" />
+    <property name="REPO_LOCAL_ROOT" value="repotest" />
+    <property name="ant.file.type.ccn-libs" value="file" />
+    <property name="REPO_LOCAL" value="TestRepository" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="24.65-b04" />
+    <property name="env.LANGUAGE" value="pt_BR:pt:en" />
+    <property name="EXIT_ON_ERROR" value="org.ccnx.ExitOnNetworkError" />
+    <property name="ant.library.dir" value="/usr/share/ant/lib" />
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+    <property name="env.TERM" value="xterm" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="env.SUDO_UID" value="1000" />
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+    <property name="build-excludes" value="bin/**, log/**, lib/**, libsrc/**, repository/**, build/**, testout/**, ktrace.out, CCN_DEBUG_DATA/**" />
+    <property name="user.home" value="/root" />
+    <property name="env.OLDPWD" value="/home/barbara/jaime/ccnx-0.8.1" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="env.MFLAGS" value="-w" />
+    <property name="LOGDIR_KEY" value="org.ccnx.ccn.LogDir" />
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="org.ccnx.ExitOnNetworkError" value="true" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="CCND_DEBUG" value="87" />
+    <property name="env.MAKEFLAGS" value="w" />
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.4 compiled on May 9 2014" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner org.ccnx.ccn.endtoend.EndToEndTestSource skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/barbara/jaime/ccnx-0.8.1/javasrc/testout/TEST-org.ccnx.ccn.endtoend.EndToEndTestSource.xml crashfile=/home/barbara/jaime/ccnx-0.8.1/javasrc/junitvmwatcher6927424422697024811.properties propsfile=/home/barbara/jaime/ccnx-0.8.1/javasrc/junit6126619989350463268.properties" />
+    <property name="java.class.path" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/lib/bcprov-jdk16-143.jar:/home/barbara/jaime/ccnx-0.8.1/javasrc/lib/kxml2-2.3.0.jar:/home/barbara/jaime/ccnx-0.8.1/javasrc/lib/junit-4.3.1.jar:/home/barbara/jaime/ccnx-0.8.1/javasrc/ccn.jar:/usr/share/java/ant-launcher-1.9.4.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+    <property name="xml-jar" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/lib/kxml2-2.3.0.jar" />
+    <property name="junit-jar" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/lib/junit-4.3.1.jar" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="bcprov-jar" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/lib/bcprov-jdk16-143.jar" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.7" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="cmddir" value="/home/barbara/jaime/ccnx-0.8.1/csrc/cmd" />
+    <property name="env.HOME" value="/home/barbara" />
+    <property name="env.LS_COLORS" value="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="repozip" value="repotest.zip" />
+    <property name="ccn.agent.port" value="63000" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="UNIT_TOP_DIR" value="../src/test" />
+    <property name="ant.file.ccn-libs" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/libs.xml" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext" />
+    <property name="env.SUDO_USER" value="barbara" />
+    <property name="user.dir" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/testout" />
+    <property name="env.XAUTHORITY" value="/home/barbara/.Xauthority" />
+    <property name="ant.file.java-ccnx" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/build.xml" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+    <property name="env.COLORTERM" value="gnome-terminal" />
+    <property name="TEST_PORT" value="63000" />
+    <property name="basedir" value="/home/barbara/jaime/ccnx-0.8.1/javasrc" />
+    <property name="ant.java.version" value="1.7" />
+    <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
+    <property name="env.USERNAME" value="root" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="env.MAIL" value="/var/mail/root" />
+    <property name="src.systemtest.dir" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/src/systemtest" />
+    <property name="env.SUDO_GID" value="1000" />
+    <property name="testoutlog" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/testout/log" />
+    <property name="java.specification.version" value="1.7" />
+    <property name="src.dir" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/src/main" />
+    <property name="ant.project.invoked-targets" value="test" />
+    <property name="USE_KEY_CONFIG_KEY" value="org.ccnx.config.UseKeyConfiguration" />
+    <property name="REPO_ROOT2" value="/home/barbara/jaime/ccnx-0.8.1/javasrc/testout/repotest2" />
+    <property name="org.ccnx.config.UseKeyConfiguration" value="false" />
+  </properties>
+  <testcase classname="org.ccnx.ccn.endtoend.EndToEndTestSource" name="source" time="6.136" />
+  <system-out><![CDATA[Writing log records to /home/barbara/jaime/ccnx-0.8.1/javasrc/testout/log/ccn_15-01-15-182622-6252.log
+]]></system-out>
+  <system-err><![CDATA[Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadKeyStore
+INFORMAÇÕES: Loading CCN key store from /root/.ccnx/.ccnx_keystore...last modified 1420721633000(ms).
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager readKeyStore
+INFORMAÇÕES: Loading CCN key store...
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadKeyStore
+INFORMAÇÕES: Loaded CCN key store from /root/.ccnx/.ccnx_keystore...version 2015-01-08 09:53:53.0 ms: 1420721633000
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadValuesFromKeystore
+INFORMAÇÕES: Loading key store file:/root/.ccnx/.ccnx_keystore version 2015-01-08 09:53:53.0 version component =FD054AE7DE1000 millis 1420721633000
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadValuesFromKeystore
+INFORMAÇÕES: Default key ID for user root: kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.security.keys.SecureKeyCache loadKeyStore
+INFORMAÇÕES: KeyCache: loading signing key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=, remembering public key in public key cache.
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.security.keys.SecureKeyCache addMySigningKey
+INFORMAÇÕES: SecureKeyCache: adding my private key 9234adec47d19e3e6a2af362d44e09ab6b71f43b1900ba0622fb45f2a5b7d9f6
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager loadValuesFromConfiguration
+INFORMAÇÕES: Not loading key manager configuration data in response to user configuration variable.
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+ADVERTÊNCIA: NetworkManager 1: Non-standard CCN agent port 63000 per property ccn.agent.port
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+INFORMAÇÕES: NetworkManager 1: Contacting CCN agent at localhost:63000
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.CCNNetworkChannel <init>
+INFORMAÇÕES: NetworkChannel 1: Starting up CCNNetworkChannel using TCP.
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 1: open()
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 1: Contacting CCN agent at localhost:63000 on local port 40798
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.CCNHandle <init>
+INFORMAÇÕES: CCNHandle 1: Handle is now open
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.CCNNetworkManager run
+INFORMAÇÕES: NetworkManager 1: CCNNetworkManager processing thread started for port: 63000
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.security.keys.PublicKeyCache getPublicKeyObject
+INFORMAÇÕES: Retrieved key 1jYqtWb54a3hYuudALlY+uWoa+H6XEFakodAe1T6/ws= using locator NAME: /%C1.M.S.localhost/%C1.M.SRV/ccnd/KEY/%C1.M.K=00D6362AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B/=FD054B82D339C9.
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.security.keys.PublicKeyCache getPublicKeyObject
+INFORMAÇÕES: Retrieved key 1jYqtWb54a3hYuudALlY+uWoa+H6XEFakodAe1T6/ws= using locator NAME: /%C1.M.S.localhost/%C1.M.SRV/ccnd/KEY/%C1.M.K=00D6362AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B/=FD054B82D339C9 - got /%C1.M.S.localhost/%C1.M.SRV/ccnd/KEY/%C1.M.K=00D6362AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B/=FD054B82D339C9/=00
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.io.CCNAbstractInputStream <init>
+INFORMAÇÕES: CCNAbstractInputStream: /%C1.M.S.localhost/%C1.M.SRV/ccnd/KEY/%C1.M.K=00D6362AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B/=FD054B82D339C9 segment 0
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.security.keys.PublicKeyCache getPublicKeyObject
+INFORMAÇÕES: Retrieved public key using name: /%C1.M.S.localhost/%C1.M.SRV/ccnd/KEY/%C1.M.K=00D6362AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B/=FD054B82D339C9
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.security.keys.PublicKeyCache getPublicKey
+INFORMAÇÕES: Retrieved key 1jYqtWb54a3hYuudALlY+uWoa+H6XEFakodAe1T6/ws= from network with locator NAME: /%C1.M.S.localhost/%C1.M.SRV/ccnd/KEY/%C1.M.K=00D6362AB566F9E1ADE162EB9D00B958FAE5A86BE1FA5C415A9287407B54FAFF0B/=FD054B82D339C9!
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.config.PlatformConfiguration <clinit>
+INFORMAÇÕES: BC provider: BC
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.config.PlatformConfiguration <clinit>
+INFORMAÇÕES: Provider info: BouncyCastle Security Provider v1.43 version: 1.43
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.config.PlatformConfiguration <clinit>
+INFORMAÇÕES: java.vm.name = OpenJDK 64-Bit Server VM
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: Flow controller addNameSpace: added namespace: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator KEY: kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY= for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.KeyManager publishKey
+INFORMAÇÕES: publishKey: key not previously published, making new key object /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6 with version 2015-01-08 09:53:53.0 displayed as =FD054AE7DE1000
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.io.CCNAbstractOutputStream <init>
+INFORMAÇÕES: CCNAbstractOutputStream: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 blocksize is 4096
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.io.CCNAbstractOutputStream startWrite
+INFORMAÇÕES: CCNAbstractOutputStream: startWrite -- searching for keys.
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.profiles.security.access.AccessControlManager keysForOutput
+INFORMAÇÕES: keysForOutput: found an acm: (null)
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 basenameindex =00; 162 bytes written, holding back 162 flushing final blocks? false.
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 0
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: flush: outputting to the segmenter, baseName /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 basenameindex =00; 162 bytes written, holding back 0 flushing final blocks? true.
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.io.CCNOutputStream flushToNetwork
+INFORMAÇÕES: HEADER: CCNOutputStream: flushToNetwork: new _baseNameIndex 1
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.io.CCNOutputStream close
+INFORMAÇÕES: CCNOutputStream close: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.KeyManager publishKey
+INFORMAÇÕES: Published key Sun RSA public key, 1024 bits
+  modulus: 110921138301212145392004253279917995950258669333863662056871643271976607790547016315269834949391078948318860805625603844022322721344201027571021917379901461301585327002407293702110801478794762434747364279565414349376821790585553127606947398240644540011141381284624017866806283409148649866001587866016004087361
+  public exponent: 65537 to name /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 with key locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga; ephemeral digest O%ADh=EA1AFDF4458BA457A178942137A32891619D1195CD5655B934F7C63374.
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager publishKey
+INFORMAÇÕES: publishKey: published key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+ under specified key name /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000
+ key locator: NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager publishKey
+INFORMAÇÕES: publishKey: storing key locator kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY= for key NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+ADVERTÊNCIA: NetworkManager 2: Non-standard CCN agent port 63000 per property ccn.agent.port
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.CCNNetworkManager <init>
+INFORMAÇÕES: NetworkManager 2: Contacting CCN agent at localhost:63000
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.CCNNetworkChannel <init>
+INFORMAÇÕES: NetworkChannel 2: Starting up CCNNetworkChannel using TCP.
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 2: open()
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.CCNNetworkChannel open
+INFORMAÇÕES: NetworkChannel 2: Contacting CCN agent at localhost:63000 on local port 40800
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.CCNHandle <init>
+INFORMAÇÕES: CCNHandle 2: Handle is now open
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.endtoend.EndToEndTestSource source
+INFORMAÇÕES: Starting source
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.CCNFlowControl <init>
+INFORMAÇÕES: adding namespace: /BaseLibraryTest/sync
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.CCNNetworkManager run
+INFORMAÇÕES: NetworkManager 2: CCNNetworkManager processing thread started for port: 63000
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/sync/380 already monitoring prefix: /BaseLibraryTest/sync
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/sync/380 already monitoring prefix: /BaseLibraryTest/sync
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put sequence started
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.CCNFlowControl <init>
+INFORMAÇÕES: adding namespace: /BaseLibraryTest
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/0 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/0 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 0 done: 421 content bytes
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/0
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/1 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/1 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 1 done: 565 content bytes
+Jan 15, 2015 6:26:22 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/1
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/2 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/2 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 2 done: 337 content bytes
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/2
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/3 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/3 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 3 done: 121 content bytes
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/3
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/4 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/4 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 4 done: 457 content bytes
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/4
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/5 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/5 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 5 done: 73 content bytes
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/5
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/6 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/6 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 6 done: 169 content bytes
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/6
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/7 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/7 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 7 done: 409 content bytes
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/7
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/8 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/8 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 8 done: 1825 content bytes
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/8
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/9 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/9 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 9 done: 349 content bytes
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/9
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/10 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/10 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 10 done: 1621 content bytes
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/10
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/11 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/11 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 11 done: 97 content bytes
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/11
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/12 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/12 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 12 done: 325 content bytes
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/12
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/13 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/13 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 13 done: 3349 content bytes
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/13
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/14 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/14 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 14 done: 301 content bytes
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/14
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/15 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/15 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 15 done: 289 content bytes
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/15
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/16 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/16 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 16 done: 337 content bytes
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/16
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/17 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/17 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 17 done: 1 content bytes
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/17
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/18 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/18 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 18 done: 13 content bytes
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/18
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/19 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/19 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 19 done: 73 content bytes
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/19
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/20 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/20 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 20 done: 3181 content bytes
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/20
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/21 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/21 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 21 done: 37 content bytes
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/21
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/22 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/22 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 22 done: 349 content bytes
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/22
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/23 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/23 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 23 done: 1069 content bytes
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/23
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/24 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/24 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 24 done: 229 content bytes
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/24
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/25 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/25 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 25 done: 1 content bytes
+Jan 15, 2015 6:26:23 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/25
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/26 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/26 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 26 done: 1237 content bytes
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/26
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/27 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/27 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 27 done: 325 content bytes
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/27
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/28 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/28 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 28 done: 61 content bytes
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/28
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/29 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/29 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 29 done: 1621 content bytes
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/29
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/30 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/30 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 30 done: 481 content bytes
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/30
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/31 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/31 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 31 done: 193 content bytes
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/31
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/32 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/32 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 32 done: 2221 content bytes
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/32
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/33 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/33 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 33 done: 2821 content bytes
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/33
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/34 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/34 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 34 done: 1645 content bytes
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/34
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/35 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/35 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 35 done: 325 content bytes
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/35
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/36 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/36 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 36 done: 373 content bytes
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/36
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/37 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/37 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 37 done: 3193 content bytes
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/37
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/38 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/38 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 38 done: 85 content bytes
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/38
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/39 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/39 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 39 done: 241 content bytes
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/39
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/40 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/40 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 40 done: 1261 content bytes
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/40
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/41 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/41 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 41 done: 2569 content bytes
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/41
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/42 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/gets/42 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put 42 done: 1633 content bytes
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/gets/42
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.EndToEndTestSource puts
+INFORMAÇÕES: Put sequence finished
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.endtoend.EndToEndTestSource server
+INFORMAÇÕES: PutServer started
+Jan 15, 2015 6:26:24 PM org.ccnx.ccn.impl.CCNFlowControl <init>
+INFORMAÇÕES: adding namespace: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl removeUnmatchedInterests
+INFORMAÇÕES: Removing unmatched interest /BaseLibraryTest/server
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/0 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/0 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 0 done: 433 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/0
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/1 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/1 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 1 done: 2185 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/1
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/2 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/2 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 2 done: 361 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/2
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/3 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/3 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 3 done: 1153 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/3
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/4 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/4 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 4 done: 457 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/4
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/5 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/5 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 5 done: 2509 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/5
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/6 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/6 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 6 done: 229 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/6
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/7 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/7 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 7 done: 181 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/7
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/8 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/8 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 8 done: 3349 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/8
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/9 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/9 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 9 done: 2497 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/9
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/10 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/10 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 10 done: 2893 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/10
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/11 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/11 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 11 done: 193 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/11
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/12 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/12 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 12 done: 229 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/12
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/13 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/13 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 13 done: 37 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/13
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/14 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/14 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 14 done: 1309 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/14
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/15 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/15 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 15 done: 3133 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/15
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/16 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/16 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 16 done: 1909 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/16
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/17 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/17 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 17 done: 2665 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/17
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/18 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/18 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 18 done: 901 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/18
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/19 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/19 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 19 done: 3205 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/19
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/20 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/20 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 20 done: 517 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/20
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/21 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/21 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 21 done: 2917 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/21
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/22 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/22 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 22 done: 397 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/22
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/23 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/23 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 23 done: 25 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/23
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/24 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/24 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 24 done: 2377 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/24
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/25 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/25 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 25 done: 1009 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/25
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/26 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/26 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 26 done: 649 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/26
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/27 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/27 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 27 done: 3037 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/27
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/28 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/28 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 28 done: 25 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/28
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/29 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/29 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 29 done: 1969 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/29
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/30 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/30 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 30 done: 493 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/30
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/31 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/31 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 31 done: 277 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/31
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/32 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/32 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 32 done: 49 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/32
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/33 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/33 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 33 done: 649 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/33
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/34 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/34 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 34 done: 2929 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/34
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/35 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/35 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 35 done: 493 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/35
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/36 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/36 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 36 done: 217 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/36
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/37 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/37 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 37 done: 2893 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/37
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/38 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/38 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 38 done: 2017 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/38
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/39 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/39 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 39 done: 133 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/39
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.InterestTable add
+INFORMAÇÕES: removing entry associated with name /BaseLibraryTest/gets/2
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/40 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/40 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 40 done: 1 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/40
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.InterestTable add
+INFORMAÇÕES: removing entry associated with name /BaseLibraryTest/gets/3
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/41 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/41 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 41 done: 301 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/41
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.InterestTable add
+INFORMAÇÕES: removing entry associated with name /BaseLibraryTest/gets/8
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/42 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.security.keys.BasicKeyManager getKeyLocator
+INFORMAÇÕES: getKeyLocator: returning locator NAME: /ccnx.org/Users/root/Keys/%C1.M.K=009234ADEC47D19E3E6A2AF362D44E09AB6B71F43B1900BA0622FB45F2A5B7D9F6/=FD054AE7DE1000 KEY:-reba89rgbj1o6ata34t5eovcl4kho5s9pnv8nstq15q1ld4g9ga for key kjSt7EfRnj5qKvNi1E4Jq2tx9DsZALoGIvtF8qW32fY=
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNFlowControl addNameSpace
+INFORMAÇÕES: addNameSpace: not adding name: /BaseLibraryTest/server/42 already monitoring prefix: /BaseLibraryTest
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource handleInterest
+INFORMAÇÕES: Put 42 done: 1873 content bytes
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.BaseLibrarySource checkPutResults
+INFORMAÇÕES: Put data: /BaseLibraryTest/server/42
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.endtoend.EndToEndTestSource source
+INFORMAÇÕES: Completed source
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.InterestTable add
+INFORMAÇÕES: removing entry associated with name /BaseLibraryTest/gets/10
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNNetworkManager shutdown
+INFORMAÇÕES: NetworkManager 2: Shutdown requested
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNNetworkChannel close
+INFORMAÇÕES: NetworkChannel 2: close(false)
+Jan 15, 2015 6:26:28 PM org.ccnx.ccn.impl.CCNNetworkManager run
+INFORMAÇÕES: NetworkManager 2: Shutdown complete for port: 63000
+]]></system-err>
+</testsuite>

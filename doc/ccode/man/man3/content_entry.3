@@ -1,0 +1,180 @@
+.TH "content_entry" 3 "9 Oct 2013" "Version 0.8.1" "Content-Centric Networking in C" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+content_entry \- 
+.PP
+Content table entry.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fBccn_cookie\fP \fBaccession\fP"
+.br
+.RI "\fIfor associated nametree entry \fP"
+.ti -1c
+.RI "unsigned \fBarrival_faceid\fP"
+.br
+.RI "\fIthe faceid of first arrival \fP"
+.ti -1c
+.RI "short \fBrefs\fP"
+.br
+.RI "\fInumber of queues we are on \fP"
+.ti -1c
+.RI "short \fBncomps\fP"
+.br
+.RI "\fINumber of name components plus one. \fP"
+.ti -1c
+.RI "int \fBflags\fP"
+.br
+.RI "\fIsee defines below \fP"
+.ti -1c
+.RI "unsigned char * \fBccnb\fP"
+.br
+.RI "\fIccnb-encoded ContentObject \fP"
+.ti -1c
+.RI "int \fBsize\fP"
+.br
+.RI "\fISize of ContentObject. \fP"
+.ti -1c
+.RI "int \fBstaletime\fP"
+.br
+.RI "\fITime in seconds, relative to starttime. \fP"
+.ti -1c
+.RI "struct \fBcontent_entry\fP * \fBnextx\fP"
+.br
+.RI "\fINext to expire after us. \fP"
+.ti -1c
+.RI "struct \fBcontent_entry\fP * \fBprevx\fP"
+.br
+.RI "\fIExpiry doubly linked for fast removal. \fP"
+.ti -1c
+.RI "\fBccnr_accession\fP \fBaccession\fP"
+.br
+.RI "\fIpermanent repository id \fP"
+.ti -1c
+.RI "\fBccnr_cookie\fP \fBcookie\fP"
+.br
+.RI "\fIfor in-memory references \fP"
+.ti -1c
+.RI "struct \fBccn_charbuf\fP * \fBflatname\fP"
+.br
+.RI "\fIfor skiplist, et. \fP"
+.ti -1c
+.RI "struct \fBccn_charbuf\fP * \fBcob\fP"
+.br
+.RI "\fImay contain ContentObject, or be NULL \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Content table entry. 
+
+The content table is built on a nametree that is keyed by the flatname representation of the content name (including the implicit digest). 
+.PP
+Definition at line 262 of file ccnd_private.h.
+.SH "Field Documentation"
+.PP 
+.SS "\fBccnr_accession\fP \fBcontent_entry::accession\fP"
+.PP
+permanent repository id 
+.PP
+Definition at line 72 of file ccnr_store.c.
+.SS "\fBccn_cookie\fP \fBcontent_entry::accession\fP"
+.PP
+for associated nametree entry 
+.PP
+Definition at line 263 of file ccnd_private.h.
+.PP
+Referenced by ccnd_debug_content(), content_dequeuex(), content_enqueuex(), content_matches_prefix(), content_next(), face_send_queue_insert(), match_interests(), next_child_at_level(), process_incoming_content(), process_incoming_interest(), r_store_content_accession(), r_store_content_base(), r_store_content_btree_insert(), r_store_content_from_accession(), r_store_content_read(), r_store_content_trim(), r_store_enroll_content(), r_store_forget_content(), r_store_look(), r_store_lookup(), r_store_send_content(), r_store_set_accession_from_offset(), and remove_content().
+.SS "unsigned \fBcontent_entry::arrival_faceid\fP"
+.PP
+the faceid of first arrival 
+.PP
+Definition at line 264 of file ccnd_private.h.
+.PP
+Referenced by process_incoming_content().
+.SS "unsigned char* \fBcontent_entry::ccnb\fP"
+.PP
+ccnb-encoded ContentObject 
+.PP
+Definition at line 268 of file ccnd_private.h.
+.PP
+Referenced by consume_matching_interests(), content_finalize(), process_incoming_content(), process_incoming_interest(), send_content(), and set_content_timer().
+.SS "struct \fBccn_charbuf\fP* \fBcontent_entry::cob\fP"
+.PP
+may contain ContentObject, or be NULL 
+.PP
+Definition at line 77 of file ccnr_store.c.
+.PP
+Referenced by cleanup_content_entry(), process_incoming_content(), r_store_content_base(), r_store_content_from_accession(), r_store_content_read(), r_store_content_trim(), r_store_look(), and r_store_set_accession_from_offset().
+.SS "\fBccnr_cookie\fP \fBcontent_entry::cookie\fP"
+.PP
+for in-memory references 
+.PP
+Definition at line 73 of file ccnr_store.c.
+.PP
+Referenced by cleanup_content_entry(), r_store_content_base(), r_store_content_cookie(), r_store_content_from_accession(), r_store_content_from_cookie(), r_store_enroll_content(), and r_store_lookup().
+.SS "int \fBcontent_entry::flags\fP"
+.PP
+see defines below see below - use accessor functions 
+.PP
+Definition at line 267 of file ccnd_private.h.
+.PP
+Referenced by cleanup_content_entry(), face_send_queue_insert(), r_store_content_change_flags(), r_store_content_flags(), r_store_enroll_content(), and r_store_set_accession_from_offset().
+.SS "struct \fBccn_charbuf\fP* \fBcontent_entry::flatname\fP"
+.PP
+for skiplist, et. al. 
+.PP
+Definition at line 76 of file ccnr_store.c.
+.PP
+Referenced by ccnr_debug_content(), cleanup_content_entry(), r_store_content_btree_insert(), r_store_content_flatname(), r_store_content_matches_interest_prefix(), r_store_content_next(), r_store_look(), r_store_lookup(), r_store_lookup_ccnb(), r_store_name_append_components(), r_store_next_child_at_level(), r_store_set_accession_from_offset(), and r_store_set_flatname().
+.SS "short \fBcontent_entry::ncomps\fP"
+.PP
+Number of name components plus one. 
+.PP
+Definition at line 266 of file ccnd_private.h.
+.PP
+Referenced by next_child_at_level(), process_incoming_content(), and r_proto_answer_req().
+.SS "struct \fBcontent_entry\fP* \fBcontent_entry::nextx\fP"
+.PP
+Next to expire after us. 
+.PP
+Definition at line 271 of file ccnd_private.h.
+.PP
+Referenced by ccnd_create(), ccnd_n_stale(), content_dequeuex(), content_enqueuex(), content_preremove(), and content_tree_trim().
+.SS "struct \fBcontent_entry\fP* \fBcontent_entry::prevx\fP"
+.PP
+Expiry doubly linked for fast removal. 
+.PP
+Definition at line 272 of file ccnd_private.h.
+.PP
+Referenced by ccnd_create(), ccnd_n_stale(), content_dequeuex(), and content_enqueuex().
+.SS "short \fBcontent_entry::refs\fP"
+.PP
+number of queues we are on 
+.PP
+Definition at line 265 of file ccnd_private.h.
+.PP
+Referenced by content_queue_destroy(), content_sender(), content_tree_trim(), face_send_queue_insert(), process_incoming_content(), and remove_content().
+.SS "int \fBcontent_entry::size\fP"
+.PP
+Size of ContentObject. size of ContentObject 
+.PP
+Definition at line 269 of file ccnd_private.h.
+.PP
+Referenced by ccnd_debug_content(), ccnr_debug_content(), consume_matching_interests(), content_sender(), process_incoming_content(), process_incoming_interest(), process_input_buffer(), r_lookup(), r_store_content_base(), r_store_content_field_access(), r_store_content_from_accession(), r_store_content_read(), r_store_content_size(), r_store_look(), r_store_send_content(), r_store_set_flatname(), and send_content().
+.SS "int \fBcontent_entry::staletime\fP"
+.PP
+Time in seconds, relative to starttime. 
+.PP
+Definition at line 270 of file ccnd_private.h.
+.PP
+Referenced by ccnd_create(), ccnd_n_stale(), content_dequeuex(), content_enqueuex(), is_stale(), mark_stale(), mark_unsolicited(), and set_content_timer().
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Content-Centric Networking in C from the source code.
